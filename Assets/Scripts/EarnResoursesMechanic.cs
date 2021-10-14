@@ -14,6 +14,11 @@ public class EarnResoursesMechanic : MonoBehaviour
             stone = PlayerPrefs.GetInt("Stone");
             stoneText.text = stone.ToString();
         }
+        else
+        {
+            stone = 0;
+            stoneText.text = stone.ToString();
+        }
     }
 
     public void EarnStoneMechanic()
@@ -21,5 +26,6 @@ public class EarnResoursesMechanic : MonoBehaviour
         stone = int.Parse(stoneText.text);
         stone++;
         stoneText.text = stone.ToString();
+        PlayerPrefs.SetInt("Stone", stone);
     }
 }
