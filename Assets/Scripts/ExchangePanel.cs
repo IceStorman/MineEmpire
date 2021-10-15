@@ -10,26 +10,30 @@ public class ExchangePanel : MonoBehaviour
     public int stone;
     public float money;
 
-    private void Start()
+    private void Update()
     {
         if (PlayerPrefs.HasKey("Money"))
         {
-            money = PlayerPrefs.GetInt("Money");
+            money = PlayerPrefs.GetFloat("Money");
+            moneyText.text = money.ToString();
         }
         else
         {
-            PlayerPrefs.SetInt("Money", 0);
-            money = PlayerPrefs.GetInt("Money");
+            PlayerPrefs.SetFloat("Money", 0);
+            money = PlayerPrefs.GetFloat("Money");
+            moneyText.text = money.ToString();
         }
 
         if (PlayerPrefs.HasKey("Stone"))
         {
             stone = PlayerPrefs.GetInt("Stone");
+            stoneText.text = stone.ToString();
         }
         else
         {
             PlayerPrefs.SetInt("Stone", 0);
             stone = PlayerPrefs.GetInt("Stone");
+            stoneText.text = stone.ToString();
         }
     }
 
@@ -47,7 +51,10 @@ public class ExchangePanel : MonoBehaviour
         if(stone >= 5)
         {
             stone -= 5;
+            stoneText.text = stone.ToString();
             money++;
+            moneyText.text = money.ToString("F2");
+
             PlayerPrefs.SetInt("Stone", stone);
             PlayerPrefs.SetFloat("Money", money);
         }

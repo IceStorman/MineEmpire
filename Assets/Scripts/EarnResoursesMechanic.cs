@@ -7,7 +7,7 @@ public class EarnResoursesMechanic : MonoBehaviour
 
     public int stone;
 
-    private void Start()
+    private void Update()
     {
         if (PlayerPrefs.HasKey("Stone"))
         {
