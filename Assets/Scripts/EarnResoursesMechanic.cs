@@ -5,7 +5,7 @@ public class EarnResoursesMechanic : MonoBehaviour
 {
     [SerializeField] private Text stoneText;
 
-    private int stone;
+    public int stone;
 
     private void Start()
     {
