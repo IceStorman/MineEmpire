@@ -1,30 +1,45 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
 public class Songs : MonoBehaviour
 {
-    public AudioClip song1;
-    public AudioClip song2;
-    public AudioClip song3;
-    public AudioClip song4;
-    public AudioClip song5;
-    public AudioClip song6;
-    public AudioClip song7;
-    public AudioClip song8;
-    public AudioClip song9;
-    public AudioClip song10;
+    [SerializeField] private AudioSource classicMineTheme;
+    [SerializeField] private AudioSource specialMineTheme;
+    [SerializeField] private AudioSource oldestMineTheme;
+    [SerializeField] private AudioSource exchancheTheme;
+    [SerializeField] private AudioSource clickEffect;
+    [SerializeField] private AudioSource mineEffect;
 
-    void Start()
+    private void Start()
     {
-        GetComponent<AudioSource>();
-        //AudioSource.PlayClipAtPoint(song1, new Vector2(0, 0));
-        
+        classicMineTheme.Play();
+    }
+    
+    public void ChangeOnExchangeTheme()
+    {
+        StopAllMusics();
+        exchancheTheme.Play();
     }
 
-    void Update()
+    public void ChangeOnClassicMineTheme()
     {
-        
+        StopAllMusics();
+        classicMineTheme.Play();
+    }
+
+    public void ClickEffect()
+    {
+        clickEffect.Play();
+    }
+
+    public void MineEffect()
+    {
+        mineEffect.Play();
+    }
+
+    private void StopAllMusics()
+    {
+        classicMineTheme.Stop();
+        exchancheTheme.Stop();
     }
 }
