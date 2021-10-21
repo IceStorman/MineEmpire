@@ -10,6 +10,8 @@ public class Songs : MonoBehaviour
     [SerializeField] private AudioSource clickEffect;
     [SerializeField] private AudioSource mineEffect;
 
+   public AudioMixerGroup mixer;
+
     private void Start()
     {
         classicMineTheme.Play();
@@ -34,7 +36,13 @@ public class Songs : MonoBehaviour
 
     public void MineEffect()
     {
+        mineEffect.pitch = Random.Range(0.4f, 2f);
         mineEffect.Play();
+    }
+
+    public void ChangeMusicVolume(float volume)
+    {
+        mixer.audioMixer.SetFloat("MasterVolume", Mathf.Lerp(-10, volume, -80));
     }
 
     private void StopAllMusics()
