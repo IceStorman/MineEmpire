@@ -6,6 +6,9 @@ public class ExchangePanel : MonoBehaviour
     [SerializeField] private RectTransform panel;
     [SerializeField] private Text stoneText;
     [SerializeField] private Text moneyText;
+    [SerializeField] private float speed;
+    [SerializeField] private bool opening;
+    [SerializeField] private bool closing;
 
     public int stone;
     public float money;
@@ -39,11 +42,21 @@ public class ExchangePanel : MonoBehaviour
 
     public void Open()
     {
-        panel.localPosition = new Vector2(0, 0);
+        opening = true;
+        //panel.transform.Translate(new Vector2(-1f, 0f) * speed * Time.deltaTime);
     }
     public void Close()
     {
-        panel.localPosition = new Vector2(800, 0);
+        closing = true;
+        //panel.localPosition = new Vector2(800, 0);
+    }
+
+    public void FixedUpdate()
+    {
+        if (transform.position.x == 0f) closing = false;
+        else if (transform.position.x == 800f) opening = false;
+        if (opening) panel.transform.Translate(new Vector2(-1f, 0f) * speed * Time.deltaTime);
+        else if (closing) panel.transform.Translate(new Vector2(1f, 0f) * speed * Time.deltaTime);
     }
 
     public void TradeStone()
