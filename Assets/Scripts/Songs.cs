@@ -42,7 +42,7 @@ public class Songs : MonoBehaviour
 
     public void ChangeMusicVolume(float volume)
     {
-        mixer.audioMixer.SetFloat("MasterVolume", Mathf.Lerp(-10, volume, -80));
+        mixer.audioMixer.SetFloat("MasterVolume", Mathf.Lerp(-80, 0, volume));
     }
 
     private void StopAllMusics()

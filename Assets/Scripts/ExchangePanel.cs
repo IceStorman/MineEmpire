@@ -43,18 +43,16 @@ public class ExchangePanel : MonoBehaviour
     public void Open()
     {
         opening = true;
-        //panel.transform.Translate(new Vector2(-1f, 0f) * speed * Time.deltaTime);
     }
     public void Close()
     {
         closing = true;
-        //panel.localPosition = new Vector2(800, 0);
     }
 
-    public void FixedUpdate()
+    private void FixedUpdate()
     {
-        if (transform.position.x == 0f) closing = false;
-        else if (transform.position.x == 800f) opening = false;
+        if (panel.transform.position.x <= -256f) opening = false;
+        else if (panel.transform.position.x >= 270f) closing = false;
         if (opening) panel.transform.Translate(new Vector2(-1f, 0f) * speed * Time.deltaTime);
         else if (closing) panel.transform.Translate(new Vector2(1f, 0f) * speed * Time.deltaTime);
     }
