@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class ExchangePanel : MonoBehaviour
 {
-    [SerializeField] private RectTransform panel;
+    [SerializeField] private GameObject exchangePanel;
     [SerializeField] private Text stoneText;
     [SerializeField] private Text ironText;
     [SerializeField] private Text goldText;
@@ -16,6 +16,11 @@ public class ExchangePanel : MonoBehaviour
     public int iron;
     public int gold;
     public float money;
+
+    private void Start()
+    {
+        exchangePanel.SetActive(false);
+    }
 
     private void Update()
     {
@@ -70,19 +75,12 @@ public class ExchangePanel : MonoBehaviour
 
     public void Open()
     {
-        opening = true;
-    }
-    public void Close()
-    {
-        closing = true;
+        exchangePanel.SetActive(true);
     }
 
-    private void FixedUpdate()
+    public void Close()
     {
-        if (panel.transform.position.x <= -256f) opening = false;
-        else if (panel.transform.position.x >= 270f) closing = false;
-        if (opening) panel.transform.Translate(new Vector2(-1f, 0f) * speed * Time.deltaTime);
-        else if (closing) panel.transform.Translate(new Vector2(1f, 0f) * speed * Time.deltaTime);
+        exchangePanel.SetActive(false);
     }
 
     public void TradeStone()
