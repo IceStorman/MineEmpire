@@ -6,6 +6,7 @@ public class ExchangePanel : MonoBehaviour
     [SerializeField] private RectTransform panel;
     [SerializeField] private Text stoneText;
     [SerializeField] private Text ironText;
+    [SerializeField] private Text goldText;
     [SerializeField] private Text moneyText;
     [SerializeField] private float speed;
     [SerializeField] private bool opening;
@@ -13,6 +14,7 @@ public class ExchangePanel : MonoBehaviour
 
     public int stone;
     public int iron;
+    public int gold;
     public float money;
 
     private void Update()
@@ -49,8 +51,20 @@ public class ExchangePanel : MonoBehaviour
         else
         {
             PlayerPrefs.SetInt("Iron", 0);
-            stone = PlayerPrefs.GetInt("Iron");
+            iron = PlayerPrefs.GetInt("Iron");
             ironText.text = iron.ToString();
+        }
+
+        if (PlayerPrefs.HasKey("Gold"))
+        {
+            gold = PlayerPrefs.GetInt("Gold");
+            goldText.text = gold.ToString();
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Gold", 0);
+            gold = PlayerPrefs.GetInt("Gold");
+            goldText.text = gold.ToString();
         }
     }
 
