@@ -7,10 +7,11 @@ public class Songs : MonoBehaviour
     [SerializeField] private AudioSource specialMineTheme;
     [SerializeField] private AudioSource oldestMineTheme;
     [SerializeField] private AudioSource exchancheTheme;
+    [SerializeField] private AudioSource plantTheme;
     [SerializeField] private AudioSource clickEffect;
     [SerializeField] private AudioSource mineEffect;
 
-   public AudioMixerGroup mixer;
+    public AudioMixerGroup mixer;
 
     private void Start()
     {
@@ -27,6 +28,12 @@ public class Songs : MonoBehaviour
     {
         StopAllMusics();
         classicMineTheme.Play();
+    }
+
+    public void ChangeOnPlantTheme()
+    {
+        StopAllMusics();
+        plantTheme.Play();
     }
 
     public void ClickEffect()
@@ -49,5 +56,6 @@ public class Songs : MonoBehaviour
     {
         classicMineTheme.Stop();
         exchancheTheme.Stop();
+        plantTheme.Stop();
     }
 }
