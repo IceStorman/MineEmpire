@@ -12,9 +12,9 @@ public class ExchangePanel : MonoBehaviour
     [SerializeField] private bool opening;
     [SerializeField] private bool closing;
 
-    public int stone;
-    public int iron;
-    public int gold;
+    public float stone;
+    public float iron;
+    public float gold;
     public float money;
 
     private void Start()
@@ -36,39 +36,39 @@ public class ExchangePanel : MonoBehaviour
             moneyText.text = money.ToString();
         }
 
-        if (PlayerPrefs.HasKey("Stone"))
+        if (PlayerPrefs.HasKey("RecycleStone"))
         {
-            stone = PlayerPrefs.GetInt("Stone");
+            stone = PlayerPrefs.GetFloat("RecycleStone");
             stoneText.text = stone.ToString();
         }
         else
         {
-            PlayerPrefs.SetInt("Stone", 0);
-            stone = PlayerPrefs.GetInt("Stone");
+            PlayerPrefs.SetFloat("RecycleStone", 0);
+            stone = PlayerPrefs.GetFloat("RecycleStone");
             stoneText.text = stone.ToString();
         }
 
-        if (PlayerPrefs.HasKey("Iron"))
+        if (PlayerPrefs.HasKey("RecycleIron"))
         {
-            iron = PlayerPrefs.GetInt("Iron");
+            iron = PlayerPrefs.GetFloat("RecycleIron");
             ironText.text = iron.ToString();
         }
         else
         {
-            PlayerPrefs.SetInt("Iron", 0);
-            iron = PlayerPrefs.GetInt("Iron");
+            PlayerPrefs.SetFloat("RecycleIron", 0);
+            iron = PlayerPrefs.GetFloat("RecycleIron");
             ironText.text = iron.ToString();
         }
 
-        if (PlayerPrefs.HasKey("Gold"))
+        if (PlayerPrefs.HasKey("RecycleGold"))
         {
-            gold = PlayerPrefs.GetInt("Gold");
+            gold = PlayerPrefs.GetFloat("RecycleGold");
             goldText.text = gold.ToString();
         }
         else
         {
-            PlayerPrefs.SetInt("Gold", 0);
-            gold = PlayerPrefs.GetInt("Gold");
+            PlayerPrefs.SetInt("RecycleGold", 0);
+            gold = PlayerPrefs.GetFloat("RecycleGold");
             goldText.text = gold.ToString();
         }
     }
@@ -85,14 +85,42 @@ public class ExchangePanel : MonoBehaviour
 
     public void TradeStone()
     {
-        if(stone >= 5)
+        if(stone >= 10)
         {
-            stone -= 5;
+            stone -= 10;
             stoneText.text = stone.ToString();
-            money++;
+            money += 0.5f;
             moneyText.text = money.ToString("F2");
 
-            PlayerPrefs.SetInt("Stone", stone);
+            PlayerPrefs.SetFloat("RecycleStone", stone);
+            PlayerPrefs.SetFloat("Money", money);
+        }
+    }
+
+    public void TradeIron()
+    {
+        if(iron >= 5)
+        {
+            iron -= 5;
+            ironText.text = iron.ToString();
+            money += 1.25f;
+            moneyText.text = money.ToString("F2");
+
+            PlayerPrefs.SetFloat("RecycleIron", iron);
+            PlayerPrefs.SetFloat("Money", money);
+        }
+    }
+
+    public void TradeGold()
+    {
+        if (gold >= 5)
+        {
+            gold -= 5;
+            goldText.text = gold.ToString();
+            money += 5f;
+            moneyText.text = money.ToString("F2");
+
+            PlayerPrefs.SetFloat("RecycleGold", gold);
             PlayerPrefs.SetFloat("Money", money);
         }
     }
