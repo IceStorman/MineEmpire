@@ -22,8 +22,6 @@ public class StandartPlantPanel : MonoBehaviour
     public float recycleIron;
     public float recycleGold;
 
-
-
     private void Start()
     {
         standartPlantPanel.SetActive(false);
