@@ -5,15 +5,11 @@ public class StandartPlantPanel : MonoBehaviour
 {
     [SerializeField] private GameObject standartPlantPanel;
     [SerializeField] private Text stoneText;
-    [SerializeField] private Text stoneText2;
     [SerializeField] private Text ironText;
     [SerializeField] private Text goldText;
     [SerializeField] private Text recycleStoneText;
     [SerializeField] private Text recycleIronText;
     [SerializeField] private Text recycleGoldText;
-    [SerializeField] private Text recycleStoneText2;
-    [SerializeField] private Text recycleIronText2;
-    [SerializeField] private Text recycleGoldText2;
 
     public int stone;
     public int iron;
@@ -29,11 +25,6 @@ public class StandartPlantPanel : MonoBehaviour
 
     private void Update()
     {
-        recycleGoldText2.text = recycleGoldText.text;
-        recycleIronText2.text = recycleIronText.text;
-        recycleStoneText2.text = recycleStoneText.text;
-        stoneText2.text = stoneText.text;
-
         if (PlayerPrefs.HasKey("Stone"))
         {
             stone = PlayerPrefs.GetInt("Stone");
