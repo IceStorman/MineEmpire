@@ -12,62 +12,74 @@ public class ExchangePanel : MonoBehaviour
     public float recycleStone;
     public float recycleIron;
     public float recycleGold;
+
+    [SerializeField] private float recycleStoneCount = 15;
+    [SerializeField] private float recycleIronCount = 5;
+    [SerializeField] private float recycleGoldCount = 5;
+
+    [SerializeField] private float recycleStoneCost = 7.90f;
+    [SerializeField] private float recycleIronCost = 23.70f;
+    [SerializeField] private float recycleGoldCost = 42.30f;
+
+    [SerializeField] private string recycleStoneKey = "RecycleStone";
+    [SerializeField] private string recycleIronKey = "RecycleIron";
+    [SerializeField] private string recycleGoldKey = "RecycleGold";
+    [SerializeField] private string moneyKey = "Money";
+
     public float money;
 
     private void Start()
     {
-        exchangePanel.SetActive(false);
+        exchangePanel.SetActive(false);      
     }
 
     private void Update()
     {
-        if (PlayerPrefs.HasKey("Money"))
+        if (Check(moneyKey)) LoadResources(moneyKey, money, moneyText);
+        else NewResources(moneyKey, money, moneyText);
+
+        if (Check(recycleStoneKey)) LoadResources(recycleStoneKey, recycleStone, recycleStoneText);
+        else NewResources(recycleStoneKey, recycleStone, recycleStoneText);
+
+        if (Check(recycleIronKey)) LoadResources(recycleIronKey, recycleIron, recycleIronText);
+        else NewResources(recycleIronKey, recycleIron, recycleIronText);
+
+        if (Check(recycleGoldKey)) LoadResources(recycleGoldKey, recycleGold, recycleGoldText);
+        else NewResources(recycleGoldKey, recycleGold, recycleGoldText);
+    }
+
+    private void TradeResources(string resourceKey, float resourceCount, float resource,
+        float resourceCost, Text resourceText)
+    {
+        if (resource >= resourceCount)
         {
-            money = PlayerPrefs.GetFloat("Money");
+            resource -= resourceCount;
+            resourceText.text = resource.ToString("F2");
+            money += resourceCost;
             moneyText.text = money.ToString("F2");
-        }
-        else
-        {
-            PlayerPrefs.SetFloat("Money", 0);
-            money = PlayerPrefs.GetFloat("Money");
-            moneyText.text = money.ToString("F2");
-        }
 
-        if (PlayerPrefs.HasKey("RecycleStone"))
-        {
-            recycleStone = PlayerPrefs.GetFloat("RecycleStone");
-            recycleStoneText.text = recycleStone.ToString("F2");
+            PlayerPrefs.SetFloat(resourceKey, resource);
+            PlayerPrefs.SetFloat(moneyKey, money);
         }
-        else
-        {
-            PlayerPrefs.SetFloat("RecycleStone", 0);
-            recycleStone = PlayerPrefs.GetFloat("RecycleStone");
-            recycleStoneText.text = recycleStone.ToString("F2");
-        }
+    }
 
-        if (PlayerPrefs.HasKey("RecycleIron"))
-        {
-            recycleIron = PlayerPrefs.GetFloat("RecycleIron");
-            recycleIronText.text = recycleIron.ToString("F2");
-        }
-        else
-        {
-            PlayerPrefs.SetFloat("RecycleIron", 0);
-            recycleIron = PlayerPrefs.GetFloat("RecycleIron");
-            recycleIronText.text = recycleIron.ToString("F2");
-        }
+    private bool Check(string key)
+    {
+        if (PlayerPrefs.HasKey(key)) return true;
+        else return false;
+    }
 
-        if (PlayerPrefs.HasKey("RecycleGold"))
-        {
-            recycleGold = PlayerPrefs.GetFloat("RecycleGold");
-            recycleGoldText.text = recycleGold.ToString("F2");
-        }
-        else
-        {
-            PlayerPrefs.SetInt("RecycleGold", 0);
-            recycleGold = PlayerPrefs.GetFloat("RecycleGold");
-            recycleGoldText.text = recycleGold.ToString("F2");
-        }
+    private void LoadResources(string key, float resource, Text resourceText)
+    {
+        resource = PlayerPrefs.GetFloat(key);
+        resourceText.text = resource.ToString("F2");
+    }
+
+    private void NewResources(string key, float resource, Text resourceText)
+    {
+        PlayerPrefs.SetFloat(key, resource);
+        resource = PlayerPrefs.GetFloat(key);
+        resourceText.text = resource.ToString("F2");
     }
 
     public void Open()
@@ -82,43 +94,19 @@ public class ExchangePanel : MonoBehaviour
 
     public void TradeRecycleStone()
     {
-        if(recycleStone >= 15)
-        {
-            recycleStone -= 15;
-            recycleStoneText.text = recycleStone.ToString();
-            money += 7.90f;
-            moneyText.text = money.ToString("F2");
-
-            PlayerPrefs.SetFloat("RecycleStone", recycleStone);
-            PlayerPrefs.SetFloat("Money", money);
-        }
+        TradeResources(recycleStoneKey, recycleStoneCount, recycleStone, recycleStoneCost, 
+            recycleStoneText);
     }
 
     public void TradeRecycleIron()
     {
-        if(recycleIron >= 5)
-        {
-            recycleIron -= 5;
-            recycleIronText.text = recycleIron.ToString();
-            money += 23.70f;
-            moneyText.text = money.ToString("F2");
-
-            PlayerPrefs.SetFloat("RecycleIron", recycleIron);
-            PlayerPrefs.SetFloat("Money", money);
-        }
+        TradeResources(recycleIronKey, recycleIronCount, recycleIron, recycleIronCost,
+            recycleIronText);
     }
 
     public void TradeRecycleGold()
     {
-        if (recycleGold >= 5)
-        {
-            recycleGold -= 5;
-            recycleGoldText.text = recycleGold.ToString();
-            money += 42.30f;
-            moneyText.text = money.ToString("F2");
-
-            PlayerPrefs.SetFloat("RecycleGold", recycleGold);
-            PlayerPrefs.SetFloat("Money", money);
-        }
+        TradeResources(recycleGoldKey, recycleGoldCount, recycleGold, recycleGoldCost,
+            recycleGoldText);
     }
 }

@@ -5639,6 +5639,16 @@ MonoBehaviour:
   recycleStone: 0
   recycleIron: 0
   recycleGold: 0
+  recycleStoneCount: 15
+  recycleIronCount: 5
+  recycleGoldCount: 5
+  recycleStoneCost: 7.9
+  recycleIronCost: 23.7
+  recycleGoldCost: 42.3
+  recycleStoneKey: RecycleStone
+  recycleIronKey: RecycleIron
+  recycleGoldKey: RecycleGold
+  moneyKey: Money
   money: 0
 --- !u!114 &1093185007
 MonoBehaviour:
@@ -5856,7 +5866,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1149289962
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7268,7 +7278,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1452862063
 RectTransform:
   m_ObjectHideFlags: 0
