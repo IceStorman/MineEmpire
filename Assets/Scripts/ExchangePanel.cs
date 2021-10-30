@@ -51,11 +51,14 @@ public class ExchangePanel : MonoBehaviour
     private void TradeResources(string resourceKey, float resourceCount, float resource,
         float resourceCost, Text resourceText)
     {
+        resource = PlayerPrefs.GetFloat(resourceKey);
+
         if (resource >= resourceCount)
         {
             resource -= resourceCount;
-            resourceText.text = resource.ToString("F2");
             money += resourceCost;
+
+            resourceText.text = resource.ToString("F2");
             moneyText.text = money.ToString("F2");
 
             PlayerPrefs.SetFloat(resourceKey, resource);
@@ -77,7 +80,7 @@ public class ExchangePanel : MonoBehaviour
 
     private void NewResources(string key, float resource, Text resourceText)
     {
-        PlayerPrefs.SetFloat(key, resource);
+        PlayerPrefs.SetFloat(key, 0);
         resource = PlayerPrefs.GetFloat(key);
         resourceText.text = resource.ToString("F2");
     }
@@ -94,7 +97,7 @@ public class ExchangePanel : MonoBehaviour
 
     public void TradeRecycleStone()
     {
-        TradeResources(recycleStoneKey, recycleStoneCount, recycleStone, recycleStoneCost, 
+        TradeResources(recycleStoneKey, recycleStoneCount, recycleStone, recycleStoneCost,
             recycleStoneText);
     }
 
