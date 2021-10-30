@@ -4098,7 +4098,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &722853943
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5729,12 +5729,11 @@ MonoBehaviour:
   recycleStoneText: {fileID: 1596707761}
   recycleIronText: {fileID: 293256289}
   recycleGoldText: {fileID: 813463097}
-  stone: 0
-  iron: 0
-  gold: 0
-  recycleStone: 0
-  recycleIron: 0
-  recycleGold: 0
+  materials: 000000000000000000000000
+  recycledMaterials:
+  - 0
+  - 0
+  - 0
 --- !u!114 &1093185013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7864,6 +7863,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1093185010}
         m_TargetAssemblyTypeName: Songs, Assembly-CSharp
         m_MethodName: ClickEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1093185012}
+        m_TargetAssemblyTypeName: StandartPlantPanel, Assembly-CSharp
+        m_MethodName: SaveProgress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

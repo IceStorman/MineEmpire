@@ -11,21 +11,38 @@ public class StandartPlantPanel : MonoBehaviour
     [SerializeField] private Text recycleIronText;
     [SerializeField] private Text recycleGoldText;
 
-    public int stone;
-    public int iron;
-    public int gold;
-    public float recycleStone;
-    public float recycleIron;
-    public float recycleGold;
+    public static int stone;
+    public static int iron;
+    public static int gold;
+
+    public static float recycleStone;
+    public static float recycleIron;
+    public static float recycleGold;
+
+    public int[] materials = new int[3]
+    {
+        stone,
+        iron,
+        gold
+    };
+
+    public float[] recycledMaterials = new float[3]
+    {
+        recycleStone,
+        recycleIron,
+        recycleGold
+    };
 
     private void Start()
     {
         standartPlantPanel.SetActive(false);
+        LoadProgress();
     }
 
     private void Update()
     {
-        if (PlayerPrefs.HasKey("Stone"))
+        WriteMaterials();
+        /*if (PlayerPrefs.HasKey("Stone"))
         {
             stone = PlayerPrefs.GetInt("Stone");
             stoneText.text = stone.ToString();
@@ -95,8 +112,40 @@ public class StandartPlantPanel : MonoBehaviour
             PlayerPrefs.SetFloat("RecycleGold", 0);
             recycleGold = PlayerPrefs.GetFloat("RecycleGold");
             recycleGoldText.text = recycleGold.ToString("F2");
-        }
+        }*/
+    }
 
+    public void WriteMaterials()
+    {
+        stoneText.text = stone.ToString();
+        ironText.text = iron.ToString();
+        goldText.text = gold.ToString();
+
+        recycleStoneText.text = recycleStone.ToString("F2");
+        recycleIronText.text = recycleIron.ToString("F2");
+        recycleGoldText.text = recycleGold.ToString("F2");
+    }
+
+    public void LoadProgress()
+    {
+        stone = PlayerPrefs.GetInt("Stone");
+        iron = PlayerPrefs.GetInt("Iron");
+        gold = PlayerPrefs.GetInt("Gold");
+
+        recycleStone = PlayerPrefs.GetFloat("RecycleStone");
+        recycleIron = PlayerPrefs.GetFloat("RecycleIron");
+        recycleGold = PlayerPrefs.GetFloat("RecycleGold");
+    }
+
+    public void SaveProgress()
+    {
+        PlayerPrefs.SetInt("Stone", stone);
+        PlayerPrefs.SetInt("Iron", iron);
+        PlayerPrefs.SetInt("Gold", gold);
+
+        PlayerPrefs.SetFloat("RecycleStone", recycleStone);
+        PlayerPrefs.SetFloat("RecycleIron", recycleIron);
+        PlayerPrefs.SetFloat("RecycleGold", recycleGold);
     }
 
     public void Open()
