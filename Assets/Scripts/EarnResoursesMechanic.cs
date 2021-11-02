@@ -3,6 +3,8 @@ using UnityEngine.UI;
 
 public class EarnResoursesMechanic : MonoBehaviour
 {
+    [SerializeField] private GameObject minePanel;
+
     [SerializeField] private Text stoneText;
     [SerializeField] private Text ironText;
     [SerializeField] private Text goldText;
@@ -12,6 +14,11 @@ public class EarnResoursesMechanic : MonoBehaviour
     public int stone;
     public int iron;
     public int gold;
+
+    private void Start()
+    {
+        minePanel.SetActive(true);
+    }
 
     private void Update()
     {

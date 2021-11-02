@@ -8,6 +8,7 @@ public class Songs : MonoBehaviour
     [SerializeField] private AudioSource oldestMineTheme;
     [SerializeField] private AudioSource exchancheTheme;
     [SerializeField] private AudioSource plantTheme;
+    [SerializeField] private AudioSource prestigePanelTheme;
     [SerializeField] private AudioSource clickEffect;
     [SerializeField] private AudioSource mineEffect;
 
@@ -36,6 +37,12 @@ public class Songs : MonoBehaviour
         plantTheme.Play();
     }
 
+    public void ChangeOnPrestigePanelTheme()
+    {
+        StopAllMusics();
+        prestigePanelTheme.Play();
+    }
+
     public void ClickEffect()
     {
         clickEffect.Play();
@@ -57,5 +64,6 @@ public class Songs : MonoBehaviour
         classicMineTheme.Stop();
         exchancheTheme.Stop();
         plantTheme.Stop();
+        prestigePanelTheme.Stop();
     }
 }
