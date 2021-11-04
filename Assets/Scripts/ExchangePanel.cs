@@ -1,9 +1,11 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ExchangePanel : MonoBehaviour
 {
     [SerializeField] private GameObject exchangePanel;
+
     [SerializeField] private Text recycleStoneText;
     [SerializeField] private Text recycleIronText;
     [SerializeField] private Text recycleGoldText;
@@ -11,14 +13,23 @@ public class ExchangePanel : MonoBehaviour
     [SerializeField] private Text recycleStoneCostText;
     [SerializeField] private Text recycleIronCostText;
     [SerializeField] private Text recycleGoldCostText;
+
     [SerializeField] private Text moneyText;
+
     [SerializeField] private Text timerText;
 
-    [SerializeField] private static int howMuchMaterials = 3;
     public int timer = 5;
+
+    private int rnd1;
+    private int rnd2;
+    private int rnd3;
+
     public float recycleStone;
     public float recycleIron;
     public float recycleGold;
+
+    private float up = 1.4f;
+    private float down = 0.6f;
 
     [SerializeField] private float recycleStoneCount = 15;
     [SerializeField] private float recycleIronCount = 5;
@@ -35,12 +46,14 @@ public class ExchangePanel : MonoBehaviour
     [SerializeField] private float recycleIronCost = 23.70f;
     [SerializeField] private float recycleGoldCost = 42.30f;
 
-    [SerializeField] private string recycleStoneKey = "RecycleStone";
-    [SerializeField] private string recycleIronKey = "RecycleIron";
-    [SerializeField] private string recycleGoldKey = "RecycleGold";
-    [SerializeField] private string recycleStoneCostKey = "RecycleStoneCost";
-    [SerializeField] private string recycleIronCostKey = "RecycleIronCost";
-    [SerializeField] private string recycleGoldCostKey = "RecycleGoldCost";
+    private string recycleStoneKey = "RecycleStone";
+    private string recycleIronKey = "RecycleIron";
+    private string recycleGoldKey = "RecycleGold";
+
+    private string recycleStoneCostKey = "RecycleStoneCost";
+    private string recycleIronCostKey = "RecycleIronCost";
+    private string recycleGoldCostKey = "RecycleGoldCost";
+
     [SerializeField] private string moneyKey = "Money";
 
     public float money;
@@ -48,53 +61,54 @@ public class ExchangePanel : MonoBehaviour
     private void Start()
     {
         exchangePanel.SetActive(false);
-        InvokeRepeating("ChangeCost", timer, timer);
-        InvokeRepeating("TimerCount", 1, 1);
+        StartCoroutine(Timer());
     }
 
-    private void ChangeCost()
+    private IEnumerator Timer()
     {
-        float up = 1.4f;
-        float down = 0.6f;
-        int rnd = Random.Range(0, 3);
+        yield return new WaitForSeconds(1);
 
-        if (rnd == 1) recycleStoneCost *= up;
-        if (rnd == 2) recycleStoneCost *= down;
-
-        if (rnd == 1) recycleIronCost *= up;
-        if (rnd == 2) recycleIronCost *= down;
-
-        if (rnd == 1) recycleGoldCost *= up;
-        if (rnd == 2) recycleGoldCost *= down;
-        /*for (int i = 0; i < howMuchMaterials; i++)
-        {
-
-        }*/
-    }
-
-    private void TimerCount()
-    {
-        if (timer > 1) timer--;
-        else timer = 5;
-    }
-
-    public void WriteMaterials()
-    {
-        recycleStoneText.text = recycleStone.ToString("F2");
-        recycleIronText.text = recycleIron.ToString("F2");
-        recycleGoldText.text = recycleGold.ToString("F2");
-
-        recycleStoneCostText.text = $"X15 = {recycleStoneCost.ToString("F2")}";
-        recycleIronCostText.text = $"X5 = {recycleIronCost.ToString("F2")}";
-        recycleGoldCostText.text = $"X5 = {recycleGoldCost.ToString("F2")}";
-
+        timer--;
         timerText.text = timer.ToString();
+
+        if(timer == 0)
+        {
+            ChangeCourse(rnd1, recycleStoneCostKey, recycleStoneCost, recycleStoneCostText);
+            ChangeCourse(rnd2, recycleIronCostKey, recycleIronCost, recycleIronCostText);
+            ChangeCourse(rnd3, recycleGoldCostKey, recycleGoldCost, recycleGoldCostText);
+
+            timer = 5;
+            timerText.text = timer.ToString();
+        }
+
+        Repeat();
+    }
+
+    private void ChangeCourse(int rnd, string resourceKey ,float resourceCost, Text resourceText)
+    {
+        rnd = Random.Range(1, 3);
+
+        if (rnd == 1)
+        {
+            resourceCost *= up;
+            resourceText.text = resourceCost.ToString("F2");
+            PlayerPrefs.SetFloat(resourceKey, resourceCost);
+        }
+        else if (rnd == 2)
+        {
+            resourceCost *= down;
+            resourceText.text = resourceCost.ToString("F2");
+            PlayerPrefs.SetFloat(resourceKey, resourceCost);
+        }
+    }
+
+    private void Repeat()
+    {
+        StartCoroutine(Timer());
     }
 
     private void Update()
     {
-        WriteMaterials();
-
         if (Check(moneyKey)) LoadResources(moneyKey, money, moneyText);
         else NewResources(moneyKey, money, moneyText);
 
@@ -106,12 +120,25 @@ public class ExchangePanel : MonoBehaviour
 
         if (Check(recycleGoldKey)) LoadResources(recycleGoldKey, recycleGold, recycleGoldText);
         else NewResources(recycleGoldKey, recycleGold, recycleGoldText);
+
+        if (Check(recycleStoneCostKey)) LoadResources(recycleStoneCostKey, recycleStoneCost,
+             recycleStoneCostText);
+        else NewResources(recycleStoneCostKey, recycleStoneCost, recycleStoneCostText);
+
+        if (Check(recycleIronCostKey)) LoadResources(recycleIronCostKey, recycleIronCost,
+             recycleIronCostText);
+        else NewResources(recycleIronCostKey, recycleIronCost, recycleIronCostText);
+
+        if (Check(recycleGoldCostKey)) LoadResources(recycleGoldCostKey, recycleGoldCost,
+             recycleGoldCostText);
+        else NewResources(recycleGoldCostKey, recycleGoldCost, recycleGoldCostText);
     }
 
     private void TradeResources(string resourceKey, float resourceCount, float resource,
-        float resourceCost, Text resourceText)
+        float resourceCost, string resourceCostKey, Text resourceText)
     {
         resource = PlayerPrefs.GetFloat(resourceKey);
+        resourceCost = PlayerPrefs.GetFloat(resourceCostKey);
 
         if (resource >= resourceCount)
         {
@@ -157,19 +184,19 @@ public class ExchangePanel : MonoBehaviour
 
     public void TradeRecycleStone()
     {
-        TradeResources(recycleStoneKey, recycleStoneCount, recycleStone, recycleStoneCost,
+        TradeResources(recycleStoneKey, recycleStoneCount, recycleStone, recycleStoneCost, recycleStoneCostKey,
             recycleStoneText);
     }
 
     public void TradeRecycleIron()
     {
-        TradeResources(recycleIronKey, recycleIronCount, recycleIron, recycleIronCost,
+        TradeResources(recycleIronKey, recycleIronCount, recycleIron, recycleIronCost, recycleIronCostKey,
             recycleIronText);
     }
 
     public void TradeRecycleGold()
     {
-        TradeResources(recycleGoldKey, recycleGoldCount, recycleGold, recycleGoldCost,
+        TradeResources(recycleGoldKey, recycleGoldCount, recycleGold, recycleGoldCost, recycleGoldCostKey,
             recycleGoldText);
     }
 }
