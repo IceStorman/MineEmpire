@@ -77,7 +77,7 @@ public class ExchangePanel : MonoBehaviour
             ChangeCourse(rnd2, recycleIronCostKey, recycleIronCost, recycleIronCostText);
             ChangeCourse(rnd3, recycleGoldCostKey, recycleGoldCost, recycleGoldCostText);
 
-            timer = 5;
+            timer = 600;
             timerText.text = timer.ToString();
         }
 
