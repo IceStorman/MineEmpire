@@ -18,7 +18,7 @@ public class ExchangePanel : MonoBehaviour
 
     [SerializeField] private Text timerText;
 
-    public int timer = 5;
+    public int timer = 600;
 
     private int rnd1;
     private int rnd2;
@@ -63,7 +63,7 @@ public class ExchangePanel : MonoBehaviour
         exchangePanel.SetActive(false);
         StartCoroutine(Timer());
     }
-
+ 
     private IEnumerator Timer()
     {
         yield return new WaitForSeconds(1);
@@ -82,6 +82,17 @@ public class ExchangePanel : MonoBehaviour
         }
 
         Repeat();
+    }
+    public void DisplayTime(float timeToDisplay)
+    {
+        if (timeToDisplay == 0)
+        {
+            Repeat();
+        }
+        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+
+        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
     private void ChangeCourse(int rnd, string resourceKey ,float resourceCost, Text resourceText)
@@ -132,6 +143,8 @@ public class ExchangePanel : MonoBehaviour
         if (Check(recycleGoldCostKey)) LoadResources(recycleGoldCostKey, recycleGoldCost,
              recycleGoldCostText);
         else NewResources(recycleGoldCostKey, recycleGoldCost, recycleGoldCostText);
+
+        DisplayTime(timer);
     }
 
     private void TradeResources(string resourceKey, float resourceCount, float resource,
