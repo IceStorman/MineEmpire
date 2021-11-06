@@ -18,45 +18,14 @@ public class ExchangePanel : MonoBehaviour
 
     [SerializeField] private Text timerText;
 
-    public int timer = 600;
+    [SerializeField] private MainData mainData;
 
     private int rnd1;
     private int rnd2;
     private int rnd3;
 
-    public float recycleStone;
-    public float recycleIron;
-    public float recycleGold;
-
     private float up = 1.4f;
     private float down = 0.6f;
-
-    [SerializeField] private float recycleStoneCount = 15;
-    [SerializeField] private float recycleIronCount = 5;
-    [SerializeField] private float recycleGoldCount = 5;
-
-    /*float[] recycleMaterialCount = new float[3]
-    {
-        recycleStoneCount,
-        recycleIronCount,
-        recycleGoldCount
-    };*/
-
-    [SerializeField] private float recycleStoneCost = 7.90f;
-    [SerializeField] private float recycleIronCost = 23.70f;
-    [SerializeField] private float recycleGoldCost = 42.30f;
-
-    private string recycleStoneKey = "RecycleStone";
-    private string recycleIronKey = "RecycleIron";
-    private string recycleGoldKey = "RecycleGold";
-
-    private string recycleStoneCostKey = "RecycleStoneCost";
-    private string recycleIronCostKey = "RecycleIronCost";
-    private string recycleGoldCostKey = "RecycleGoldCost";
-
-    [SerializeField] private string moneyKey = "Money";
-
-    public float money;
 
     private void Start()
     {
@@ -68,21 +37,22 @@ public class ExchangePanel : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
 
-        timer--;
-        timerText.text = timer.ToString();
+        mainData.otherData.timer--;
+        timerText.text = mainData.otherData.timer.ToString();
 
-        if(timer == 0)
+        if(mainData.otherData.timer == 0)
         {
-            ChangeCourse(rnd1, recycleStoneCostKey, recycleStoneCost, recycleStoneCostText);
-            ChangeCourse(rnd2, recycleIronCostKey, recycleIronCost, recycleIronCostText);
-            ChangeCourse(rnd3, recycleGoldCostKey, recycleGoldCost, recycleGoldCostText);
+            ChangeCourse(rnd1, mainData.stoneData, recycleStoneCostText);
+            ChangeCourse(rnd2, mainData.ironData, recycleIronCostText);
+            ChangeCourse(rnd3, mainData.goldData, recycleGoldCostText);
 
-            timer = 600;
-            timerText.text = timer.ToString();
+            mainData.otherData.timer = 600;
+            timerText.text = mainData.otherData.timer.ToString();
         }
 
         Repeat();
     }
+
     public void DisplayTime(float timeToDisplay)
     {
         if (timeToDisplay == 0)
@@ -95,21 +65,19 @@ public class ExchangePanel : MonoBehaviour
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
-    private void ChangeCourse(int rnd, string resourceKey ,float resourceCost, Text resourceText)
+    private void ChangeCourse(int rnd, OreData oreData, Text resourceText)
     {
         rnd = Random.Range(1, 3);
 
         if (rnd == 1)
         {
-            resourceCost *= up;
-            resourceText.text = resourceCost.ToString("F2");
-            PlayerPrefs.SetFloat(resourceKey, resourceCost);
+            oreData.recycleOreCost *= up;
+            resourceText.text = oreData.recycleOreCost.ToString("F2");
         }
         else if (rnd == 2)
         {
-            resourceCost *= down;
-            resourceText.text = resourceCost.ToString("F2");
-            PlayerPrefs.SetFloat(resourceKey, resourceCost);
+            oreData.recycleOreCost *= down;
+            resourceText.text = oreData.recycleOreCost.ToString("F2");
         }
     }
 
@@ -120,69 +88,31 @@ public class ExchangePanel : MonoBehaviour
 
     private void Update()
     {
-        if (Check(moneyKey)) LoadResources(moneyKey, money, moneyText);
-        else NewResources(moneyKey, money, moneyText);
-
-        if (Check(recycleStoneKey)) LoadResources(recycleStoneKey, recycleStone, recycleStoneText);
-        else NewResources(recycleStoneKey, recycleStone, recycleStoneText);
-
-        if (Check(recycleIronKey)) LoadResources(recycleIronKey, recycleIron, recycleIronText);
-        else NewResources(recycleIronKey, recycleIron, recycleIronText);
-
-        if (Check(recycleGoldKey)) LoadResources(recycleGoldKey, recycleGold, recycleGoldText);
-        else NewResources(recycleGoldKey, recycleGold, recycleGoldText);
-
-        if (Check(recycleStoneCostKey)) LoadResources(recycleStoneCostKey, recycleStoneCost,
-             recycleStoneCostText);
-        else NewResources(recycleStoneCostKey, recycleStoneCost, recycleStoneCostText);
-
-        if (Check(recycleIronCostKey)) LoadResources(recycleIronCostKey, recycleIronCost,
-             recycleIronCostText);
-        else NewResources(recycleIronCostKey, recycleIronCost, recycleIronCostText);
-
-        if (Check(recycleGoldCostKey)) LoadResources(recycleGoldCostKey, recycleGoldCost,
-             recycleGoldCostText);
-        else NewResources(recycleGoldCostKey, recycleGoldCost, recycleGoldCostText);
-
-        DisplayTime(timer);
+        DisplayTime(mainData.otherData.timer);
+        UpdateUI();
     }
 
-    private void TradeResources(string resourceKey, float resourceCount, float resource,
-        float resourceCost, string resourceCostKey, Text resourceText)
+    private void UpdateUI()
     {
-        resource = PlayerPrefs.GetFloat(resourceKey);
-        resourceCost = PlayerPrefs.GetFloat(resourceCostKey);
+        moneyText.text = mainData.otherData.money.ToString("F2");
+        recycleStoneText.text = mainData.stoneData.recycleOre.ToString("F2");
+        recycleIronText.text = mainData.ironData.recycleOre.ToString("F2");
+        recycleGoldText.text = mainData.goldData.recycleOre.ToString("F2");
+        recycleStoneCostText.text = mainData.stoneData.recycleOreCost.ToString("F2");
+        recycleIronCostText.text = mainData.ironData.recycleOreCost.ToString("F2");
+        recycleGoldCostText.text = mainData.goldData.recycleOreCost.ToString("F2");
+    }
 
-        if (resource >= resourceCount)
+    private void TradeResources(OreData oreData, Text resourceText)
+    {
+        if (oreData.recycleOre >= oreData.recycleOreGive)
         {
-            resource -= resourceCount;
-            money += resourceCost;
+            oreData.recycleOre -= oreData.recycleOreGive;
+            mainData.otherData.money += oreData.recycleOreCost;
 
-            resourceText.text = resource.ToString("F2");
-            moneyText.text = money.ToString("F2");
-
-            PlayerPrefs.SetFloat(resourceKey, resource);
-            PlayerPrefs.SetFloat(moneyKey, money);
+            resourceText.text = oreData.recycleOre.ToString("F2");
+            moneyText.text = mainData.otherData.money.ToString("F2");
         }
-    }
-
-    private bool Check(string key)
-    {
-        if (PlayerPrefs.HasKey(key)) return true;
-        else return false;
-    }
-
-    private void LoadResources(string key, float resource, Text resourceText)
-    {
-        resource = PlayerPrefs.GetFloat(key);
-        resourceText.text = resource.ToString("F2");
-    }
-
-    private void NewResources(string key, float resource, Text resourceText)
-    {
-        PlayerPrefs.SetFloat(key, 0);
-        resource += PlayerPrefs.GetFloat(key);
-        resourceText.text = resource.ToString("F2");
     }
 
     public void Open()
@@ -197,19 +127,16 @@ public class ExchangePanel : MonoBehaviour
 
     public void TradeRecycleStone()
     {
-        TradeResources(recycleStoneKey, recycleStoneCount, recycleStone, recycleStoneCost, recycleStoneCostKey,
-            recycleStoneText);
+        TradeResources(mainData.stoneData, recycleStoneText);
     }
 
     public void TradeRecycleIron()
     {
-        TradeResources(recycleIronKey, recycleIronCount, recycleIron, recycleIronCost, recycleIronCostKey,
-            recycleIronText);
+        TradeResources(mainData.ironData, recycleIronText);
     }
 
     public void TradeRecycleGold()
     {
-        TradeResources(recycleGoldKey, recycleGoldCount, recycleGold, recycleGoldCost, recycleGoldCostKey,
-            recycleGoldText);
+        TradeResources(mainData.goldData, recycleGoldText);
     }
 }

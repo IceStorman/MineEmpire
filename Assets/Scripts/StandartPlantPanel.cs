@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class StandartPlantPanel : MonoBehaviour
 {
     [SerializeField] private GameObject standartPlantPanel;
+
     [SerializeField] private Text stoneText;
     [SerializeField] private Text ironText;
     [SerializeField] private Text goldText;
@@ -11,27 +12,7 @@ public class StandartPlantPanel : MonoBehaviour
     [SerializeField] private Text recycleIronText;
     [SerializeField] private Text recycleGoldText;
 
-    public static int stone;
-    public static int iron;
-    public static int gold;
-
-    public static float recycleStone;
-    public static float recycleIron;
-    public static float recycleGold;
-
-    public int[] materials = new int[3]
-    {
-        stone,
-        iron,
-        gold
-    };
-
-    public float[] recycledMaterials = new float[3]
-    {
-        recycleStone,
-        recycleIron,
-        recycleGold
-    };
+    [SerializeField] private MainData mainData;
 
     private void Start()
     {
@@ -40,41 +21,17 @@ public class StandartPlantPanel : MonoBehaviour
 
     private void Update()
     {
-        LoadProgress();
-        WriteMaterials();
+        UpdateUI();
     }
 
-    public void WriteMaterials()
+    private void UpdateUI()
     {
-        stoneText.text = stone.ToString();
-        ironText.text = iron.ToString();
-        goldText.text = gold.ToString();
-
-        recycleStoneText.text = recycleStone.ToString("F2");
-        recycleIronText.text = recycleIron.ToString("F2");
-        recycleGoldText.text = recycleGold.ToString("F2");
-    }
-
-    public void LoadProgress()
-    {
-        stone = PlayerPrefs.GetInt("Stone");
-        iron = PlayerPrefs.GetInt("Iron");
-        gold = PlayerPrefs.GetInt("Gold");
-
-        recycleStone = PlayerPrefs.GetFloat("RecycleStone");
-        recycleIron = PlayerPrefs.GetFloat("RecycleIron");
-        recycleGold = PlayerPrefs.GetFloat("RecycleGold");
-    }
-
-    public void SaveProgress()
-    {
-        PlayerPrefs.SetInt("Stone", stone);
-        PlayerPrefs.SetInt("Iron", iron);
-        PlayerPrefs.SetInt("Gold", gold);
-
-        PlayerPrefs.SetFloat("RecycleStone", recycleStone);
-        PlayerPrefs.SetFloat("RecycleIron", recycleIron);
-        PlayerPrefs.SetFloat("RecycleGold", recycleGold);
+        stoneText.text = mainData.stoneData.ore.ToString();
+        ironText.text = mainData.ironData.ore.ToString();
+        goldText.text = mainData.goldData.ore.ToString();
+        recycleStoneText.text = mainData.stoneData.recycleOre.ToString("F2");
+        recycleIronText.text = mainData.ironData.recycleOre.ToString("F2");
+        recycleGoldText.text = mainData.goldData.recycleOre.ToString("F2");
     }
 
     public void Open()
@@ -87,44 +44,29 @@ public class StandartPlantPanel : MonoBehaviour
         standartPlantPanel.SetActive(false);
     }
 
+    private void RecycleResource(OreData oreData, Text recourceText, Text recycleRecourceText)
+    {
+        if(oreData.ore >= 1)
+        {
+            oreData.ore--;
+            recourceText.text = oreData.ore.ToString();
+            oreData.recycleOre += oreData.recycleCount;
+            recycleRecourceText.text = oreData.recycleOre.ToString("F2");
+        }
+    }
+
     public void RecycleStone()
     {
-        if (stone >= 1)
-        {
-            stone -= 1;
-            stoneText.text = stone.ToString();
-            recycleStone += 0.9f;
-            recycleStoneText.text = recycleStone.ToString("F2");
-
-            PlayerPrefs.SetInt("Stone", stone);
-            PlayerPrefs.SetFloat("RecycleStone", recycleStone);
-        }
+        RecycleResource(mainData.stoneData, stoneText, recycleStoneText);
     }
 
     public void RecycleIron()
     {
-        if (iron >= 1)
-        {
-            iron -= 1;
-            ironText.text = iron.ToString();
-            recycleIron += 0.8f;
-            recycleIronText.text = recycleIron.ToString("F2");
-
-            PlayerPrefs.SetInt("Iron", iron);
-            PlayerPrefs.SetFloat("RecycleIron", recycleIron);
-        }
+        RecycleResource(mainData.ironData, ironText, recycleIronText);
     }
+
     public void RecycleGold()
     {
-        if (gold >= 1)
-        {
-            gold -= 1;
-            goldText.text = gold.ToString();
-            recycleGold += 0.8f;
-            recycleGoldText.text = recycleGold.ToString("F2");
-
-            PlayerPrefs.SetInt("Gold", gold);
-            PlayerPrefs.SetFloat("RecycleGold", recycleGold);
-        }
+        RecycleResource(mainData.goldData, goldText, recycleGoldText);
     }
 }
