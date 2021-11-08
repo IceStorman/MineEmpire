@@ -5,4 +5,7 @@ public class OtherData : ScriptableObject
 {
     public float money;
     public float timer;
+    public int lvl;
+    public int exp;
+    public int maxExp;
 }

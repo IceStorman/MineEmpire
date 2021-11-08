@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   money: 4.2660003
   timer: 573
+  lvl: 1
+  exp: 0
+  maxExp: 10
