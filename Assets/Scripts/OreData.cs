@@ -5,7 +5,6 @@ public class OreData : ScriptableObject
 {
     public int ore;
     public float recycleOre;
-    public float dropProcent;
     public float recycleCount;
     public int recycleOreGive;
     public float recycleOreCost;

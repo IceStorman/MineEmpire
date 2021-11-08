@@ -9,8 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f0b2f660b905f748b738f0920e450c9, type: 3}
-  m_Name: Other
+  m_Script: {fileID: 11500000, guid: 90f0037ad9216924b8dc0ecd5dfeb031, type: 3}
+  m_Name: ClassicMine
   m_EditorClassIdentifier: 
-  money: 224.06001
-  timer: 588
+  stoneDropPrecentage: 100
+  ironDropPrecentage: 20
+  goldDropPrecentage: 5
+  cost: 1
+  isOpened: 1

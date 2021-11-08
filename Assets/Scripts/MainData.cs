@@ -7,4 +7,7 @@ public class MainData : ScriptableObject
     public OreData ironData;
     public OreData goldData;
     public OtherData otherData;
+    public MineData classicMineData;
+    public MineData ironMineData;
+    public MineData goldMineData;
 }

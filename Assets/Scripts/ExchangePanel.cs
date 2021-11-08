@@ -20,19 +20,12 @@ public class ExchangePanel : MonoBehaviour
 
     [SerializeField] private MainData mainData;
 
-    private int rnd1;
-    private int rnd2;
-    private int rnd3;
-
-    private float up = 1.4f;
-    private float down = 0.6f;
-
     private void Start()
     {
         exchangePanel.SetActive(false);
         StartCoroutine(Timer());
     }
- 
+
     private IEnumerator Timer()
     {
         yield return new WaitForSeconds(1);
@@ -40,11 +33,11 @@ public class ExchangePanel : MonoBehaviour
         mainData.otherData.timer--;
         timerText.text = mainData.otherData.timer.ToString();
 
-        if(mainData.otherData.timer == 0)
+        if (mainData.otherData.timer == 0)
         {
-            ChangeCourse(rnd1, mainData.stoneData, recycleStoneCostText);
-            ChangeCourse(rnd2, mainData.ironData, recycleIronCostText);
-            ChangeCourse(rnd3, mainData.goldData, recycleGoldCostText);
+            ChangeCourse(mainData.stoneData, recycleStoneCostText);
+            ChangeCourse(mainData.ironData, recycleIronCostText);
+            ChangeCourse(mainData.goldData, recycleGoldCostText);
 
             mainData.otherData.timer = 600;
             timerText.text = mainData.otherData.timer.ToString();
@@ -65,20 +58,16 @@ public class ExchangePanel : MonoBehaviour
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
-    private void ChangeCourse(int rnd, OreData oreData, Text resourceText)
+    private void ChangeCourse(OreData oreData, Text resourceText)
     {
-        rnd = Random.Range(1, 3);
+        int rnd = 1;
+        int rndWhere = Random.Range(0, 2);
 
-        if (rnd == 1)
-        {
-            oreData.recycleOreCost *= up;
-            resourceText.text = oreData.recycleOreCost.ToString("F2");
-        }
-        else if (rnd == 2)
-        {
-            oreData.recycleOreCost *= down;
-            resourceText.text = oreData.recycleOreCost.ToString("F2");
-        }
+        if (rndWhere == 0) rnd = Random.Range(3, 10);
+        else rnd = Random.Range(11, 31);
+
+        oreData.recycleOreCost = (oreData.recycleOreCost * rnd) / 10;
+        resourceText.text = oreData.recycleOreCost.ToString("F2");
     }
 
     private void Repeat()
