@@ -1,9 +1,16 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PrestigeMechanics : MonoBehaviour
 {
     [SerializeField] private GameObject prestigePanel;
     [SerializeField] private GameObject upgradePanel;
+
+    [SerializeField] private Text flatText;
+    [SerializeField] private Text flatCostText;
+
+    [SerializeField] private Image thingImage;
+    [SerializeField] private Image buyFlatButtonImage;
 
     [SerializeField] private MainData mainData;
 
@@ -37,6 +44,18 @@ public class PrestigeMechanics : MonoBehaviour
 
             otherData.exp += prestigeData.giveExp;
             prestigeData.thingCost *= 0.3f;
+        }
+    }
+
+    private void CanBuyLogic(OtherData otherData, PrestigeData prestigeData, 
+        Text thingText, Text thingCostText, Image thingImage, Image buyButtonImage)
+    {
+        if(prestigeData.thingID == otherData.lastIndex + 1)
+        {
+            buyButtonImage.sprite = prestigeData.unlockButtonSprite;
+            thingText.text = prestigeData.thingText;
+            thingCostText.text = prestigeData.thingCost.ToString("F2");
+            prestigeData.canUpgrade = true;
         }
     }
 
