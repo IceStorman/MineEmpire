@@ -4,8 +4,14 @@ using UnityEngine;
 public class PrestigeData : ScriptableObject
 {
     public string thingText;
+    public string lockPrizeThingText;
     public Sprite lockThingSprite;
     public Sprite unlockThingSprite;
-    public bool canUnlock;
-    public int thingCost;
+    public Sprite lockButtonSprite;
+    public Sprite unlockButtonSprite;
+    public bool canUpgrade;
+    public bool wasBought;
+    public float thingCost;
+    public int giveExp;
+    public int thingID;
 }

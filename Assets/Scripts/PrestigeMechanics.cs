@@ -5,6 +5,8 @@ public class PrestigeMechanics : MonoBehaviour
     [SerializeField] private GameObject prestigePanel;
     [SerializeField] private GameObject upgradePanel;
 
+    [SerializeField] private MainData mainData;
+
     private void Start()
     {
         prestigePanel.SetActive(false);
@@ -19,6 +21,38 @@ public class PrestigeMechanics : MonoBehaviour
     public void ClosePanel()
     {
         prestigePanel.SetActive(false);
+    }
+
+    private void UpgradeThing(OtherData otherData, PrestigeData prestigeData)
+    {
+        if(prestigeData.canUpgrade && otherData.money >= prestigeData.thingCost)
+        {
+            otherData.money -= prestigeData.thingCost;
+
+            if (!prestigeData.wasBought)
+            {
+                otherData.lastIndex++;
+                prestigeData.wasBought = true;
+            }
+
+            otherData.exp += prestigeData.giveExp;
+            prestigeData.thingCost *= 0.3f;
+        }
+    }
+
+    public void UpgradePhone()
+    {
+
+    }
+
+    public void UpgradePC()
+    {
+
+    }
+
+    public void UpgradeFlat()
+    {
+
     }
 
     public void OpenUpgrdePanel()

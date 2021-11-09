@@ -10,4 +10,7 @@ public class MainData : ScriptableObject
     public MineData classicMineData;
     public MineData ironMineData;
     public MineData goldMineData;
+    public PrestigeData phoneData;
+    public PrestigeData PCData;
+    public PrestigeData flatData;
 }

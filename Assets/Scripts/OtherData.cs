@@ -8,4 +8,5 @@ public class OtherData : ScriptableObject
     public int lvl;
     public int exp;
     public int maxExp;
+    public int lastIndex;
 }
