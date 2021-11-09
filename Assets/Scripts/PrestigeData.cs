@@ -6,12 +6,6 @@ public class PrestigeData : ScriptableObject
     public string thingText;
     public Sprite lockThingSprite;
     public Sprite unlockThingSprite;
-    //public Image thingImage;
     public bool canUnlock;
     public int thingCost;
-
-    public void DoSomeThingOnStart()
-    {
-
-    }
 }
