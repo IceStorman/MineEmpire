@@ -110,7 +110,7 @@ public class PrestigeMechanics : MonoBehaviour
 
     public void UpgradePhone()
     {
-        CanBuyLogic(mainData.phoneData);
+        //CanBuyLogic(mainData.phoneData);
         UpgradeThing(mainData.phoneData, phoneCostText);
         UpdateUI(mainData.phoneData, phoneText, phoneCostText, phoneImage, buyPhoneButtonImage);
     }
