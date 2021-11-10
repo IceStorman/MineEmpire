@@ -2053,7 +2053,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &269219686
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5560,7 +5560,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &684757160
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8642,12 +8642,12 @@ MonoBehaviour:
   expText: {fileID: 1210472468}
   maxExpText: {fileID: 376558129}
   lvlText: {fileID: 120280584}
-  phoneCostText: {fileID: 1485703614}
   phoneText: {fileID: 1453503655}
+  phoneCostText: {fileID: 1485703614}
   phoneImage: {fileID: 2007902771}
   buyPhoneButtonImage: {fileID: 1118126246}
-  pcCostText: {fileID: 664889184}
   pcText: {fileID: 709022303}
+  pcCostText: {fileID: 664889184}
   pcImage: {fileID: 1534652000}
   buyPcButtonImage: {fileID: 132424204}
   flatText: {fileID: 987377082}
@@ -14506,7 +14506,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1892985306
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16133,9 +16133,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1093185014}
-        m_TargetAssemblyTypeName: PrestigeButtonMechanics, Assembly-CSharp
-        m_MethodName: OpenPanel
+      - m_Target: {fileID: 1093185010}
+        m_TargetAssemblyTypeName: Songs, Assembly-CSharp
+        m_MethodName: ChangeOnPrestigePanelTheme
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16145,9 +16145,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1093185010}
-        m_TargetAssemblyTypeName: Songs, Assembly-CSharp
-        m_MethodName: ChangeOnPrestigePanelTheme
+      - m_Target: {fileID: 1093185014}
+        m_TargetAssemblyTypeName: PrestigeMechanics, Assembly-CSharp
+        m_MethodName: OpenPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
