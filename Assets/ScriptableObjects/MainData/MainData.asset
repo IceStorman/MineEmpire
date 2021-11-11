@@ -19,3 +19,6 @@ MonoBehaviour:
   classicMineData: {fileID: 11400000, guid: b55d83ec1c5913b48b1c1ffd60543c52, type: 2}
   ironMineData: {fileID: 11400000, guid: 52ddf4c32f3bdeb49bf0468e694719a6, type: 2}
   goldMineData: {fileID: 11400000, guid: 3415f8cd9529b1c49b3b2feac514b351, type: 2}
+  phoneData: {fileID: 11400000, guid: 57997ebae99d11648ab514277635ddd6, type: 2}
+  PCData: {fileID: 11400000, guid: e02bf5611e938804797b7bc18b285ff7, type: 2}
+  flatData: {fileID: 11400000, guid: 76f42ad97a012d04d82dc1a66911891f, type: 2}
