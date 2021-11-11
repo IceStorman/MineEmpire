@@ -15,6 +15,10 @@ public class EarnResoursesMechanic : MonoBehaviour
     [SerializeField] private bool ironMineOpened = false;
     [SerializeField] private bool goldMineOpened = false;
 
+    [SerializeField] private GameObject chooseOfClassicMine;
+    [SerializeField] private GameObject chooseOfIronMine;
+    [SerializeField] private GameObject chooseOfGoldMine;
+
     private void Start()
     {
         minePanel.SetActive(true);
@@ -29,12 +33,16 @@ public class EarnResoursesMechanic : MonoBehaviour
     {
         CloseMines();
         classicMineOpened = true;
+        CloseChoosen();
+        chooseOfClassicMine.SetActive(true);
     }
 
     public void IronMineStart()
     {
         if (mainData.ironMineData.isOpened)
         {
+            CloseChoosen();
+            chooseOfIronMine.SetActive(true);
             CloseMines();
             ironMineOpened = true;
         }
@@ -46,6 +54,8 @@ public class EarnResoursesMechanic : MonoBehaviour
         {
             CloseMines();
             goldMineOpened = true;
+            CloseChoosen();
+            chooseOfGoldMine.SetActive(true);
         }
     }
 
@@ -54,6 +64,13 @@ public class EarnResoursesMechanic : MonoBehaviour
         classicMineOpened = false;
         ironMineOpened = false;
         goldMineOpened = false;
+    }
+
+    private void CloseChoosen()
+    {
+        chooseOfClassicMine.SetActive(false);
+        chooseOfIronMine.SetActive(false);
+        chooseOfGoldMine.SetActive(false);
     }
 
     private void UpdateUI()
