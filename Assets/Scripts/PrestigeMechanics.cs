@@ -80,7 +80,6 @@ public class PrestigeMechanics : MonoBehaviour
         if(prestigeData.canUpgrade && mainData.otherData.money >= prestigeData.thingCost)
         {
             mainData.otherData.money -= prestigeData.thingCost;
-            moneyText.text = mainData.otherData.money.ToString("F2");
 
             if (!prestigeData.wasBought)
             {
@@ -89,16 +88,24 @@ public class PrestigeMechanics : MonoBehaviour
             }
 
             mainData.otherData.exp += prestigeData.giveExp;
-            expText.text = mainData.otherData.exp.ToString();
 
-            prestigeData.thingCost *= 0.3f;
-            thingCostText.text = prestigeData.thingCost.ToString("F2");
+            prestigeData.thingCost *= 1.3f;
         }
     }
 
     private void CanBuyLogic(PrestigeData prestigeData)
     {
-        if(prestigeData.thingID <= mainData.otherData.lastIndex + 1) prestigeData.canUpgrade = true;
+        if(prestigeData.thingID == mainData.otherData.lastIndex + 1) prestigeData.canUpgrade = true;
+    }
+
+    private void LevelUpMechanic()
+    {
+        if(mainData.otherData.exp >= mainData.otherData.maxExp)
+        {
+            mainData.otherData.exp -= mainData.otherData.maxExp;
+            mainData.otherData.maxExp *= 2;
+            mainData.otherData.lvl++;
+        }
     }
 
     private void Update()
@@ -106,6 +113,10 @@ public class PrestigeMechanics : MonoBehaviour
         CanBuyLogic(mainData.phoneData);
         CanBuyLogic(mainData.PCData);
         CanBuyLogic(mainData.flatData);
+        UpdateUI(mainData.phoneData, phoneText, phoneCostText, phoneImage, buyPhoneButtonImage);
+        UpdateUI(mainData.PCData, pcText, pcCostText, pcImage, buyPcButtonImage);
+        UpdateUI(mainData.flatData, flatText, flatCostText, flatImage, buyFlatButtonImage);
+        LevelUpMechanic();
     }
 
     public void UpgradePhone()
