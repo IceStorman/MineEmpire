@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Gold
   m_EditorClassIdentifier: 
   ore: 0
-  recycleOre: 4.8
-  dropProcent: 5
+  recycleOre: 0
   recycleCount: 0.8
   recycleOreGive: 5
   recycleOreCost: 43.3

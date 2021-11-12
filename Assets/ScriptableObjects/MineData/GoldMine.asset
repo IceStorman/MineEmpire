@@ -16,4 +16,4 @@ MonoBehaviour:
   ironDropPrecentage: 5
   goldDropPrecentage: 100
   cost: 7000
-  isOpened: 1
+  isOpened: 0
