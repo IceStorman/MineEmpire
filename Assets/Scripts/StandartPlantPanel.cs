@@ -11,6 +11,9 @@ public class StandartPlantPanel : MonoBehaviour
     [SerializeField] private Text recycleStoneText;
     [SerializeField] private Text recycleIronText;
     [SerializeField] private Text recycleGoldText;
+    [SerializeField] private Text amountOfRecycleStoneText;
+    [SerializeField] private Text amountOfRecycleIronText;
+    [SerializeField] private Text amountOfRecycleGoldText;
 
     [SerializeField] private MainData mainData;
 
@@ -32,6 +35,9 @@ public class StandartPlantPanel : MonoBehaviour
         recycleStoneText.text = mainData.stoneData.recycleOre.ToString("F2");
         recycleIronText.text = mainData.ironData.recycleOre.ToString("F2");
         recycleGoldText.text = mainData.goldData.recycleOre.ToString("F2");
+        amountOfRecycleStoneText.text = mainData.stoneData.amountOfRecycle.ToString("00");
+        amountOfRecycleIronText.text = mainData.ironData.amountOfRecycle.ToString("00");
+        amountOfRecycleGoldText.text = mainData.goldData.amountOfRecycle.ToString("00");
     }
 
     public void Open()
@@ -46,11 +52,11 @@ public class StandartPlantPanel : MonoBehaviour
 
     private void RecycleResource(OreData oreData, Text recourceText, Text recycleRecourceText)
     {
-        if(oreData.ore >= 1)
+        if (oreData.ore >= oreData.amountOfRecycle)
         {
-            oreData.ore--;
             recourceText.text = oreData.ore.ToString();
-            oreData.recycleOre += oreData.recycleCount;
+            oreData.recycleOre += (oreData.amountOfRecycle * oreData.recycleOreCost);
+            oreData.ore -= oreData.amountOfRecycle;
             recycleRecourceText.text = oreData.recycleOre.ToString("F2");
         }
     }
