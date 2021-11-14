@@ -14,6 +14,9 @@ public class StandartPlantPanel : MonoBehaviour
     [SerializeField] private Text amountOfRecycleStoneText;
     [SerializeField] private Text amountOfRecycleIronText;
     [SerializeField] private Text amountOfRecycleGoldText;
+    [SerializeField] private Text amountOfRecycleStoneReciveText;
+    [SerializeField] private Text amountOfRecycleReceiveIronText;
+    [SerializeField] private Text amountOfRecycleReceiveGoldText;
 
     [SerializeField] private MainData mainData;
 
@@ -38,6 +41,9 @@ public class StandartPlantPanel : MonoBehaviour
         amountOfRecycleStoneText.text = mainData.stoneData.amountOfRecycle.ToString("00");
         amountOfRecycleIronText.text = mainData.ironData.amountOfRecycle.ToString("00");
         amountOfRecycleGoldText.text = mainData.goldData.amountOfRecycle.ToString("00");
+        amountOfRecycleStoneReciveText.text = mainData.stoneData.amountOfRecycleReceive.ToString("F2");
+        amountOfRecycleReceiveIronText.text = mainData.ironData.amountOfRecycleReceive.ToString("F2");
+        amountOfRecycleReceiveGoldText.text = mainData.goldData.amountOfRecycleReceive.ToString("F2");
     }
 
     public void Open()
@@ -60,6 +66,7 @@ public class StandartPlantPanel : MonoBehaviour
             recycleRecourceText.text = oreData.recycleOre.ToString("F2");
         }
     }
+   
 
     public void RecycleStone()
     {

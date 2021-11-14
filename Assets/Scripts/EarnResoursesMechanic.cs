@@ -78,6 +78,7 @@ public class EarnResoursesMechanic : MonoBehaviour
         stoneText.text = mainData.stoneData.ore.ToString();
         ironText.text = mainData.ironData.ore.ToString();
         goldText.text = mainData.goldData.ore.ToString();
+
     }
 
     public void EarnMechanic()
@@ -88,6 +89,7 @@ public class EarnResoursesMechanic : MonoBehaviour
             if (mainData.classicMineData.goldDropPrecentage >= rnd) EarnResource(mainData.goldData, goldText);
             else if (mainData.classicMineData.ironDropPrecentage >= rnd) EarnResource(mainData.ironData, ironText);
             else if (mainData.classicMineData.stoneDropPrecentage >= rnd) EarnResource(mainData.stoneData, stoneText);
+
         }
 
         else if (ironMineOpened)
@@ -95,6 +97,7 @@ public class EarnResoursesMechanic : MonoBehaviour
             if (mainData.ironMineData.goldDropPrecentage >= rnd) EarnResource(mainData.goldData, goldText);
             else if (mainData.ironMineData.stoneDropPrecentage >= rnd) EarnResource(mainData.stoneData, stoneText);
             else if (mainData.ironMineData.ironDropPrecentage >= rnd) EarnResource(mainData.ironData, ironText);
+
         }
 
         else if (goldMineOpened)
@@ -102,6 +105,7 @@ public class EarnResoursesMechanic : MonoBehaviour
             if (mainData.goldMineData.ironDropPrecentage >= rnd) EarnResource(mainData.ironData, ironText);
             else if (mainData.goldMineData.stoneDropPrecentage >= rnd) EarnResource(mainData.stoneData, stoneText);
             else if (mainData.goldMineData.goldDropPrecentage >= rnd) EarnResource(mainData.goldData, goldText);
+
         }
     }
 
