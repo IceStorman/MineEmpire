@@ -10,6 +10,7 @@ public class EarnResoursesMechanic : MonoBehaviour
     [SerializeField] private Text stoneText;
     [SerializeField] private Text ironText;
     [SerializeField] private Text goldText;
+    [SerializeField] private Text benitoiteText;
 
     [SerializeField] private bool classicMineOpened = true;
     [SerializeField] private bool ironMineOpened = false;
@@ -78,7 +79,7 @@ public class EarnResoursesMechanic : MonoBehaviour
         stoneText.text = mainData.stoneData.ore.ToString();
         ironText.text = mainData.ironData.ore.ToString();
         goldText.text = mainData.goldData.ore.ToString();
-
+        benitoiteText.text = mainData.benitoiteData.ore.ToString();
     }
 
     public void EarnMechanic()
@@ -89,7 +90,7 @@ public class EarnResoursesMechanic : MonoBehaviour
             if (mainData.classicMineData.goldDropPrecentage >= rnd) EarnResource(mainData.goldData, goldText);
             else if (mainData.classicMineData.ironDropPrecentage >= rnd) EarnResource(mainData.ironData, ironText);
             else if (mainData.classicMineData.stoneDropPrecentage >= rnd) EarnResource(mainData.stoneData, stoneText);
-
+            else if (mainData.classicMineData.benitoiteDropPrecentage >= rnd) EarnResource(mainData.benitoiteData, benitoiteText);
         }
 
         else if (ironMineOpened)

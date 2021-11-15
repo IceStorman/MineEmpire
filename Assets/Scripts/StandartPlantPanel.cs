@@ -61,7 +61,7 @@ public class StandartPlantPanel : MonoBehaviour
         if (oreData.ore >= oreData.amountOfRecycle)
         {
             recourceText.text = oreData.ore.ToString();
-            oreData.recycleOre += (oreData.amountOfRecycle * oreData.recycleOreCost);
+            oreData.recycleOre += (oreData.amountOfRecycle * oreData.recycleCount);
             oreData.ore -= oreData.amountOfRecycle;
             recycleRecourceText.text = oreData.recycleOre.ToString("F2");
         }

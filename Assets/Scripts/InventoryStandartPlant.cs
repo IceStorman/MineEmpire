@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InventoryMechanic : MonoBehaviour
+public class InventoryStandartPlant : MonoBehaviour
 {
-    [SerializeField] private GameObject InventoryPanel;
+    [SerializeField] private GameObject InventoryStandartPlantPanel;
 
     [SerializeField] private Text stoneText;
     [SerializeField] private Text ironText;
@@ -20,7 +20,7 @@ public class InventoryMechanic : MonoBehaviour
 
     private void Start()
     {
-        InventoryPanel.SetActive(false);
+        InventoryStandartPlantPanel.SetActive(false);
     }
 
     private void Update()
@@ -43,13 +43,14 @@ public class InventoryMechanic : MonoBehaviour
     {
         if (!isOpen)
         {
-            InventoryPanel.SetActive(true);
+            InventoryStandartPlantPanel.SetActive(true);
             isOpen = true;
         }
         else if (isOpen)
         {
-            InventoryPanel.SetActive(false);
+            InventoryStandartPlantPanel.SetActive(false);
             isOpen = false;
         }
     }
 }
+

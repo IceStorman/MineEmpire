@@ -34,7 +34,7 @@ public class AmountOfRecycleStandart : MonoBehaviour
         ironSlider.onValueChanged.AddListener(SliderIronText);
         goldSlider.onValueChanged.AddListener(SliderGoldText);
     }
-
+    
     private void SliderStoneText(float value)
     {
         amountOfRecycleStoneText.text = $"{value:0}";
@@ -61,44 +61,40 @@ public class AmountOfRecycleStandart : MonoBehaviour
     }
     public void OpenStone(OreData oreData)
     {
-              
-        mainData.stoneData.amountOfRecycleReceive = oreData.amountOfRecycle;
-        amountOfRecycleStoneText.text = mainData.stoneData.amountOfRecycleReceive.ToString();
+        oreData.amountOfRecycleReceive = 0;
 
         amountOfRecyclePanel.SetActive(true);
     }
     public void OpenIron(OreData oreData)
     {
-        mainData.ironData.amountOfRecycleReceive = oreData.amountOfRecycle;
-        amountOfRecycleIronText.text = mainData.ironData.amountOfRecycleReceive.ToString();
+        oreData.amountOfRecycleReceive = 0;
     }
     public void OpenGold(OreData oreData)
     {
-        mainData.goldData.amountOfRecycleReceive = oreData.amountOfRecycle;
-        amountOfRecycleGoldText.text = mainData.goldData.amountOfRecycleReceive.ToString();
-
+        oreData.amountOfRecycleReceive = 0;
     }
     public void AmountOfRecycleStoneRecive(OreData oreData)
     {
-        mainData.stoneData.amountOfRecycleReceive += (oreData.amountOfRecycle * oreData.recycleOreCost);
+        oreData.amountOfRecycleReceive += (oreData.amountOfRecycle * oreData.recycleCount);
         amountOfRecycleReceiveStoneText.text = oreData.amountOfRecycleReceive.ToString();
         amountOfRecyclePanel.SetActive(false);
     }
     public void AmountOfRecycleIronRecive(OreData oreData)
-    {      
-        mainData.ironData.amountOfRecycleReceive += (oreData.amountOfRecycle * oreData.recycleOreCost);
+    {
+        oreData.amountOfRecycleReceive += (oreData.amountOfRecycle * oreData.recycleCount);
         amountOfRecycleReceiveIronText.text = oreData.amountOfRecycleReceive.ToString();
-        amountOfRecyclePanel.SetActive(false);
+
     }
     public void AmountOfRecycleGoldRecive(OreData oreData)
-    {       
-        mainData.goldData.amountOfRecycleReceive += (oreData.amountOfRecycle * oreData.recycleOreCost);
+    {
+        oreData.amountOfRecycleReceive += (oreData.amountOfRecycle * oreData.recycleCount);
         amountOfRecycleReceiveGoldText.text = oreData.amountOfRecycleReceive.ToString();
-        amountOfRecyclePanel.SetActive(false);
+
     }
 
     public void Close()
     {
         amountOfRecyclePanel.SetActive(false);
     }
+
 }
