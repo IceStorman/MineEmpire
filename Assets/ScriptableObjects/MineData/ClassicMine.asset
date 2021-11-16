@@ -15,5 +15,6 @@ MonoBehaviour:
   stoneDropPrecentage: 100
   ironDropPrecentage: 20
   goldDropPrecentage: 5
+  benitoiteDropPrecentage: 90
   cost: 1
   isOpened: 1

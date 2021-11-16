@@ -6,12 +6,6 @@ public class PrestigeData : ScriptableObject
     public string unlockThingText;
     public string lockThingText;
 
-    public Sprite lockThingSprite;
-    public Sprite unlockThingSprite;
-
-    public Sprite lockButtonSprite;
-    public Sprite unlockButtonSprite;
-
     public bool canUpgrade;
     public bool wasBought;
     public float thingCost;

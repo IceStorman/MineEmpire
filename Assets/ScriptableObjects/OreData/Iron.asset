@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Iron
   m_EditorClassIdentifier: 
   ore: 0
-  recycleOre: 0
+  recycleOre: 19.599998
   recycleCount: 0.7
   recycleOreGive: 5
-  recycleOreCost: 23.7
+  recycleOreCost: 8.532001
+  amountOfRecycle: 11
+  amountOfRecycleReceive: 7.7

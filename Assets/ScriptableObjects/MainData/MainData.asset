@@ -15,6 +15,7 @@ MonoBehaviour:
   stoneData: {fileID: 11400000, guid: f908f65115a2fc24dbf1f01844512079, type: 2}
   ironData: {fileID: 11400000, guid: 1b7624ce9af207f4aad77d5c567ed95c, type: 2}
   goldData: {fileID: 11400000, guid: 598ec7cfe7abe0b42a9772c1b53c31d1, type: 2}
+  benitoiteData: {fileID: 11400000, guid: cb45ff081e9749d43a605991cd6869f5, type: 2}
   otherData: {fileID: 11400000, guid: 96f1fd20bbd24d542af2f4bf55bade92, type: 2}
   classicMineData: {fileID: 11400000, guid: b55d83ec1c5913b48b1c1ffd60543c52, type: 2}
   ironMineData: {fileID: 11400000, guid: 52ddf4c32f3bdeb49bf0468e694719a6, type: 2}

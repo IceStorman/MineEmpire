@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Gold
   m_EditorClassIdentifier: 
   ore: 0
-  recycleOre: 0
+  recycleOre: 12.800001
   recycleCount: 0.8
   recycleOreGive: 5
-  recycleOreCost: 43.3
+  recycleOreCost: 35.954998
+  amountOfRecycle: 5
+  amountOfRecycleReceive: 4
