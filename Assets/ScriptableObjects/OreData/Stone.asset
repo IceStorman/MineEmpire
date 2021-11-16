@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68fd01e644279614997c47ec8a306fc8, type: 3}
   m_Name: Stone
   m_EditorClassIdentifier: 
-  ore: 8
-  recycleOre: 61
+  ore: 0
+  recycleOre: 0
   recycleCount: 0.5
   recycleOreGive: 15
-  recycleOreCost: 7.505
-  amountOfRecycle: 20
-  amountOfRecycleReceive: 10
+  recycleOreCost: 7.9
+  amountOfRecycle: 1
+  amountOfRecycleReceive: 0.5

@@ -10449,6 +10449,7 @@ GameObject:
   - component: {fileID: 1093185015}
   - component: {fileID: 1093185016}
   - component: {fileID: 1093185017}
+  - component: {fileID: 1093185018}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -10729,6 +10730,19 @@ MonoBehaviour:
   recycleStoneText: {fileID: 875552585}
   recycleIronText: {fileID: 1438081426}
   recycleGoldText: {fileID: 1376480295}
+  mainData: {fileID: 11400000, guid: e91ed92415be5fa488ac8a6ba8215bf5, type: 2}
+--- !u!114 &1093185018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093185003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18ac033608e412748988c120eb3a76dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   mainData: {fileID: 11400000, guid: e91ed92415be5fa488ac8a6ba8215bf5, type: 2}
 --- !u!1 &1113909548
 GameObject:
@@ -14354,7 +14368,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.0889893, y: -30.970993}
+  m_AnchoredPosition: {x: 2.0889893, y: -30.971008}
   m_SizeDelta: {x: -332.68, y: -151.5501}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1492087299
@@ -15316,9 +15330,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1093185012}
-        m_TargetAssemblyTypeName: StandartPlantPanel, Assembly-CSharp
-        m_MethodName: SaveProgress
+      - m_Target: {fileID: 1093185018}
+        m_TargetAssemblyTypeName: Save, Assembly-CSharp
+        m_MethodName: SaveData
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
