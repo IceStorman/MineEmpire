@@ -10666,6 +10666,7 @@ MonoBehaviour:
   flatImage: {fileID: 1201227109}
   buyFlatButtonImage: {fileID: 1839145223}
   mainData: {fileID: 11400000, guid: e91ed92415be5fa488ac8a6ba8215bf5, type: 2}
+  spritesData: {fileID: 11400000, guid: 7c232e55fbfe16646b61c6615d1e0a65, type: 2}
 --- !u!114 &1093185015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14353,7 +14354,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.0889893, y: -30.971008}
+  m_AnchoredPosition: {x: 2.0889893, y: -30.970993}
   m_SizeDelta: {x: -332.68, y: -151.5501}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1492087299

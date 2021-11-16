@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 924b7b769d6215a40a1e8d836883a161, type: 3}
+  m_Name: SpritesData
+  m_EditorClassIdentifier: 
+  phoneSprites: {fileID: 11400000, guid: 456c766d7214d2b46a67cc0abb7cbc18, type: 2}
+  pcSprites: {fileID: 11400000, guid: a8ac4516429058348bac4f2fd2d1b7d8, type: 2}
+  flatSprites: {fileID: 11400000, guid: f748084c77fd29044a05261527342974, type: 2}
