@@ -11,6 +11,8 @@ public class EarnResoursesMechanic : MonoBehaviour
     [SerializeField] private Text ironText;
     [SerializeField] private Text goldText;
     [SerializeField] private Text benitoiteText;
+    [SerializeField] private Text rubyText;
+    [SerializeField] private Text emeraldText;
 
     [SerializeField] private bool classicMineOpened = true;
     [SerializeField] private bool ironMineOpened = false;
@@ -80,6 +82,8 @@ public class EarnResoursesMechanic : MonoBehaviour
         ironText.text = mainData.ironData.ore.ToString();
         goldText.text = mainData.goldData.ore.ToString();
         benitoiteText.text = mainData.benitoiteData.ore.ToString();
+        rubyText.text = mainData.rubyData.ore.ToString();
+        emeraldText.text = mainData.emeraldData.ore.ToString();
     }
 
     public void EarnMechanic()
@@ -90,12 +94,14 @@ public class EarnResoursesMechanic : MonoBehaviour
             if (mainData.classicMineData.goldDropPrecentage >= rnd) EarnResource(mainData.goldData, goldText);
             else if (mainData.classicMineData.ironDropPrecentage >= rnd) EarnResource(mainData.ironData, ironText);
             else if (mainData.classicMineData.stoneDropPrecentage >= rnd) EarnResource(mainData.stoneData, stoneText);
-            else if (mainData.classicMineData.benitoiteDropPrecentage >= rnd) EarnResource(mainData.benitoiteData, benitoiteText);
         }
 
         else if (ironMineOpened)
         {
-            if (mainData.ironMineData.goldDropPrecentage >= rnd) EarnResource(mainData.goldData, goldText);
+            if (mainData.ironMineData.emeraldDropPrecentage >= rnd) EarnResource(mainData.emeraldData, emeraldText);
+            else if (mainData.ironMineData.rubyDropPrecentage >= rnd) EarnResource(mainData.rubyData, rubyText);
+            else if (mainData.ironMineData.benitoiteDropPrecentage >= rnd) EarnResource(mainData.benitoiteData, benitoiteText);
+            else if (mainData.ironMineData.goldDropPrecentage >= rnd) EarnResource(mainData.goldData, goldText);
             else if (mainData.ironMineData.stoneDropPrecentage >= rnd) EarnResource(mainData.stoneData, stoneText);
             else if (mainData.ironMineData.ironDropPrecentage >= rnd) EarnResource(mainData.ironData, ironText);
 
@@ -103,10 +109,12 @@ public class EarnResoursesMechanic : MonoBehaviour
 
         else if (goldMineOpened)
         {
-            if (mainData.goldMineData.ironDropPrecentage >= rnd) EarnResource(mainData.ironData, ironText);
+            if (mainData.goldMineData.emeraldDropPrecentage >= rnd) EarnResource(mainData.emeraldData, emeraldText);
+            else if (mainData.goldMineData.rubyDropPrecentage >= rnd) EarnResource(mainData.rubyData, rubyText);
+            else if (mainData.goldMineData.benitoiteDropPrecentage >= rnd) EarnResource(mainData.benitoiteData, benitoiteText);
+            else if (mainData.goldMineData.ironDropPrecentage >= rnd) EarnResource(mainData.ironData, ironText);
             else if (mainData.goldMineData.stoneDropPrecentage >= rnd) EarnResource(mainData.stoneData, stoneText);
             else if (mainData.goldMineData.goldDropPrecentage >= rnd) EarnResource(mainData.goldData, goldText);
-
         }
     }
 

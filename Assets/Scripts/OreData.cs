@@ -8,6 +8,7 @@ public class OreData : ScriptableObject
     public float recycleCount;
     public int recycleOreGive;
     public float recycleOreCost;
+    public int howMuchAmountOfRecycle;
     public int amountOfRecycle;
     public float amountOfRecycleReceive;
 }

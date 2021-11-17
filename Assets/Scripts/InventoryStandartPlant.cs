@@ -4,11 +4,11 @@ using UnityEngine.UI;
 public class InventoryStandartPlant : MonoBehaviour
 {
     [SerializeField] private GameObject InventoryStandartPlantPanel;
+    [SerializeField] private GameObject PlantPanel;
 
     [SerializeField] private Text stoneText;
     [SerializeField] private Text ironText;
     [SerializeField] private Text goldText;
-    [SerializeField] private Text benitoiteText;
 
     [SerializeField] private Text recycleStoneText;
     [SerializeField] private Text recycleIronText;
@@ -33,10 +33,17 @@ public class InventoryStandartPlant : MonoBehaviour
         stoneText.text = mainData.stoneData.ore.ToString();
         ironText.text = mainData.ironData.ore.ToString();
         goldText.text = mainData.goldData.ore.ToString();
-        benitoiteText.text = mainData.benitoiteData.ore.ToString();
         recycleStoneText.text = mainData.stoneData.recycleOre.ToString("F2");
         recycleIronText.text = mainData.ironData.recycleOre.ToString("F2");
         recycleGoldText.text = mainData.goldData.recycleOre.ToString("F2");
+    }
+    public void Close()
+    {
+        if (PlantPanel == true)
+        {
+            InventoryStandartPlantPanel.SetActive(false);
+            isOpen = false;
+        }
     }
 
     public void Click()

@@ -9,14 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90f0037ad9216924b8dc0ecd5dfeb031, type: 3}
-  m_Name: ClassicMine
+  m_Script: {fileID: 11500000, guid: 68fd01e644279614997c47ec8a306fc8, type: 3}
+  m_Name: Ruby
   m_EditorClassIdentifier: 
-  stoneDropPrecentage: 100
-  ironDropPrecentage: 20
-  goldDropPrecentage: 5
-  benitoiteDropPrecentage: 0
-  rubyDropPrecentage: 0
-  emeraldDropPrecentage: 0
-  cost: 1
-  isOpened: 1
+  ore: 0
+  recycleOre: 1
+  recycleCount: 1
+  recycleOreGive: 1
+  recycleOreCost: 1
+  howMuchAmountOfRecycle: 0
+  amountOfRecycle: 1
+  amountOfRecycleReceive: 1

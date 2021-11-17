@@ -9,6 +9,10 @@ public class AmountOfRecycleStandart : MonoBehaviour
     [SerializeField] private Text amountOfRecycleIronText;
     [SerializeField] private Text amountOfRecycleGoldText;
 
+    [SerializeField] private Text howMuchAmountOfRecycleStoneText;
+    [SerializeField] private Text howMuchAmountOfRecycleIronText;
+    [SerializeField] private Text howMuchAmountOfRecycleGoldText;
+
     [SerializeField] private Slider stoneSlider;
     [SerializeField] private Slider ironSlider;
     [SerializeField] private Slider goldSlider;
@@ -34,7 +38,7 @@ public class AmountOfRecycleStandart : MonoBehaviour
         ironSlider.onValueChanged.AddListener(SliderIronText);
         goldSlider.onValueChanged.AddListener(SliderGoldText);
     }
-    
+       
     private void SliderStoneText(float value)
     {
         amountOfRecycleStoneText.text = $"{value:0}";
@@ -62,7 +66,7 @@ public class AmountOfRecycleStandart : MonoBehaviour
     public void OpenStone(OreData oreData)
     {
         oreData.amountOfRecycleReceive = 0;
-
+  
         amountOfRecyclePanel.SetActive(true);
     }
     public void OpenIron(OreData oreData)

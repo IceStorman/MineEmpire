@@ -8,6 +8,8 @@ public class MineData : ScriptableObject
     public float ironDropPrecentage;
     public float goldDropPrecentage;
     public float benitoiteDropPrecentage;
+    public float rubyDropPrecentage;
+    public float emeraldDropPrecentage;
     public float cost;
     public bool isOpened;
 }
