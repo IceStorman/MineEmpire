@@ -10,7 +10,6 @@ public class PlantPanel : MonoBehaviour
         plantPanel.SetActive(false);
     }
     
-
     public void Open()
     {
         plantPanel.SetActive(true);

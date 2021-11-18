@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f0037ad9216924b8dc0ecd5dfeb031, type: 3}
   m_Name: IronMine
   m_EditorClassIdentifier: 
-  stoneDropPrecentage: 36
-  ironDropPrecentage: 100
-  goldDropPrecentage: 4
-  benitoiteDropPrecentage: 1
-  rubyDropPrecentage: 0.8
-  emeraldDropPrecentage: 0.5
+  stoneDropPrecentage: 360
+  ironDropPrecentage: 1000
+  goldDropPrecentage: 40
+  benitoiteDropPrecentage: 8
+  rubyDropPrecentage: 6
+  emeraldDropPrecentage: 4
   cost: 2500
-  isOpened: 0
+  isOpened: 1

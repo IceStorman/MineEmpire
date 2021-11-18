@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f0037ad9216924b8dc0ecd5dfeb031, type: 3}
   m_Name: ClassicMine
   m_EditorClassIdentifier: 
-  stoneDropPrecentage: 100
-  ironDropPrecentage: 20
-  goldDropPrecentage: 5
-  benitoiteDropPrecentage: 0
-  rubyDropPrecentage: 0
-  emeraldDropPrecentage: 0
+  stoneDropPrecentage: 1000
+  ironDropPrecentage: 200
+  goldDropPrecentage: 50
+  benitoiteDropPrecentage: 7
+  rubyDropPrecentage: 4
+  emeraldDropPrecentage: 3
   cost: 1
   isOpened: 1

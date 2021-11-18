@@ -88,10 +88,13 @@ public class EarnResoursesMechanic : MonoBehaviour
 
     public void EarnMechanic()
     {
-        int rnd = Random.Range(0, 101);
+        int rnd = Random.Range(0, 1001);
         if (classicMineOpened)
         {
-            if (mainData.classicMineData.goldDropPrecentage >= rnd) EarnResource(mainData.goldData, goldText);
+            if (mainData.ironMineData.emeraldDropPrecentage >= rnd) EarnResource(mainData.emeraldData, emeraldText);
+            else if (mainData.ironMineData.rubyDropPrecentage >= rnd) EarnResource(mainData.rubyData, rubyText);
+            else if (mainData.ironMineData.benitoiteDropPrecentage >= rnd) EarnResource(mainData.benitoiteData, benitoiteText);
+            else if (mainData.classicMineData.goldDropPrecentage >= rnd) EarnResource(mainData.goldData, goldText);
             else if (mainData.classicMineData.ironDropPrecentage >= rnd) EarnResource(mainData.ironData, ironText);
             else if (mainData.classicMineData.stoneDropPrecentage >= rnd) EarnResource(mainData.stoneData, stoneText);
         }
