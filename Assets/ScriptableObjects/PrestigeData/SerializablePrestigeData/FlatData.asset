@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unlockThingText: Upgrade flat
   lockThingText: ???
-  canUpgrade: 1
+  canUpgrade: 0
   wasBought: 0
   thingCost: 7000
   giveExp: 39

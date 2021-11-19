@@ -23,6 +23,15 @@ public class Reset : MonoBehaviour
         ResetOreData(mainData.stoneData, 7.9f);
         ResetOreData(mainData.ironData, 23.7f);
         ResetOreData(mainData.goldData, 42.3f);
+        ResetOreData(mainData.benitoiteData, 0f);
+        ResetOreData(mainData.amethystData, 0f);
+        ResetOreData(mainData.copperData, 0f);
+        ResetOreData(mainData.diamondData, 0f);
+        ResetOreData(mainData.emeraldData, 0f);
+        ResetOreData(mainData.onyxData, 0f);
+        ResetOreData(mainData.rubyData, 0f);
+        ResetOreData(mainData.sapphireData, 0f);
+        ResetOreData(mainData.tinData, 0f);
         Debug.LogWarning("Reseted");
     }
 

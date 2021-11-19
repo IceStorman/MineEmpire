@@ -25,4 +25,4 @@ MonoBehaviour:
   copperDropPrecentage: 2
   amethysDropPrecentage: 1
   cost: 2500
-  isOpened: 1
+  isOpened: 0
