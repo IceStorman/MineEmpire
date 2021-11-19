@@ -171,7 +171,8 @@ public class PrestigeMechanics : MonoBehaviour
         CanBuyLogic(mainData.planetData);
         UpdateUI(mainData.phoneData, spritesData.phoneSprites, phoneText, phoneCostText, phoneImage, buyPhoneButtonImage);
         UpdateUI(mainData.PCData, spritesData.pcSprites, pcText, pcCostText, pcImage, buyPcButtonImage);
-        UpdateUI(mainData.flatData, spritesData.flatSprites, flatText, flatCostText, flatImage, buyFlatButtonImage); UpdateUI(mainData.carData, spritesData.carSprites, carText, carCostText, carImage, buyCarButtonImage);
+        UpdateUI(mainData.flatData, spritesData.flatSprites, flatText, flatCostText, flatImage, buyFlatButtonImage);
+        UpdateUI(mainData.carData, spritesData.carSprites, carText, carCostText, carImage, buyCarButtonImage);
         UpdateUI(mainData.mansionData, spritesData.mansionSprites, mansionText, mansionCostText, mansionImage, buyMansionButtonImage);
         UpdateUI(mainData.helicopterData, spritesData.helicopterSprites, helicopterText, helicopterCostText, helicopterImage, buyHelicopterButtonImage);
         UpdateUI(mainData.yachtData, spritesData.yachtSprites, yachtText, yachtCostText, yachtImage, buyYachtButtonImage);
@@ -204,37 +205,51 @@ public class PrestigeMechanics : MonoBehaviour
 
     public void UpgradeCar()
     {
+        CanBuyLogic(mainData.carData);
         UpgradeThing(mainData.carData);
+        UpdateUI(mainData.carData, spritesData.carSprites, carText, carCostText, carImage, buyCarButtonImage);
     }
 
     public void UpgradeMansion()
     {
+        CanBuyLogic(mainData.mansionData);
         UpgradeThing(mainData.mansionData);
+        UpdateUI(mainData.mansionData, spritesData.mansionSprites, mansionText, mansionCostText, mansionImage, buyMansionButtonImage);
     }
 
     public void UpgradeHelicopter()
     {
+        CanBuyLogic(mainData.helicopterData);
         UpgradeThing(mainData.helicopterData);
+        UpdateUI(mainData.helicopterData, spritesData.helicopterSprites, helicopterText, helicopterCostText, helicopterImage, buyHelicopterButtonImage);
     }
 
     public void UpgradeYacht()
     {
+        CanBuyLogic(mainData.yachtData);
         UpgradeThing(mainData.yachtData);
+        UpdateUI(mainData.yachtData, spritesData.yachtSprites, yachtText, yachtCostText, yachtImage, buyYachtButtonImage);
     }
 
     public void UpgradePrivatePlane()
     {
+        CanBuyLogic(mainData.privatePlaneData);
         UpgradeThing(mainData.privatePlaneData);
+        UpdateUI(mainData.privatePlaneData, spritesData.privatePlaneSprites, privatePlaneText, privatePlaneCostText, privatePlaneImage, buyPrivatePlaneButtonImage);
     }
 
     public void UpgradeRocket()
     {
+        CanBuyLogic(mainData.rocketData);
         UpgradeThing(mainData.rocketData);
+        UpdateUI(mainData.rocketData, spritesData.rocketSprites, rocketText, rocketCostText, rocketImage, buyRocketButtonImage);
     }
 
     public void UpgradePlanet()
     {
+        CanBuyLogic(mainData.planetData);
         UpgradeThing(mainData.planetData);
+        UpdateUI(mainData.planetData, spritesData.planetSprites, planetText, planetCostText, planetImage, buyPlanetButtonImage);
     }
 
     public void OpenUpgrdePanel()
