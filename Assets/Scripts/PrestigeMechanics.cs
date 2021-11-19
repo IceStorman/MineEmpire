@@ -162,6 +162,13 @@ public class PrestigeMechanics : MonoBehaviour
         CanBuyLogic(mainData.phoneData);
         CanBuyLogic(mainData.PCData);
         CanBuyLogic(mainData.flatData);
+        CanBuyLogic(mainData.carData);
+        CanBuyLogic(mainData.mansionData);
+        CanBuyLogic(mainData.helicopterData);
+        CanBuyLogic(mainData.yachtData);
+        CanBuyLogic(mainData.privatePlaneData);
+        CanBuyLogic(mainData.rocketData);
+        CanBuyLogic(mainData.planetData);
         UpdateUI(mainData.phoneData, spritesData.phoneSprites, phoneText, phoneCostText, phoneImage, buyPhoneButtonImage);
         UpdateUI(mainData.PCData, spritesData.pcSprites, pcText, pcCostText, pcImage, buyPcButtonImage);
         UpdateUI(mainData.flatData, spritesData.flatSprites, flatText, flatCostText, flatImage, buyFlatButtonImage); UpdateUI(mainData.carData, spritesData.carSprites, carText, carCostText, carImage, buyCarButtonImage);

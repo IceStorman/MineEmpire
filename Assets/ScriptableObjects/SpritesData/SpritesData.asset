@@ -15,10 +15,10 @@ MonoBehaviour:
   phoneSprites: {fileID: 11400000, guid: 456c766d7214d2b46a67cc0abb7cbc18, type: 2}
   pcSprites: {fileID: 11400000, guid: a8ac4516429058348bac4f2fd2d1b7d8, type: 2}
   flatSprites: {fileID: 11400000, guid: f748084c77fd29044a05261527342974, type: 2}
-  carData: {fileID: 11400000, guid: e42043789a4b53b4396ed8db782a3c31, type: 2}
-  mansionData: {fileID: 11400000, guid: 3384b5402af83ed4e87992b73a1a6eb8, type: 2}
-  helicopterData: {fileID: 11400000, guid: 10c8bd2488694074abff2b1fb2b29164, type: 2}
-  yachtData: {fileID: 11400000, guid: edc53bd008090d14db874e642d848975, type: 2}
-  privatePlaneData: {fileID: 11400000, guid: 6107e4b8df66c524887988c61b100982, type: 2}
-  rocketData: {fileID: 11400000, guid: 673d68d3ab41e064fa122e1d6e603ad2, type: 2}
-  planetData: {fileID: 11400000, guid: 95f434d431e591d48ba61d6deb0be8b0, type: 2}
+  carSprites: {fileID: 11400000, guid: e42043789a4b53b4396ed8db782a3c31, type: 2}
+  mansionSprites: {fileID: 11400000, guid: 3384b5402af83ed4e87992b73a1a6eb8, type: 2}
+  helicopterSprites: {fileID: 11400000, guid: 10c8bd2488694074abff2b1fb2b29164, type: 2}
+  yachtSprites: {fileID: 11400000, guid: edc53bd008090d14db874e642d848975, type: 2}
+  privatePlaneSprites: {fileID: 11400000, guid: 6107e4b8df66c524887988c61b100982, type: 2}
+  rocketSprites: {fileID: 11400000, guid: 673d68d3ab41e064fa122e1d6e603ad2, type: 2}
+  planetSprites: {fileID: 11400000, guid: 95f434d431e591d48ba61d6deb0be8b0, type: 2}

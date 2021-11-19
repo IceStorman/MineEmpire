@@ -9,6 +9,13 @@ public class Reset : MonoBehaviour
         ResetPrestigeData(mainData.phoneData, 700, true);
         ResetPrestigeData(mainData.PCData, 1300, false);
         ResetPrestigeData(mainData.flatData, 7000, false);
+        ResetPrestigeData(mainData.carData, 4500, false);
+        ResetPrestigeData(mainData.mansionData, 10000, false);
+        ResetPrestigeData(mainData.helicopterData, 14000, false);
+        ResetPrestigeData(mainData.yachtData, 19000, false);
+        ResetPrestigeData(mainData.privatePlaneData, 25000, false);
+        ResetPrestigeData(mainData.rocketData, 50000, false);
+        ResetPrestigeData(mainData.planetData, 200000, false);
         ResetOtherData(mainData.otherData);
         ResetMineData(mainData.classicMineData, true);
         ResetMineData(mainData.ironMineData, false);
