@@ -10417,7 +10417,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185014}
         m_TargetAssemblyTypeName: PrestigeMechanics, Assembly-CSharp
-        m_MethodName: UpgradeFlat
+        m_MethodName: UpgradeCar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10957,7 +10957,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185014}
         m_TargetAssemblyTypeName: PrestigeMechanics, Assembly-CSharp
-        m_MethodName: UpgradeFlat
+        m_MethodName: UpgradeMansion
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11804,7 +11804,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185014}
         m_TargetAssemblyTypeName: PrestigeMechanics, Assembly-CSharp
-        m_MethodName: UpgradeFlat
+        m_MethodName: UpgradePrivatePlane
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17200,7 +17200,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185014}
         m_TargetAssemblyTypeName: PrestigeMechanics, Assembly-CSharp
-        m_MethodName: UpgradeFlat
+        m_MethodName: UpgradePlanet
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19075,7 +19075,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185014}
         m_TargetAssemblyTypeName: PrestigeMechanics, Assembly-CSharp
-        m_MethodName: UpgradeFlat
+        m_MethodName: UpgradeHelicopter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24357,7 +24357,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185014}
         m_TargetAssemblyTypeName: PrestigeMechanics, Assembly-CSharp
-        m_MethodName: UpgradeFlat
+        m_MethodName: UpgradeRocket
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26256,7 +26256,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185014}
         m_TargetAssemblyTypeName: PrestigeMechanics, Assembly-CSharp
-        m_MethodName: UpgradeFlat
+        m_MethodName: UpgradeYacht
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
