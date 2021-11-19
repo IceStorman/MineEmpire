@@ -74,15 +74,26 @@ public class Save : MonoBehaviour
         mainData.otherData.timer = o.timer;
     }
 
-    private void LoadOreData(OreData oreData, OreData o)
+    private void LoadOreData(OreData oreData, OreData jsonOreData)
     {
-        oreData.amountOfRecycle = o.amountOfRecycle;
-        oreData.amountOfRecycleReceive = o.amountOfRecycleReceive;
-        oreData.ore = o.ore;
-        oreData.recycleCount = o.recycleCount;
-        oreData.recycleOre = o.recycleOre;
-        oreData.recycleOreCost = o.recycleOreCost;
-        oreData.recycleOreGive = o.recycleOreGive;
+        if (jsonOreData == null)
+        {
+            oreData.amountOfRecycle = 0;
+            oreData.amountOfRecycleReceive = 0;
+            oreData.ore = 0;
+            oreData.recycleCount = 0;
+            oreData.recycleOre = 0;
+            oreData.recycleOreCost = 0;
+            oreData.recycleOreGive = 0;
+            return;
+        }
+        oreData.amountOfRecycle = jsonOreData.amountOfRecycle;
+        oreData.amountOfRecycleReceive = jsonOreData.amountOfRecycleReceive;
+        oreData.ore = jsonOreData.ore;
+        oreData.recycleCount = jsonOreData.recycleCount;
+        oreData.recycleOre = jsonOreData.recycleOre;
+        oreData.recycleOreCost = jsonOreData.recycleOreCost;
+        oreData.recycleOreGive = jsonOreData.recycleOreGive;
     }
 
     private void LoadMineData(MineData mineData, MineData m)
