@@ -25,3 +25,10 @@ MonoBehaviour:
   phoneData: {fileID: 11400000, guid: 57997ebae99d11648ab514277635ddd6, type: 2}
   PCData: {fileID: 11400000, guid: e02bf5611e938804797b7bc18b285ff7, type: 2}
   flatData: {fileID: 11400000, guid: 76f42ad97a012d04d82dc1a66911891f, type: 2}
+  carData: {fileID: 11400000, guid: 421556e49d1c3804ab503d940e1b245a, type: 2}
+  mansionData: {fileID: 11400000, guid: c49d94a3275818a4cbf0cb6cb83aae03, type: 2}
+  helicopterData: {fileID: 11400000, guid: b47787009e962f94fbdb7226d0165106, type: 2}
+  yachtData: {fileID: 11400000, guid: 9944d6cb1b61a3b4383cb8bac5bf308d, type: 2}
+  privatePlaneData: {fileID: 11400000, guid: dc4b19ece9b5f684db124e26f771f0bc, type: 2}
+  rocketData: {fileID: 11400000, guid: d923d68ff45482540b0e8a8338b4a381, type: 2}
+  planetData: {fileID: 11400000, guid: 0c5c692f1b12ce84dbcc3497501cc5b2, type: 2}

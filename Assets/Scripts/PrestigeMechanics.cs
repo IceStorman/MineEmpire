@@ -27,6 +27,41 @@ public class PrestigeMechanics : MonoBehaviour
     [SerializeField] private Image flatImage;
     [SerializeField] private Image buyFlatButtonImage;
 
+    [SerializeField] private Text carText;
+    [SerializeField] private Text carCostText;
+    [SerializeField] private Image carImage;
+    [SerializeField] private Image buyCarButtonImage;
+
+    [SerializeField] private Text mansionText;
+    [SerializeField] private Text mansionCostText;
+    [SerializeField] private Image mansionImage;
+    [SerializeField] private Image buyMansionButtonImage;
+
+    [SerializeField] private Text helicopterText;
+    [SerializeField] private Text helicopterCostText;
+    [SerializeField] private Image helicopterImage;
+    [SerializeField] private Image buyHelicopterButtonImage;
+
+    [SerializeField] private Text yachtText;
+    [SerializeField] private Text yachtCostText;
+    [SerializeField] private Image yachtImage;
+    [SerializeField] private Image buyYachtButtonImage;
+
+    [SerializeField] private Text privatePlaneText;
+    [SerializeField] private Text privatePlaneCostText;
+    [SerializeField] private Image privatePlaneImage;
+    [SerializeField] private Image buyPrivatePlaneButtonImage;
+
+    [SerializeField] private Text rocketText;
+    [SerializeField] private Text rocketCostText;
+    [SerializeField] private Image rocketImage;
+    [SerializeField] private Image buyRocketButtonImage;
+
+    [SerializeField] private Text planetText;
+    [SerializeField] private Text planetCostText;
+    [SerializeField] private Image planetImage;
+    [SerializeField] private Image buyPlanetButtonImage;
+
     [SerializeField] private MainData mainData;
     [SerializeField] private SpritesData spritesData;
 
@@ -37,6 +72,13 @@ public class PrestigeMechanics : MonoBehaviour
         UpdateUI(mainData.phoneData, spritesData.phoneSprites, phoneText, phoneCostText, phoneImage, buyPhoneButtonImage);
         UpdateUI(mainData.PCData, spritesData.pcSprites, pcText, pcCostText, pcImage, buyPcButtonImage);
         UpdateUI(mainData.flatData, spritesData.flatSprites, flatText, flatCostText, flatImage, buyFlatButtonImage);
+        UpdateUI(mainData.carData, spritesData.carSprites, carText, carCostText, carImage, buyCarButtonImage);
+        UpdateUI(mainData.mansionData, spritesData.mansionSprites, mansionText, mansionCostText, mansionImage, buyMansionButtonImage);
+        UpdateUI(mainData.helicopterData, spritesData.helicopterSprites, helicopterText, helicopterCostText, helicopterImage, buyHelicopterButtonImage);
+        UpdateUI(mainData.yachtData, spritesData.yachtSprites, yachtText, yachtCostText, yachtImage, buyYachtButtonImage);
+        UpdateUI(mainData.privatePlaneData, spritesData.privatePlaneSprites, privatePlaneText, privatePlaneCostText, privatePlaneImage, buyPrivatePlaneButtonImage);
+        UpdateUI(mainData.rocketData, spritesData.rocketSprites, rocketText, rocketCostText, rocketImage, buyRocketButtonImage);
+        UpdateUI(mainData.planetData, spritesData.planetSprites, planetText, planetCostText, planetImage, buyPlanetButtonImage);
     }
 
     public void OpenPanel()
@@ -44,7 +86,13 @@ public class PrestigeMechanics : MonoBehaviour
         prestigePanel.SetActive(true);
         UpdateUI(mainData.phoneData, spritesData.phoneSprites, phoneText, phoneCostText, phoneImage, buyPhoneButtonImage);
         UpdateUI(mainData.PCData, spritesData.pcSprites, pcText, pcCostText, pcImage, buyPcButtonImage);
-        UpdateUI(mainData.flatData, spritesData.flatSprites, flatText, flatCostText, flatImage, buyFlatButtonImage);
+        UpdateUI(mainData.flatData, spritesData.flatSprites, flatText, flatCostText, flatImage, buyFlatButtonImage); UpdateUI(mainData.carData, spritesData.carSprites, carText, carCostText, carImage, buyCarButtonImage);
+        UpdateUI(mainData.mansionData, spritesData.mansionSprites, mansionText, mansionCostText, mansionImage, buyMansionButtonImage);
+        UpdateUI(mainData.helicopterData, spritesData.helicopterSprites, helicopterText, helicopterCostText, helicopterImage, buyHelicopterButtonImage);
+        UpdateUI(mainData.yachtData, spritesData.yachtSprites, yachtText, yachtCostText, yachtImage, buyYachtButtonImage);
+        UpdateUI(mainData.privatePlaneData, spritesData.privatePlaneSprites, privatePlaneText, privatePlaneCostText, privatePlaneImage, buyPrivatePlaneButtonImage);
+        UpdateUI(mainData.rocketData, spritesData.rocketSprites, rocketText, rocketCostText, rocketImage, buyRocketButtonImage);
+        UpdateUI(mainData.planetData, spritesData.planetSprites, planetText, planetCostText, planetImage, buyPlanetButtonImage);
     }
 
     public void ClosePanel()
@@ -116,7 +164,13 @@ public class PrestigeMechanics : MonoBehaviour
         CanBuyLogic(mainData.flatData);
         UpdateUI(mainData.phoneData, spritesData.phoneSprites, phoneText, phoneCostText, phoneImage, buyPhoneButtonImage);
         UpdateUI(mainData.PCData, spritesData.pcSprites, pcText, pcCostText, pcImage, buyPcButtonImage);
-        UpdateUI(mainData.flatData, spritesData.flatSprites, flatText, flatCostText, flatImage, buyFlatButtonImage);
+        UpdateUI(mainData.flatData, spritesData.flatSprites, flatText, flatCostText, flatImage, buyFlatButtonImage); UpdateUI(mainData.carData, spritesData.carSprites, carText, carCostText, carImage, buyCarButtonImage);
+        UpdateUI(mainData.mansionData, spritesData.mansionSprites, mansionText, mansionCostText, mansionImage, buyMansionButtonImage);
+        UpdateUI(mainData.helicopterData, spritesData.helicopterSprites, helicopterText, helicopterCostText, helicopterImage, buyHelicopterButtonImage);
+        UpdateUI(mainData.yachtData, spritesData.yachtSprites, yachtText, yachtCostText, yachtImage, buyYachtButtonImage);
+        UpdateUI(mainData.privatePlaneData, spritesData.privatePlaneSprites, privatePlaneText, privatePlaneCostText, privatePlaneImage, buyPrivatePlaneButtonImage);
+        UpdateUI(mainData.rocketData, spritesData.rocketSprites, rocketText, rocketCostText, rocketImage, buyRocketButtonImage);
+        UpdateUI(mainData.planetData, spritesData.planetSprites, planetText, planetCostText, planetImage, buyPlanetButtonImage);
         LevelUpMechanic();
     }
 
@@ -139,6 +193,41 @@ public class PrestigeMechanics : MonoBehaviour
         CanBuyLogic(mainData.flatData);
         UpgradeThing(mainData.flatData);
         UpdateUI(mainData.flatData, spritesData.flatSprites, flatText, flatCostText, flatImage, buyFlatButtonImage);
+    }
+
+    public void UpgradeCar()
+    {
+        UpgradeThing(mainData.carData);
+    }
+
+    public void UpgradeMansion()
+    {
+        UpgradeThing(mainData.mansionData);
+    }
+
+    public void UpgradeHelicopter()
+    {
+        UpgradeThing(mainData.helicopterData);
+    }
+
+    public void UpgradeYacht()
+    {
+        UpgradeThing(mainData.yachtData);
+    }
+
+    public void UpgradePrivatePlane()
+    {
+        UpgradeThing(mainData.privatePlaneData);
+    }
+
+    public void UpgradeRocket()
+    {
+        UpgradeThing(mainData.rocketData);
+    }
+
+    public void UpgradePlanet()
+    {
+        UpgradeThing(mainData.planetData);
     }
 
     public void OpenUpgrdePanel()
