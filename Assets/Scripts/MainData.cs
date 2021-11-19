@@ -9,6 +9,12 @@ public class MainData : ScriptableObject
     public OreData benitoiteData;
     public OreData rubyData;
     public OreData emeraldData;
+    public OreData diamondData;
+    public OreData onyxData;
+    public OreData sapphireData;
+    public OreData tinData;
+    public OreData copperData;
+    public OreData amethystData;
 
     public OtherData otherData;
 

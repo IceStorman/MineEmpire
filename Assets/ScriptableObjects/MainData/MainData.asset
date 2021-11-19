@@ -18,6 +18,12 @@ MonoBehaviour:
   benitoiteData: {fileID: 11400000, guid: cb45ff081e9749d43a605991cd6869f5, type: 2}
   rubyData: {fileID: 11400000, guid: 8a42d5a5bee46df458099ab20a342c96, type: 2}
   emeraldData: {fileID: 11400000, guid: 09cc6cc328d25954e8b04e1f03c8b3af, type: 2}
+  diamondData: {fileID: 11400000, guid: 79ae735faa7aecb4197bb3fb533d076e, type: 2}
+  onyxData: {fileID: 11400000, guid: cb4ad2ecb56963a4fbdc7df5b2e60b11, type: 2}
+  sapphireData: {fileID: 11400000, guid: 93913b281dcbea9498d3e2c9fd5bb4dc, type: 2}
+  tinData: {fileID: 11400000, guid: cdaea835918d47349ad5faeaea64b044, type: 2}
+  copperData: {fileID: 11400000, guid: cea39e15754f6f54db666de025dff45f, type: 2}
+  amethystData: {fileID: 11400000, guid: 743eb541b5692d742ae7bff6bba0738b, type: 2}
   otherData: {fileID: 11400000, guid: 96f1fd20bbd24d542af2f4bf55bade92, type: 2}
   classicMineData: {fileID: 11400000, guid: b55d83ec1c5913b48b1c1ffd60543c52, type: 2}
   ironMineData: {fileID: 11400000, guid: 52ddf4c32f3bdeb49bf0468e694719a6, type: 2}

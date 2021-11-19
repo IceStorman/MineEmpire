@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class InventoryStandartPlant : MonoBehaviour
 {
     [SerializeField] private GameObject InventoryStandartPlantPanel;
-    [SerializeField] private GameObject PlantPanel;
+    [SerializeField] private GameObject PlantStandart;
 
     [SerializeField] private Text stoneText;
     [SerializeField] private Text ironText;
@@ -38,12 +38,9 @@ public class InventoryStandartPlant : MonoBehaviour
         recycleGoldText.text = mainData.goldData.recycleOre.ToString("F2");
     }
     public void Close()
-    {
-        if (PlantPanel == true)
-        {
-            InventoryStandartPlantPanel.SetActive(false);
-            isOpen = false;
-        }
+    {       
+        InventoryStandartPlantPanel.SetActive(false);
+        isOpen = false;    
     }
 
     public void Click()

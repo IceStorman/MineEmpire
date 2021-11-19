@@ -15,8 +15,14 @@ MonoBehaviour:
   stoneDropPrecentage: 1000
   ironDropPrecentage: 200
   goldDropPrecentage: 50
-  benitoiteDropPrecentage: 7
-  rubyDropPrecentage: 4
-  emeraldDropPrecentage: 3
+  benitoiteDropPrecentage: 15
+  rubyDropPrecentage: 14
+  emeraldDropPrecentage: 12
+  diamondDropPrecentage: 10
+  onyxDropPrecentage: 7
+  sapphireDropPrecentage: 5
+  tinDropPrecentage: 3
+  copperDropPrecentage: 2
+  amethysDropPrecentage: 1
   cost: 1
   isOpened: 1

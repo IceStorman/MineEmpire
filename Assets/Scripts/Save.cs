@@ -35,6 +35,14 @@ public class Save : MonoBehaviour
         LoadOreData(mainData.ironData, m.ironData);
         LoadOreData(mainData.goldData, m.goldData);
         LoadOreData(mainData.benitoiteData, m.benitoiteData);
+        LoadOreData(mainData.rubyData, m.rubyData);
+        LoadOreData(mainData.emeraldData, m.emeraldData);
+        LoadOreData(mainData.diamondData, m.diamondData);
+        LoadOreData(mainData.onyxData, m.onyxData);
+        LoadOreData(mainData.sapphireData, m.sapphireData);
+        LoadOreData(mainData.tinData, m.tinData);
+        LoadOreData(mainData.copperData, m.copperData);
+        LoadOreData(mainData.amethystData, m.amethystData);
 
         LoadMineData(mainData.classicMineData, m.classicMineData);
         LoadMineData(mainData.ironMineData, m.ironMineData);

@@ -14,9 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stoneDropPrecentage: 360
   ironDropPrecentage: 1000
-  goldDropPrecentage: 40
-  benitoiteDropPrecentage: 8
-  rubyDropPrecentage: 6
-  emeraldDropPrecentage: 4
+  goldDropPrecentage: 50
+  benitoiteDropPrecentage: 15
+  rubyDropPrecentage: 14
+  emeraldDropPrecentage: 12
+  diamondDropPrecentage: 10
+  onyxDropPrecentage: 7
+  sapphireDropPrecentage: 5
+  tinDropPrecentage: 3
+  copperDropPrecentage: 2
+  amethysDropPrecentage: 1
   cost: 2500
   isOpened: 1

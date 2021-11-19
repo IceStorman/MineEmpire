@@ -11,6 +11,12 @@ public class InventoryMechanic : MonoBehaviour
     [SerializeField] private Text benitoiteText;
     [SerializeField] private Text rubyText;
     [SerializeField] private Text emeraldText;
+    [SerializeField] private Text diamondText;
+    [SerializeField] private Text onyxText;
+    [SerializeField] private Text sapphireText;
+    [SerializeField] private Text tinText;
+    [SerializeField] private Text copperText;
+    [SerializeField] private Text amethystText;
 
     [SerializeField] private Text recycleStoneText;
     [SerializeField] private Text recycleIronText;
@@ -38,6 +44,12 @@ public class InventoryMechanic : MonoBehaviour
         benitoiteText.text = mainData.benitoiteData.ore.ToString();
         rubyText.text = mainData.rubyData.ore.ToString();
         emeraldText.text = mainData.emeraldData.ore.ToString();
+        diamondText.text = mainData.onyxData.ore.ToString();
+        onyxText.text = mainData.onyxData.ore.ToString();
+        sapphireText.text = mainData.sapphireData.ore.ToString();
+        tinText.text = mainData.tinData.ore.ToString();
+        copperText.text = mainData.copperData.ore.ToString();
+        amethystText.text = mainData.amethystData.ore.ToString();
         recycleStoneText.text = mainData.stoneData.recycleOre.ToString("F2");
         recycleIronText.text = mainData.ironData.recycleOre.ToString("F2");
         recycleGoldText.text = mainData.goldData.recycleOre.ToString("F2");

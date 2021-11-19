@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68fd01e644279614997c47ec8a306fc8, type: 3}
   m_Name: Iron
   m_EditorClassIdentifier: 
-  ore: 0
-  recycleOre: 0
+  ore: 140
+  recycleOre: 420.69998
   recycleCount: 0.7
   recycleOreGive: 5
-  recycleOreCost: 23.7
-  amountOfRecycle: 1
-  amountOfRecycleReceive: 0.7
+  recycleOreCost: 5.688
+  howMuchAmountOfRecycle: 0
+  amountOfRecycle: 50
+  amountOfRecycleReceive: 35
