@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ee731b5de93a5c4ebbb8f99ba1a5d00, type: 3}
-  m_Name: PCData
+  m_Name: HelicopterData
   m_EditorClassIdentifier: 
-  unlockThingText: Upgrade PC
+  unlockThingText: Upgrade helicopter
   lockThingText: ???
   canUpgrade: 0
   wasBought: 0
-  thingCost: 1100
-  giveExp: 11
-  thingID: 2
+  thingCost: 14000
+  giveExp: 89
+  thingID: 6

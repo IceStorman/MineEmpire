@@ -14,12 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unlockThingText: Upgrade phone
   lockThingText: ???
-  lockThingSprite: {fileID: 21300000, guid: 872cc8aa5d1c78f4d8fc96bc6e783f16, type: 3}
-  unlockThingSprite: {fileID: 21300000, guid: a928baa521698db4c97682c08e00f40b, type: 3}
-  lockButtonSprite: {fileID: 21300000, guid: 2b0a4d437bf77ae44802ddd78b28e474, type: 3}
-  unlockButtonSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   canUpgrade: 1
   wasBought: 0
-  thingCost: 700
+  thingCost: 400
   giveExp: 4
   thingID: 1
