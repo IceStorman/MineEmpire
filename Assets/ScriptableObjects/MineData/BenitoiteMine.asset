@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90f0037ad9216924b8dc0ecd5dfeb031, type: 3}
-  m_Name: IronMine
+  m_Name: BenitoiteMine
   m_EditorClassIdentifier: 
-  stoneDropPrecentage: 360
-  ironDropPrecentage: 1000
+  stoneDropPrecentage: 800
+  ironDropPrecentage: 250
   goldDropPrecentage: 50
-  benitoiteDropPrecentage: 15
-  rubyDropPrecentage: 14
-  emeraldDropPrecentage: 12
-  diamondDropPrecentage: 10
-  onyxDropPrecentage: 7
-  sapphireDropPrecentage: 5
-  tinDropPrecentage: 3
-  copperDropPrecentage: 2
-  amethysDropPrecentage: 1
-  levelOfPrestige: 2
-  cost: 2500
+  benitoiteDropPrecentage: 1000
+  rubyDropPrecentage: 8
+  emeraldDropPrecentage: 1
+  diamondDropPrecentage: 6
+  onyxDropPrecentage: 3
+  sapphireDropPrecentage: 2
+  tinDropPrecentage: 7
+  copperDropPrecentage: 5
+  amethysDropPrecentage: 4
+  levelOfPrestige: 6
+  cost: 12000
   isOpened: 1

@@ -19,7 +19,7 @@ MonoBehaviour:
   rubyDropPrecentage: 14
   emeraldDropPrecentage: 12
   diamondDropPrecentage: 10
-  onyxDropPrecentage: 7
+  onyxDropPrecentage: 10
   sapphireDropPrecentage: 5
   tinDropPrecentage: 3
   copperDropPrecentage: 2

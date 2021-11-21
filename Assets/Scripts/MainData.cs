@@ -21,6 +21,8 @@ public class MainData : ScriptableObject
     public MineData classicMineData;
     public MineData ironMineData;
     public MineData goldMineData;
+    public MineData benitoiteMineData;
+    public MineData diamondMineData;
 
     public PrestigeData phoneData;
     public PrestigeData PCData;
