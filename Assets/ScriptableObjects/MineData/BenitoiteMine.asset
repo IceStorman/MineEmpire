@@ -26,4 +26,4 @@ MonoBehaviour:
   amethysDropPrecentage: 4
   levelOfPrestige: 6
   cost: 12000
-  isOpened: 1
+  isOpened: 0
