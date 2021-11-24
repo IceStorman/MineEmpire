@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f0037ad9216924b8dc0ecd5dfeb031, type: 3}
   m_Name: DiamondMine
   m_EditorClassIdentifier: 
-  stoneDropPrecentage: 850
-  ironDropPrecentage: 150
-  goldDropPrecentage: 25
-  benitoiteDropPrecentage: 8
-  rubyDropPrecentage: 7
-  emeraldDropPrecentage: 6
-  diamondDropPrecentage: 100000000
-  onyxDropPrecentage: 5
-  sapphireDropPrecentage: 4
-  tinDropPrecentage: 3
-  copperDropPrecentage: 2
-  amethysDropPrecentage: 1
+  stoneDropPrecentage: 80
+  ironDropPrecentage: 15
+  goldDropPrecentage: 5
+  benitoiteDropPrecentage: 0.8
+  rubyDropPrecentage: 0.7
+  emeraldDropPrecentage: 0.6
+  diamondDropPrecentage: 100
+  onyxDropPrecentage: 0.5
+  sapphireDropPrecentage: 0.4
+  tinDropPrecentage: 0.3
+  copperDropPrecentage: 0.2
+  amethysDropPrecentage: 0.1
   levelOfPrestige: 8
   cost: 25000
-  isOpened: 0
+  isOpened: 1

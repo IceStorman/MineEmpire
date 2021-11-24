@@ -130,7 +130,7 @@ public class EarnResoursesMechanic : MonoBehaviour
 
     public void EarnMechanic()
     {
-        int rnd = Random.Range(0, 1001);
+        float rnd = Random.Range(0, 101);
         if (classicMineOpened)
         {
             if (mainData.classicMineData.amethysDropPrecentage >= rnd) EarnResource(mainData.amethystData, amethystText);

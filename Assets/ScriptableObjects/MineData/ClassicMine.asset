@@ -12,17 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f0037ad9216924b8dc0ecd5dfeb031, type: 3}
   m_Name: ClassicMine
   m_EditorClassIdentifier: 
-  stoneDropPrecentage: 1000
-  ironDropPrecentage: 200
-  goldDropPrecentage: 50
-  benitoiteDropPrecentage: 15
-  rubyDropPrecentage: 14
-  emeraldDropPrecentage: 12
-  diamondDropPrecentage: 10
-  onyxDropPrecentage: 10
-  sapphireDropPrecentage: 5
-  tinDropPrecentage: 3
-  copperDropPrecentage: 2
-  amethysDropPrecentage: 1
-  cost: 1
+  stoneDropPrecentage: 100
+  ironDropPrecentage: 20
+  goldDropPrecentage: 5
+  benitoiteDropPrecentage: 0
+  rubyDropPrecentage: 0
+  emeraldDropPrecentage: 0
+  diamondDropPrecentage: 0
+  onyxDropPrecentage: 0
+  sapphireDropPrecentage: 0
+  tinDropPrecentage: 0
+  copperDropPrecentage: 0
+  amethysDropPrecentage: 0
+  levelOfPrestige: 0
+  cost: 0
   isOpened: 1
