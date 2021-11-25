@@ -28,6 +28,8 @@ public class MainData : ScriptableObject
     public MineData copperMineData;
     public MineData tinMineData;
     public MineData sapphireMineData;
+    public MineData onyxMineData;
+    public MineData emeraldMineData;
 
     public PrestigeData phoneData;
     public PrestigeData PCData;

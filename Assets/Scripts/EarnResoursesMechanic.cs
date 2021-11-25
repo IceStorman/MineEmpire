@@ -30,6 +30,8 @@ public class EarnResoursesMechanic : MonoBehaviour
     [SerializeField] private bool copperMineOpened = false;
     [SerializeField] private bool tinMineOpened = false;
     [SerializeField] private bool sapphireMineOpened = false;
+    [SerializeField] private bool onyxMineOpened = false;
+    [SerializeField] private bool emeraldMineOpened = false;
 
     [SerializeField] private GameObject chooseOfClassicMine;
     [SerializeField] private GameObject chooseOfIronMine;
@@ -41,6 +43,8 @@ public class EarnResoursesMechanic : MonoBehaviour
     [SerializeField] private GameObject chooseOfCopperMine;
     [SerializeField] private GameObject chooseOfTinMine;
     [SerializeField] private GameObject chooseOfSapphireMine;
+    [SerializeField] private GameObject chooseOfOnyxMine;
+    [SerializeField] private GameObject chooseOfEmeraldMine;
 
     private void Start()
     {
@@ -159,6 +163,28 @@ public class EarnResoursesMechanic : MonoBehaviour
         }
     }
 
+    public void OnyxMineStart()
+    {
+        if (mainData.onyxMineData.isOpened)
+        {
+            CloseMines();
+            onyxMineOpened = true;
+            CloseChoosen();
+            chooseOfOnyxMine.SetActive(true);
+        }
+    }
+
+    public void EmeraldMineStart()
+    {
+        if (mainData.emeraldMineData.isOpened)
+        {
+            CloseMines();
+            emeraldMineOpened = true;
+            CloseChoosen();
+            chooseOfEmeraldMine.SetActive(true);
+        }
+    }
+
     private void CloseMines()
     {
         classicMineOpened = false;
@@ -171,6 +197,8 @@ public class EarnResoursesMechanic : MonoBehaviour
         copperMineOpened = false;
         tinMineOpened = false;
         sapphireMineOpened = false;
+        onyxMineOpened = false;
+        emeraldMineOpened = false;
     }
 
     private void CloseChoosen()
@@ -185,6 +213,8 @@ public class EarnResoursesMechanic : MonoBehaviour
         chooseOfCopperMine.SetActive(false);
         chooseOfTinMine.SetActive(false);
         chooseOfSapphireMine.SetActive(false);
+        chooseOfOnyxMine.SetActive(false);
+        chooseOfEmeraldMine.SetActive(false);
     }
 
     private void UpdateUI()
@@ -364,6 +394,38 @@ public class EarnResoursesMechanic : MonoBehaviour
             else if (mainData.sapphireMineData.ironDropPrecentage >= rnd) EarnResource(mainData.ironData, ironText);
             else if (mainData.sapphireMineData.stoneDropPrecentage >= rnd) EarnResource(mainData.stoneData, stoneText);
             else if (mainData.sapphireMineData.sapphireDropPrecentage >= rnd) EarnResource(mainData.sapphireData, sapphireText);
+        }
+
+        else if (onyxMineOpened)
+        {
+            if (mainData.onyxMineData.amethysDropPrecentage >= rnd) EarnResource(mainData.amethystData, amethystText);
+            else if (mainData.onyxMineData.tinDropPrecentage >= rnd) EarnResource(mainData.tinData, tinText);
+            else if (mainData.onyxMineData.sapphireDropPrecentage >= rnd) EarnResource(mainData.sapphireData, sapphireText);
+            else if (mainData.onyxMineData.copperDropPrecentage >= rnd) EarnResource(mainData.copperData, copperText);
+            else if (mainData.onyxMineData.diamondDropPrecentage >= rnd) EarnResource(mainData.amethystData, amethystText);
+            else if (mainData.onyxMineData.emeraldDropPrecentage >= rnd) EarnResource(mainData.emeraldData, emeraldText);
+            else if (mainData.onyxMineData.rubyDropPrecentage >= rnd) EarnResource(mainData.rubyData, rubyText);
+            else if (mainData.onyxMineData.benitoiteDropPrecentage >= rnd) EarnResource(mainData.benitoiteData, benitoiteText);
+            else if (mainData.onyxMineData.goldDropPrecentage >= rnd) EarnResource(mainData.goldData, goldText);
+            else if (mainData.onyxMineData.ironDropPrecentage >= rnd) EarnResource(mainData.ironData, ironText);
+            else if (mainData.onyxMineData.stoneDropPrecentage >= rnd) EarnResource(mainData.stoneData, stoneText);
+            else if (mainData.onyxMineData.onyxDropPrecentage >= rnd) EarnResource(mainData.onyxData, onyxText);
+        }
+
+        else if (emeraldMineOpened)
+        {
+            if (mainData.emeraldMineData.amethysDropPrecentage >= rnd) EarnResource(mainData.amethystData, amethystText);
+            else if (mainData.emeraldMineData.tinDropPrecentage >= rnd) EarnResource(mainData.tinData, tinText);
+            else if (mainData.emeraldMineData.sapphireDropPrecentage >= rnd) EarnResource(mainData.sapphireData, sapphireText);
+            else if (mainData.emeraldMineData.copperDropPrecentage >= rnd) EarnResource(mainData.copperData, copperText);
+            else if (mainData.emeraldMineData.onyxDropPrecentage >= rnd) EarnResource(mainData.onyxData, onyxText);
+            else if (mainData.emeraldMineData.diamondDropPrecentage >= rnd) EarnResource(mainData.amethystData, amethystText);
+            else if (mainData.emeraldMineData.rubyDropPrecentage >= rnd) EarnResource(mainData.rubyData, rubyText);
+            else if (mainData.emeraldMineData.benitoiteDropPrecentage >= rnd) EarnResource(mainData.benitoiteData, benitoiteText);
+            else if (mainData.emeraldMineData.goldDropPrecentage >= rnd) EarnResource(mainData.goldData, goldText);
+            else if (mainData.emeraldMineData.ironDropPrecentage >= rnd) EarnResource(mainData.ironData, ironText);
+            else if (mainData.emeraldMineData.stoneDropPrecentage >= rnd) EarnResource(mainData.stoneData, stoneText);
+            else if (mainData.emeraldMineData.emeraldDropPrecentage >= rnd) EarnResource(mainData.emeraldData, emeraldText);
         }
     }
 

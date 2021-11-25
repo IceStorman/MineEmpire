@@ -16,6 +16,8 @@ public class MinesMechanic : MonoBehaviour
     [SerializeField] private GameObject lockOfCopperMine;
     [SerializeField] private GameObject lockOfTinMine;
     [SerializeField] private GameObject lockOfSapphireMine;
+    [SerializeField] private GameObject lockOfOnyxMine;
+    [SerializeField] private GameObject lockOfEmeraldMine;
 
     private void Update()
     {
@@ -28,6 +30,8 @@ public class MinesMechanic : MonoBehaviour
         if (mainData.copperMineData.isOpened) lockOfCopperMine.SetActive(false);
         if (mainData.copperMineData.isOpened) lockOfTinMine.SetActive(false);
         if (mainData.sapphireMineData.isOpened) lockOfSapphireMine.SetActive(false);
+        if (mainData.sapphireMineData.isOpened) lockOfOnyxMine.SetActive(false);
+        if (mainData.sapphireMineData.isOpened) lockOfEmeraldMine.SetActive(false);
     }
 
     public void TryToOpenClassicMine()
@@ -87,6 +91,18 @@ public class MinesMechanic : MonoBehaviour
     {
         TryToOpenMine(mainData, mainData.sapphireMineData, otherData);
         if (mainData.sapphireMineData.isOpened) lockOfSapphireMine.SetActive(false);
+    }
+
+    public void TryToOpenOnyxMine()
+    {
+        TryToOpenMine(mainData, mainData.onyxMineData, otherData);
+        if (mainData.onyxMineData.isOpened) lockOfOnyxMine.SetActive(false);
+    }
+
+    public void TryToOpenEmeraldMine()
+    {
+        TryToOpenMine(mainData, mainData.emeraldMineData, otherData);
+        if (mainData.emeraldMineData.isOpened) lockOfEmeraldMine.SetActive(false);
     }
 
     private void TryToOpenMine(MainData mainData, MineData mineData, OtherData otherData)
