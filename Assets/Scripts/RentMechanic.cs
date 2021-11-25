@@ -12,6 +12,8 @@ public class RentMechanic : MonoBehaviour
 
     [SerializeField] private Text rentFirstSpecialSectionText;
 
+    [SerializeField] private Text firstSpecialSectionTimeLeftText;
+
     private void Start()
     {
         firstSpecialPanel.SetActive(false);
@@ -19,10 +21,10 @@ public class RentMechanic : MonoBehaviour
 
     public void EnterFirstSpecialSection()
     {
-        ClickMechanic(firstSpecialSectionData, firstSpecialPanel);
+        ClickMechanic(firstSpecialSectionData, firstSpecialPanel, firstSpecialSectionTimeLeftText);
     }
 
-    private void ClickMechanic(PlantsData plantsData, GameObject plantPanel)
+    private void ClickMechanic(PlantsData plantsData, GameObject plantPanel, Text plantSectionLeftTime)
     {
         if (plantsData.isRented)
         {
@@ -35,7 +37,24 @@ public class RentMechanic : MonoBehaviour
                 mainData.otherData.money -= plantsData.rentCost;
                 plantsData.isRented = true;
                 rentFirstSpecialSectionText.text = "Enter";
+                StartCoroutine(Timer(plantsData, plantSectionLeftTime));
             }
+        }
+    }
+
+    private IEnumerator Timer(PlantsData plantsData, Text plantSectionLeftTime)
+    {
+        yield return new WaitForSeconds(1);
+
+        if (plantsData.isRented)
+        {
+            plantsData.rentTime--;
+            plantSectionLeftTime.text = plantsData.rentTime.ToString();
+        }
+
+        if(plantsData.rentTime == 0)
+        {
+            plantsData.isRented = false;
         }
     }
 }
