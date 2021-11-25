@@ -1,5 +1,5 @@
 [System.Serializable]
-public struct PlantsData
+public class PlantsData
 {
     public bool isRented;
     public float rentCost;
