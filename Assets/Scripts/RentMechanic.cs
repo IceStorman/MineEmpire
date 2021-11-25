@@ -21,10 +21,10 @@ public class RentMechanic : MonoBehaviour
 
     public void EnterFirstSpecialSection()
     {
-        ClickMechanic(allPlantsData.firstSpecialSectionData, firstSpecialPanel, firstSpecialSectionTimeLeftText);
+        ClickMechanic(allPlantsData.firstSpecialSectionData, allPlantsData.defaultFirstSpecialSectionData, firstSpecialPanel, firstSpecialSectionTimeLeftText);
     }
 
-    private void ClickMechanic(PlantsData plantsData, GameObject plantPanel, Text plantSectionLeftTime)
+    private void ClickMechanic(PlantsData plantsData, DefaultPlantData defaultPlantData, GameObject plantPanel, Text plantSectionLeftTime)
     {
         if (plantsData.isRented)
         {
@@ -35,6 +35,7 @@ public class RentMechanic : MonoBehaviour
             if(mainData.otherData.money >= plantsData.rentCost)
             {
                 mainData.otherData.money -= plantsData.rentCost;
+                plantsData.rentTime = defaultPlantData.defaultRentTime;
                 StopAllCoroutines();
                 StartCoroutine(Timer(plantsData, plantSectionLeftTime));
                 plantsData.isRented = true;
@@ -50,17 +51,19 @@ public class RentMechanic : MonoBehaviour
 
         plantsData.rentTime--;
         plantSectionLeftTime.text = plantsData.rentTime.ToString();
-        Repeat(plantsData, plantSectionLeftTime);
 
-        if(plantsData.rentTime == 0)
+        if(plantsData.rentTime <= 0)
         {
             plantsData.isRented = false;
             plantSectionLeftTime.text = "";
+            rentFirstSpecialSectionText.text = "250$ / 5min";
         }
+
+        Repeat(plantsData, plantSectionLeftTime);
     }
 
     private void Repeat(PlantsData plantsData, Text plantSectionLeftTime)
     {
-        StartCoroutine(Timer(plantsData, plantSectionLeftTime));
+        if(plantsData.isRented) StartCoroutine(Timer(plantsData, plantSectionLeftTime));
     }
 }
