@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90f0037ad9216924b8dc0ecd5dfeb031, type: 3}
-  m_Name: BenitoiteMine
+  m_Name: TinMine
   m_EditorClassIdentifier: 
   stoneDropPrecentage: 80
-  ironDropPrecentage: 25
+  ironDropPrecentage: 20
   goldDropPrecentage: 5
-  benitoiteDropPrecentage: 100
-  rubyDropPrecentage: 0.8
-  emeraldDropPrecentage: 0.1
-  diamondDropPrecentage: 0.6
-  onyxDropPrecentage: 0.3
-  sapphireDropPrecentage: 0.2
-  tinDropPrecentage: 0.7
-  copperDropPrecentage: 0.5
-  amethysDropPrecentage: 0.4
-  levelOfPrestige: 6
-  cost: 12000
+  benitoiteDropPrecentage: 0.8
+  rubyDropPrecentage: 0.7
+  emeraldDropPrecentage: 0.6
+  diamondDropPrecentage: 0.5
+  onyxDropPrecentage: 0.4
+  sapphireDropPrecentage: 0.3
+  tinDropPrecentage: 100
+  copperDropPrecentage: 0.2
+  amethysDropPrecentage: 0.1
+  levelOfPrestige: 8
+  cost: 24000
   isOpened: 1
