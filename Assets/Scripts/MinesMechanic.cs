@@ -15,6 +15,7 @@ public class MinesMechanic : MonoBehaviour
     [SerializeField] private GameObject lockOfRubyMine;
     [SerializeField] private GameObject lockOfCopperMine;
     [SerializeField] private GameObject lockOfTinMine;
+    [SerializeField] private GameObject lockOfSapphireMine;
 
     private void Update()
     {
@@ -26,6 +27,7 @@ public class MinesMechanic : MonoBehaviour
         if (mainData.amethystMineData.isOpened) lockOfRubyMine.SetActive(false);
         if (mainData.copperMineData.isOpened) lockOfCopperMine.SetActive(false);
         if (mainData.copperMineData.isOpened) lockOfTinMine.SetActive(false);
+        if (mainData.sapphireMineData.isOpened) lockOfSapphireMine.SetActive(false);
     }
 
     public void TryToOpenClassicMine()
@@ -79,6 +81,12 @@ public class MinesMechanic : MonoBehaviour
     {
         TryToOpenMine(mainData, mainData.tinMineData, otherData);
         if (mainData.tinMineData.isOpened) lockOfTinMine.SetActive(false);
+    }
+
+    public void TryToOpenSapphireMine()
+    {
+        TryToOpenMine(mainData, mainData.sapphireMineData, otherData);
+        if (mainData.sapphireMineData.isOpened) lockOfSapphireMine.SetActive(false);
     }
 
     private void TryToOpenMine(MainData mainData, MineData mineData, OtherData otherData)

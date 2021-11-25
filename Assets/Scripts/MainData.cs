@@ -27,6 +27,7 @@ public class MainData : ScriptableObject
     public MineData rubyMineData;
     public MineData copperMineData;
     public MineData tinMineData;
+    public MineData sapphireMineData;
 
     public PrestigeData phoneData;
     public PrestigeData PCData;

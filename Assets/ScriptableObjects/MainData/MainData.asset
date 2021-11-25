@@ -34,6 +34,7 @@ MonoBehaviour:
   rubyMineData: {fileID: 11400000, guid: d00235b7e82aaae4390c0162f6a8b91b, type: 2}
   copperMineData: {fileID: 11400000, guid: 35b4688d94fd28e47844ea80453b5990, type: 2}
   tinMineData: {fileID: 11400000, guid: 2a86dfa8c57b5bb42b0d6281fd776958, type: 2}
+  sapphireMineData: {fileID: 11400000, guid: c33e85be23780254ab0a59c3ba8a5422, type: 2}
   phoneData: {fileID: 11400000, guid: 57997ebae99d11648ab514277635ddd6, type: 2}
   PCData: {fileID: 11400000, guid: e02bf5611e938804797b7bc18b285ff7, type: 2}
   flatData: {fileID: 11400000, guid: 76f42ad97a012d04d82dc1a66911891f, type: 2}
