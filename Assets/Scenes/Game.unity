@@ -9678,7 +9678,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &595349355
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10485,7 +10485,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 67.69003, y: -0}
+  m_AnchoredPosition: {x: 67.69003, y: 0}
   m_SizeDelta: {x: 95.178, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &630146348
@@ -24135,7 +24135,7 @@ GameObject:
   - component: {fileID: 1484586068}
   - component: {fileID: 1484586067}
   m_Layer: 5
-  m_Name: TimeLeftText
+  m_Name: FirstSpecialSectionTimeLeftText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26464,7 +26464,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -71.71002, y: -0}
+  m_AnchoredPosition: {x: -71.71002, y: 0}
   m_SizeDelta: {x: 95.178, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1627713485
@@ -32303,7 +32303,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1939167765
 RectTransform:
   m_ObjectHideFlags: 0
