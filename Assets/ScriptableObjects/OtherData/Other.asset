@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Other
   m_EditorClassIdentifier: 
   money: 500
-  timer: 395
+  timer: 402
   lvl: 4
   exp: 30
   maxExp: 80
