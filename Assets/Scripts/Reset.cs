@@ -20,18 +20,18 @@ public class Reset : MonoBehaviour
         ResetMineData(mainData.classicMineData, true);
         ResetMineData(mainData.ironMineData, false);
         ResetMineData(mainData.goldMineData, false);
-        ResetOreData(mainData.stoneData, 7.9f);
-        ResetOreData(mainData.ironData, 23.7f);
-        ResetOreData(mainData.goldData, 42.3f);
-        ResetOreData(mainData.benitoiteData, 0f);
-        ResetOreData(mainData.amethystData, 0f);
-        ResetOreData(mainData.copperData, 0f);
-        ResetOreData(mainData.diamondData, 0f);
-        ResetOreData(mainData.emeraldData, 0f);
-        ResetOreData(mainData.onyxData, 0f);
-        ResetOreData(mainData.rubyData, 0f);
-        ResetOreData(mainData.sapphireData, 0f);
-        ResetOreData(mainData.tinData, 0f);
+        ResetOreData(mainData.stoneData);
+        ResetOreData(mainData.ironData);
+        ResetOreData(mainData.goldData);
+        ResetOreData(mainData.benitoiteData);
+        ResetOreData(mainData.amethystData);
+        ResetOreData(mainData.copperData);
+        ResetOreData(mainData.diamondData);
+        ResetOreData(mainData.emeraldData);
+        ResetOreData(mainData.onyxData);
+        ResetOreData(mainData.rubyData);
+        ResetOreData(mainData.sapphireData);
+        ResetOreData(mainData.tinData);
         Debug.LogWarning("Reseted");
     }
 
@@ -57,10 +57,10 @@ public class Reset : MonoBehaviour
         mineData.isOpened = standartBool;
     }
 
-    private void ResetOreData(OreData oreData, float standartCost)
+    private void ResetOreData(OreData oreData)
     {
         oreData.ore = 0;
         oreData.recycleOre = 0;
-        oreData.recycleOreCost = standartCost;
+        oreData.recycleOreCost = oreData.defaultOreCost;
     }
 }

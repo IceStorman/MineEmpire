@@ -33,7 +33,7 @@ public class ExchangePanel : MonoBehaviour
         mainData.otherData.timer--;
         timerText.text = mainData.otherData.timer.ToString();
 
-        if (mainData.otherData.timer == 0)
+        if (mainData.otherData.timer <= 0)
         {
             ChangeCourse(mainData.stoneData, recycleStoneCostText);
             ChangeCourse(mainData.ironData, recycleIronCostText);

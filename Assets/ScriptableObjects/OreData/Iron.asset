@@ -17,6 +17,7 @@ MonoBehaviour:
   recycleCount: 0.7
   recycleOreGive: 5
   recycleOreCost: 23.7
+  defaultOreCost: 23.7
   howMuchAmountOfRecycle: 0
   amountOfRecycle: 1
   amountOfRecycleReceive: 0.7
