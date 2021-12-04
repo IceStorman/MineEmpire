@@ -20,7 +20,7 @@ public class EarnResoursesMechanic : MonoBehaviour
     [SerializeField] private Text copperText;
     [SerializeField] private Text amethystText;
 
-    [SerializeField] private bool classicMineOpened = true;
+    /*[SerializeField] private bool classicMineOpened = true;
     [SerializeField] private bool ironMineOpened = false;
     [SerializeField] private bool goldMineOpened = false;
     [SerializeField] private bool benitoiteMineOpened = false;
@@ -31,7 +31,7 @@ public class EarnResoursesMechanic : MonoBehaviour
     [SerializeField] private bool tinMineOpened = false;
     [SerializeField] private bool sapphireMineOpened = false;
     [SerializeField] private bool onyxMineOpened = false;
-    [SerializeField] private bool emeraldMineOpened = false;
+    [SerializeField] private bool emeraldMineOpened = false;*/
 
     [SerializeField] private GameObject chooseOfClassicMine;
     [SerializeField] private GameObject chooseOfIronMine;
@@ -46,6 +46,13 @@ public class EarnResoursesMechanic : MonoBehaviour
     [SerializeField] private GameObject chooseOfOnyxMine;
     [SerializeField] private GameObject chooseOfEmeraldMine;
 
+    [SerializeField] private int howManyOres = 11;
+
+    /*private MineData[] dataMassive = new MineData[]
+    {
+        MainData.stoneData
+    };*/
+
     private void Start()
     {
         minePanel.SetActive(true);
@@ -59,7 +66,7 @@ public class EarnResoursesMechanic : MonoBehaviour
     public void ClassicMineStart()
     {
         CloseMines();
-        classicMineOpened = true;
+        mainData.classicMineData.isItOpenedNow = true;
         CloseChoosen();
         chooseOfClassicMine.SetActive(true);
     }
@@ -68,10 +75,10 @@ public class EarnResoursesMechanic : MonoBehaviour
     {
         if (mainData.ironMineData.isOpened)
         {
+            CloseMines();
+            mainData.ironMineData.isItOpenedNow = true;
             CloseChoosen();
             chooseOfIronMine.SetActive(true);
-            CloseMines();
-            ironMineOpened = true;
         }
     }
 
@@ -80,7 +87,7 @@ public class EarnResoursesMechanic : MonoBehaviour
         if (mainData.goldMineData.isOpened)
         {
             CloseMines();
-            goldMineOpened = true;
+            mainData.goldMineData.isItOpenedNow = true;
             CloseChoosen();
             chooseOfGoldMine.SetActive(true);
         }
@@ -91,7 +98,7 @@ public class EarnResoursesMechanic : MonoBehaviour
         if (mainData.benitoiteMineData.isOpened)
         {
             CloseMines();
-            benitoiteMineOpened = true;
+            mainData.benitoiteMineData.isItOpenedNow = true;
             CloseChoosen();
             chooseOfBenitoiteMine.SetActive(true);
         }
@@ -102,7 +109,7 @@ public class EarnResoursesMechanic : MonoBehaviour
         if (mainData.diamondMineData.isOpened)
         {
             CloseMines();
-            diamondMineOpened = true;
+            mainData.diamondMineData.isItOpenedNow = true;
             CloseChoosen();
             chooseOfDiamondMine.SetActive(true);
         }
@@ -113,7 +120,7 @@ public class EarnResoursesMechanic : MonoBehaviour
         if (mainData.amethystMineData.isOpened)
         {
             CloseMines();
-            amethystMineOpened = true;
+            mainData.amethystMineData.isItOpenedNow = true;
             CloseChoosen();
             chooseOfAmethystMine.SetActive(true);
         }
@@ -124,7 +131,7 @@ public class EarnResoursesMechanic : MonoBehaviour
         if (mainData.rubyMineData.isOpened)
         {
             CloseMines();
-            rubyMineOpened = true;
+            mainData.rubyMineData.isItOpenedNow = true;
             CloseChoosen();
             chooseOfRubyMine.SetActive(true);
         }
@@ -135,7 +142,7 @@ public class EarnResoursesMechanic : MonoBehaviour
         if (mainData.copperMineData.isOpened)
         {
             CloseMines();
-            copperMineOpened = true;
+            mainData.copperMineData.isItOpenedNow = true;
             CloseChoosen();
             chooseOfCopperMine.SetActive(true);
         }
@@ -146,7 +153,7 @@ public class EarnResoursesMechanic : MonoBehaviour
         if (mainData.tinMineData.isOpened)
         {
             CloseMines();
-            tinMineOpened = true;
+            mainData.tinMineData.isItOpenedNow = true;
             CloseChoosen();
             chooseOfTinMine.SetActive(true);
         }
@@ -157,7 +164,7 @@ public class EarnResoursesMechanic : MonoBehaviour
         if (mainData.sapphireMineData.isOpened)
         {
             CloseMines();
-            sapphireMineOpened = true;
+            mainData.sapphireMineData.isItOpenedNow = true;
             CloseChoosen();
             chooseOfSapphireMine.SetActive(true);
         }
@@ -168,7 +175,7 @@ public class EarnResoursesMechanic : MonoBehaviour
         if (mainData.onyxMineData.isOpened)
         {
             CloseMines();
-            onyxMineOpened = true;
+            mainData.onyxMineData.isItOpenedNow = true;
             CloseChoosen();
             chooseOfOnyxMine.SetActive(true);
         }
@@ -179,7 +186,7 @@ public class EarnResoursesMechanic : MonoBehaviour
         if (mainData.emeraldMineData.isOpened)
         {
             CloseMines();
-            emeraldMineOpened = true;
+            mainData.emeraldMineData.isItOpenedNow = true;
             CloseChoosen();
             chooseOfEmeraldMine.SetActive(true);
         }
@@ -187,18 +194,18 @@ public class EarnResoursesMechanic : MonoBehaviour
 
     private void CloseMines()
     {
-        classicMineOpened = false;
-        ironMineOpened = false;
-        goldMineOpened = false;
-        benitoiteMineOpened = false;
-        diamondMineOpened = false;
-        amethystMineOpened = false;
-        rubyMineOpened = false;
-        copperMineOpened = false;
-        tinMineOpened = false;
-        sapphireMineOpened = false;
-        onyxMineOpened = false;
-        emeraldMineOpened = false;
+        mainData.classicMineData.isItOpenedNow = false;
+        mainData.ironMineData.isItOpenedNow = false;
+        mainData.goldMineData.isItOpenedNow = false;
+        mainData.benitoiteMineData.isItOpenedNow = false;
+        mainData.diamondMineData.isItOpenedNow = false;
+        mainData.amethystMineData.isItOpenedNow = false;
+        mainData.rubyMineData.isItOpenedNow = false;
+        mainData.copperMineData.isItOpenedNow = false;
+        mainData.tinMineData.isItOpenedNow = false;
+        mainData.sapphireMineData.isItOpenedNow = false;
+        mainData.onyxMineData.isItOpenedNow = false;
+        mainData.emeraldMineData.isItOpenedNow = false;
     }
 
     private void CloseChoosen()
@@ -233,10 +240,51 @@ public class EarnResoursesMechanic : MonoBehaviour
         amethystText.text = mainData.amethystData.ore.ToString();
     }
 
-    public void EarnMechanic()
+    /*private void EarnResource(OreData oreData, Text resourceText, float rnd, int i)
+    {
+        if (resourceText == stoneText && )
+    }*/
+
+    public void OnEarn()
+    {
+        if (mainData.classicMineData.isItOpenedNow) EarnMechanic(mainData.classicMineData, mainData.stoneData);
+        if (mainData.ironMineData.isItOpenedNow) EarnMechanic(mainData.ironMineData, mainData.ironData);
+        if (mainData.goldMineData.isItOpenedNow) EarnMechanic(mainData.goldMineData, mainData.goldData);
+        if (mainData.benitoiteMineData.isItOpenedNow) EarnMechanic(mainData.benitoiteMineData, mainData.benitoiteData);
+        if (mainData.rubyMineData.isItOpenedNow) EarnMechanic(mainData.rubyMineData, mainData.rubyData);
+        if (mainData.emeraldMineData.isItOpenedNow) EarnMechanic(mainData.emeraldMineData, mainData.emeraldData);
+        if (mainData.diamondMineData.isItOpenedNow) EarnMechanic(mainData.diamondMineData, mainData.diamondData);
+        if (mainData.onyxMineData.isItOpenedNow) EarnMechanic(mainData.onyxMineData, mainData.onyxData);
+        if (mainData.sapphireMineData.isItOpenedNow) EarnMechanic(mainData.sapphireMineData, mainData.sapphireData);
+        if (mainData.tinMineData.isItOpenedNow) EarnMechanic(mainData.tinMineData, mainData.tinData);
+        if (mainData.copperMineData.isItOpenedNow) EarnMechanic(mainData.copperMineData, mainData.copperData);
+        if (mainData.amethystMineData.isItOpenedNow) EarnMechanic(mainData.amethystMineData, mainData.amethystData);
+    }
+
+    public void EarnMechanic(MineData mineData, OreData oreData)
     {
         float rnd = Random.Range(0, 101);
-        if (classicMineOpened)
+        
+        for (int i = 0; i <= howManyOres + 1; i++)
+        {
+            if (i == 0 && mineData.stoneDropPrecentage >= rnd && !mainData.classicMineData.isItOpenedNow) { mainData.stoneData.ore++; break; }
+            else if (i == 1 && mineData.ironDropPrecentage >= rnd && !mainData.ironMineData.isItOpenedNow) { mainData.ironData.ore++; break; }
+            else if (i == 2 && mineData.goldDropPrecentage >= rnd && !mainData.goldMineData.isItOpenedNow) { mainData.goldData.ore++; break; }
+            else if (i == 3 && mineData.benitoiteDropPrecentage >= rnd && !mainData.benitoiteMineData.isItOpenedNow) { mainData.benitoiteData.ore++; break; }
+            else if (i == 4 && mineData.rubyDropPrecentage >= rnd && !mainData.rubyMineData.isItOpenedNow) { mainData.rubyData.ore++; break; }
+            else if (i == 5 && mineData.emeraldDropPrecentage >= rnd && !mainData.emeraldMineData.isItOpenedNow) { mainData.emeraldData.ore++; break; }
+            else if (i == 6 && mineData.diamondDropPrecentage >= rnd && !mainData.diamondMineData.isItOpenedNow) { mainData.diamondData.ore++; break; }
+            else if (i == 7 && mineData.onyxDropPrecentage >= rnd && !mainData.onyxMineData.isItOpenedNow) { mainData.onyxData.ore++; break; }
+            else if (i == 8 && mineData.sapphireDropPrecentage >= rnd && !mainData.sapphireMineData.isItOpenedNow) { mainData.sapphireData.ore++; break; }
+            else if (i == 9 && mineData.tinDropPrecentage >= rnd && !mainData.tinMineData.isItOpenedNow) { mainData.tinData.ore++; break; }
+            else if (i == 10 && mineData.copperDropPrecentage >= rnd && !mainData.copperMineData.isItOpenedNow) { mainData.copperData.ore++; break; }
+            else if (i == 11 && mineData.amethystDropPrecentage >= rnd && !mainData.amethystMineData.isItOpenedNow) { mainData.amethystData.ore++; break; }
+            else if (i == 12) oreData.ore++;
+
+            //if (mainData.classicMineData.isItOpenedNow) EarnResource(mainData.stoneData, stoneText, rnd, i);
+        }
+
+        /*if (classicMineOpened)
         {
             if (mainData.classicMineData.amethysDropPrecentage >= rnd) EarnResource(mainData.amethystData, amethystText);
             else if (mainData.classicMineData.copperDropPrecentage >= rnd) EarnResource(mainData.copperData, copperText);
@@ -426,11 +474,6 @@ public class EarnResoursesMechanic : MonoBehaviour
             else if (mainData.emeraldMineData.ironDropPrecentage >= rnd) EarnResource(mainData.ironData, ironText);
             else if (mainData.emeraldMineData.stoneDropPrecentage >= rnd) EarnResource(mainData.stoneData, stoneText);
             else if (mainData.emeraldMineData.emeraldDropPrecentage >= rnd) EarnResource(mainData.emeraldData, emeraldText);
-        }
-    }
-
-    private void EarnResource(OreData oreData, Text resourceText)
-    {
-        oreData.ore++;
+        }*/
     }
 }

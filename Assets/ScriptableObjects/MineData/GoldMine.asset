@@ -27,3 +27,4 @@ MonoBehaviour:
   levelOfPrestige: 5
   cost: 7000
   isOpened: 1
+  isItOpenedNow: 0

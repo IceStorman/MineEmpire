@@ -15,9 +15,10 @@ public class MineData : ScriptableObject
     public float sapphireDropPrecentage;
     public float tinDropPrecentage;
     public float copperDropPrecentage;
-    public float amethysDropPrecentage;
+    public float amethystDropPrecentage;
 
     public int levelOfPrestige;
     public float cost;
     public bool isOpened;
+    public bool isItOpenedNow;
 }
