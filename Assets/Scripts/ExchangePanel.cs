@@ -78,29 +78,24 @@ public class ExchangePanel : MonoBehaviour
     private void Update()
     {
         DisplayTime(mainData.otherData.timer);
-        UpdateUI();
+        UpdateUI(recycleStoneText, recycleStoneCostText, mainData.stoneData);
+        UpdateUI(recycleIronText, recycleIronCostText, mainData.ironData);
+        UpdateUI(recycleGoldText, recycleGoldCostText, mainData.goldData);
     }
 
-    private void UpdateUI()
+    public void UpdateUI(Text recycleResourceText, Text recycleResourceCostText, OreData oreData)
     {
         moneyText.text = mainData.otherData.money.ToString("F2");
-        recycleStoneText.text = mainData.stoneData.recycleOre.ToString("F2");
-        recycleIronText.text = mainData.ironData.recycleOre.ToString("F2");
-        recycleGoldText.text = mainData.goldData.recycleOre.ToString("F2");
-        recycleStoneCostText.text = mainData.stoneData.recycleOreCost.ToString("F2");
-        recycleIronCostText.text = mainData.ironData.recycleOreCost.ToString("F2");
-        recycleGoldCostText.text = mainData.goldData.recycleOreCost.ToString("F2");
+        recycleResourceText.text = oreData.recycleOre.ToString("F2");
+        recycleResourceCostText.text = oreData.recycleOreCost.ToString("F2");
     }
 
-    private void TradeResources(OreData oreData, Text resourceText)
+    public void TradeResources(OreData oreData)
     {
         if (oreData.recycleOre >= oreData.recycleOreGive)
         {
             oreData.recycleOre -= oreData.recycleOreGive;
             mainData.otherData.money += oreData.recycleOreCost;
-
-            resourceText.text = oreData.recycleOre.ToString("F2");
-            moneyText.text = mainData.otherData.money.ToString("F2");
         }
     }
 
@@ -114,7 +109,7 @@ public class ExchangePanel : MonoBehaviour
         exchangePanel.SetActive(false);
     }
 
-    public void TradeRecycleStone()
+    /*public void TradeRecycleStone()
     {
         TradeResources(mainData.stoneData, recycleStoneText);
     }
@@ -127,5 +122,5 @@ public class ExchangePanel : MonoBehaviour
     public void TradeRecycleGold()
     {
         TradeResources(mainData.goldData, recycleGoldText);
-    }
+    }*/
 }

@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68fd01e644279614997c47ec8a306fc8, type: 3}
   m_Name: Onyx
   m_EditorClassIdentifier: 
-  ore: 1
+  ore: 11
   recycleOre: 0
   recycleCount: 0
-  recycleOreGive: 0
-  recycleOreCost: 0
+  recycleOreGive: 2
+  recycleOreCost: 167.9
+  defaultOreCost: 167.9
+  dropProcent: 0
   howMuchAmountOfRecycle: 0
   amountOfRecycle: 0
   amountOfRecycleReceive: 0

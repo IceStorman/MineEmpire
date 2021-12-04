@@ -99,8 +99,7 @@ public class Save : MonoBehaviour
             jsonOreData.ore = 0;
             jsonOreData.recycleCount = 0;
             jsonOreData.recycleOre = 0;
-            jsonOreData.recycleOreCost = 0;
-            jsonOreData.recycleOreGive = 0;
+            jsonOreData.recycleOreCost = jsonOreData.defaultOreCost;
             return;
         }
         oreData.amountOfRecycle = jsonOreData.amountOfRecycle;

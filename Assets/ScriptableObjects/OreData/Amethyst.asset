@@ -15,8 +15,10 @@ MonoBehaviour:
   ore: 0
   recycleOre: 0
   recycleCount: 0
-  recycleOreGive: 0
-  recycleOreCost: 0
+  recycleOreGive: 1
+  recycleOreCost: 489.1
+  defaultOreCost: 489.1
+  dropProcent: 0
   howMuchAmountOfRecycle: 0
   amountOfRecycle: 0
   amountOfRecycleReceive: 0

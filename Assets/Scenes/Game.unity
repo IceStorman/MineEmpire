@@ -4453,12 +4453,32 @@ PrefabInstance:
       value: SellRecycleSapphireUI
       objectReference: {fileID: 0}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1093185010}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1093185006}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ClickEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TradeResources
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 93913b281dcbea9498d3e2c9fd5bb4dc, type: 2}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: OreData, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5927340037435415783, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_Text
@@ -6200,6 +6220,10 @@ PrefabInstance:
       value: SellRecycleStoneUI
       objectReference: {fileID: 0}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1093185010}
@@ -6213,7 +6237,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: TradeRecycleStone
+      value: TradeResources
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: f908f65115a2fc24dbf1f01844512079, type: 2}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: OreData, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5927340037435415783, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_Text
@@ -8897,12 +8929,32 @@ PrefabInstance:
       value: SellRecycleOnyxUI
       objectReference: {fileID: 0}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1093185010}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1093185006}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ClickEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TradeResources
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: cb4ad2ecb56963a4fbdc7df5b2e60b11, type: 2}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: OreData, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5927340037435415783, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_Text
@@ -11734,12 +11786,32 @@ PrefabInstance:
       value: SellRecycleTinUI
       objectReference: {fileID: 0}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1093185010}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1093185006}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ClickEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TradeResources
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: cdaea835918d47349ad5faeaea64b044, type: 2}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: OreData, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5927340037435415783, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_Text
@@ -14960,6 +15032,10 @@ PrefabInstance:
       value: SellRecycleGoldUI
       objectReference: {fileID: 0}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1093185010}
@@ -14973,7 +15049,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: TradeRecycleGold
+      value: TradeResources
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 598ec7cfe7abe0b42a9772c1b53c31d1, type: 2}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: OreData, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5927340037435415783, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_Text
@@ -15555,12 +15639,32 @@ PrefabInstance:
       value: SellRecycleAmethystUI
       objectReference: {fileID: 0}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1093185010}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1093185006}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ClickEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TradeResources
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 743eb541b5692d742ae7bff6bba0738b, type: 2}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: OreData, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5927340037435415783, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_Text
@@ -18501,7 +18605,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097643883}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
   m_Name: 
@@ -22746,12 +22850,32 @@ PrefabInstance:
       value: SellRecycleBetoniteUI
       objectReference: {fileID: 0}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1093185010}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1093185006}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ClickEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TradeResources
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: cb45ff081e9749d43a605991cd6869f5, type: 2}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: OreData, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5927340037435415783, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_Text
@@ -25089,12 +25213,32 @@ PrefabInstance:
       value: SellRecycleEmeraldUI
       objectReference: {fileID: 0}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1093185010}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1093185006}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ClickEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TradeResources
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 09cc6cc328d25954e8b04e1f03c8b3af, type: 2}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: OreData, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5927340037435415783, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_Text
@@ -32848,12 +32992,32 @@ PrefabInstance:
       value: SellRecycleCopperUI
       objectReference: {fileID: 0}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1093185010}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1093185006}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ClickEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TradeResources
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: cea39e15754f6f54db666de025dff45f, type: 2}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: OreData, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5927340037435415783, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_Text
@@ -33835,15 +33999,35 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 698169102513784641, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_Name
-      value: SellRecycleRubinUI
+      value: SellRecycleRubyUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1093185010}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1093185006}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ClickEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TradeResources
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 8a42d5a5bee46df458099ab20a342c96, type: 2}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: OreData, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5927340037435415783, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_Text
@@ -34576,12 +34760,32 @@ PrefabInstance:
       value: SellRecycleDiamondUI
       objectReference: {fileID: 0}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1093185010}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1093185006}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ClickEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TradeResources
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 79ae735faa7aecb4197bb3fb533d076e, type: 2}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: OreData, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5927340037435415783, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_Text
@@ -34849,6 +35053,10 @@ PrefabInstance:
       value: SellRecycleIronUI
       objectReference: {fileID: 0}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1093185010}
@@ -34862,7 +35070,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: TradeRecycleIron
+      value: TradeResources
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 1b7624ce9af207f4aad77d5c567ed95c, type: 2}
+    - target: {fileID: 4542970844198838286, guid: af073f38783d64c448805781749ddaea, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: OreData, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5927340037435415783, guid: af073f38783d64c448805781749ddaea, type: 3}
       propertyPath: m_Text
