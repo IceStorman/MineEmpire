@@ -114,7 +114,7 @@ public class Save : MonoBehaviour
 
     private void LoadMineData(MineData mineData, MineData m)
     {
-        mineData.isOpened = m.isOpened;
+        mineData.isUnlocked = m.isUnlocked;
         mineData.cost = m.cost;
     }
 

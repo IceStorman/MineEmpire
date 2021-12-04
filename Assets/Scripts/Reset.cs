@@ -54,7 +54,7 @@ public class Reset : MonoBehaviour
 
     private void ResetMineData(MineData mineData, bool standartBool)
     {
-        mineData.isOpened = standartBool;
+        mineData.isUnlocked = standartBool;
     }
 
     private void ResetOreData(OreData oreData)

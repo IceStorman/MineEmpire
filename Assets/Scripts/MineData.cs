@@ -19,6 +19,6 @@ public class MineData : ScriptableObject
 
     public int levelOfPrestige;
     public float cost;
-    public bool isOpened;
+    public bool isUnlocked;
     public bool isItOpenedNow;
 }
