@@ -5,14 +5,35 @@ using UnityEngine.UI;
 public class ExchangePanel : MonoBehaviour
 {
     [SerializeField] private GameObject exchangePanel;
+    [SerializeField] private GameObject inventoryPanel;
+
+    private bool isOpened;
 
     [SerializeField] private Text recycleStoneText;
     [SerializeField] private Text recycleIronText;
     [SerializeField] private Text recycleGoldText;
+    [SerializeField] private Text recycleTinText;
+    [SerializeField] private Text recycleCopperText;
+    [SerializeField] private Text recycleBenitoiteText;
+    [SerializeField] private Text recycleOnyxText;
+    [SerializeField] private Text recycleEmeraldText;
+    [SerializeField] private Text recycleRubyText;
+    [SerializeField] private Text recycleDiamondText;
+    [SerializeField] private Text recycleSapphireText;
+    [SerializeField] private Text recycleAmethystText;
 
     [SerializeField] private Text recycleStoneCostText;
     [SerializeField] private Text recycleIronCostText;
     [SerializeField] private Text recycleGoldCostText;
+    [SerializeField] private Text recycleTinCostText;
+    [SerializeField] private Text recycleCopperCostText;
+    [SerializeField] private Text recycleBenitoiteCostText;
+    [SerializeField] private Text recycleOnyxCostText;
+    [SerializeField] private Text recycleEmeraldCostText;
+    [SerializeField] private Text recycleRubyCostText;
+    [SerializeField] private Text recycleDiamondCostText;
+    [SerializeField] private Text recycleSapphireCostText;
+    [SerializeField] private Text recycleAmethystCostText;
 
     [SerializeField] private Text moneyText;
 
@@ -23,7 +44,22 @@ public class ExchangePanel : MonoBehaviour
     private void Start()
     {
         exchangePanel.SetActive(false);
+        inventoryPanel.SetActive(false);
         StartCoroutine(Timer());
+    }
+
+    public void OpenInventory()
+    {
+        if (isOpened)
+        {
+            inventoryPanel.SetActive(false);
+            isOpened = !isOpened;
+        }
+        else
+        {
+            inventoryPanel.SetActive(true);
+            isOpened = !isOpened;
+        }
     }
 
     private IEnumerator Timer()
@@ -78,9 +114,23 @@ public class ExchangePanel : MonoBehaviour
     private void Update()
     {
         DisplayTime(mainData.otherData.timer);
+        UpdateAllUI();     
+    }
+
+    private void UpdateAllUI()
+    {
         UpdateUI(recycleStoneText, recycleStoneCostText, mainData.stoneData);
         UpdateUI(recycleIronText, recycleIronCostText, mainData.ironData);
         UpdateUI(recycleGoldText, recycleGoldCostText, mainData.goldData);
+        UpdateUI(recycleTinText, recycleTinCostText, mainData.tinData);
+        UpdateUI(recycleCopperText, recycleCopperCostText, mainData.copperData);
+        UpdateUI(recycleBenitoiteText, recycleBenitoiteCostText, mainData.benitoiteData);
+        UpdateUI(recycleOnyxText, recycleOnyxCostText, mainData.onyxData);
+        UpdateUI(recycleEmeraldText, recycleEmeraldCostText, mainData.emeraldData);
+        UpdateUI(recycleRubyText, recycleRubyCostText, mainData.rubyData);
+        UpdateUI(recycleDiamondCostText, recycleDiamondCostText, mainData.diamondData);
+        UpdateUI(recycleSapphireText, recycleSapphireCostText, mainData.sapphireData);
+        UpdateUI(recycleAmethystText, recycleAmethystCostText, mainData.amethystData);
     }
 
     public void UpdateUI(Text recycleResourceText, Text recycleResourceCostText, OreData oreData)
@@ -108,19 +158,4 @@ public class ExchangePanel : MonoBehaviour
     {
         exchangePanel.SetActive(false);
     }
-
-    /*public void TradeRecycleStone()
-    {
-        TradeResources(mainData.stoneData, recycleStoneText);
-    }
-
-    public void TradeRecycleIron()
-    {
-        TradeResources(mainData.ironData, recycleIronText);
-    }
-
-    public void TradeRecycleGold()
-    {
-        TradeResources(mainData.goldData, recycleGoldText);
-    }*/
 }

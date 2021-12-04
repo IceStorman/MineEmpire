@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Benitoite
   m_EditorClassIdentifier: 
   ore: 57
-  recycleOre: 4
+  recycleOre: 36
   recycleCount: 0
   recycleOreGive: 3
   recycleOreCost: 132.1
