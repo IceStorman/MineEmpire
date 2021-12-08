@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68fd01e644279614997c47ec8a306fc8, type: 3}
   m_Name: Benitoite
   m_EditorClassIdentifier: 
-  ore: 57
-  recycleOre: 36
+  ore: 199
+  recycleOre: 48
   recycleCount: 0
   recycleOreGive: 3
   recycleOreCost: 132.1
   defaultOreCost: 132.1
-  dropProcent: 0
+  dropProcent: 0.7
   howMuchAmountOfRecycle: 0
   amountOfRecycle: 0
   amountOfRecycleReceive: 0

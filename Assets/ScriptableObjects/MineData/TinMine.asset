@@ -12,18 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f0037ad9216924b8dc0ecd5dfeb031, type: 3}
   m_Name: TinMine
   m_EditorClassIdentifier: 
-  stoneDropPrecentage: 80
-  ironDropPrecentage: 20
-  goldDropPrecentage: 5
-  benitoiteDropPrecentage: 0.8
-  rubyDropPrecentage: 0.7
-  emeraldDropPrecentage: 0.6
-  diamondDropPrecentage: 0.5
-  onyxDropPrecentage: 0.4
-  sapphireDropPrecentage: 0.3
-  tinDropPrecentage: 100
-  copperDropPrecentage: 0.2
-  amethysDropPrecentage: 0.1
   levelOfPrestige: 8
   cost: 24000
-  isOpened: 1
+  isUnlocked: 1
+  isItOpenedNow: 0
