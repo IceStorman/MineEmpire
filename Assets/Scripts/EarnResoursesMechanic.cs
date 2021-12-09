@@ -20,19 +20,6 @@ public class EarnResoursesMechanic : MonoBehaviour
     [SerializeField] private Text copperText;
     [SerializeField] private Text amethystText;
 
-    /*[SerializeField] private bool classicMineOpened = true;
-    [SerializeField] private bool ironMineOpened = false;
-    [SerializeField] private bool goldMineOpened = false;
-    [SerializeField] private bool benitoiteMineOpened = false;
-    [SerializeField] private bool diamondMineOpened = false;
-    [SerializeField] private bool amethystMineOpened = false;
-    [SerializeField] private bool rubyMineOpened = false;
-    [SerializeField] private bool copperMineOpened = false;
-    [SerializeField] private bool tinMineOpened = false;
-    [SerializeField] private bool sapphireMineOpened = false;
-    [SerializeField] private bool onyxMineOpened = false;
-    [SerializeField] private bool emeraldMineOpened = false;*/
-
     [SerializeField] private GameObject chooseOfClassicMine;
     [SerializeField] private GameObject chooseOfIronMine;
     [SerializeField] private GameObject chooseOfGoldMine;
