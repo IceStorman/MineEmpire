@@ -275,19 +275,6 @@ public class EarnResoursesMechanic : MonoBehaviour
             if (i == 10 && precentageOre[i] > rnd) { mainData.ironData.ore++; break; }
             if (i == 11 && precentageOre[i] > rnd) { mainData.stoneData.ore++; break; }
             if (i == 12) oreData.ore++;
-
-            /*if (i == 11 && mainData.classicMineData.isItOpenedNow) i++;
-            if (i == 10 && mainData.ironMineData.isItOpenedNow) i++;
-            if (i == 9 && mainData.goldMineData.isItOpenedNow) i++;
-            if (i == 8 && mainData.copperMineData.isItOpenedNow) i++;
-            if (i == 7 && mainData.tinMineData.isItOpenedNow) i++;
-            if (i == 6 && mainData.benitoiteMineData.isItOpenedNow) i++;
-            if (i == 5 && mainData.emeraldMineData.isItOpenedNow) i++;
-            if (i == 4 && mainData.onyxMineData.isItOpenedNow) i++;
-            if (i == 3 && mainData.rubyMineData.isItOpenedNow) i++;
-            if (i == 2 && mainData.sapphireMineData.isItOpenedNow) i++;
-            if (i == 1 && mainData.diamondMineData.isItOpenedNow) i++;
-            if (i == 0 && mainData.amethystMineData.isItOpenedNow) i++;*/
         }
     }
 }
