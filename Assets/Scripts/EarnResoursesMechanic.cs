@@ -239,34 +239,34 @@ public class EarnResoursesMechanic : MonoBehaviour
         stoneText.text = mainData.stoneData.ore.ToString();
         ironText.text = mainData.ironData.ore.ToString();
         goldText.text = mainData.goldData.ore.ToString();
-        benitoiteText.text = mainData.benitoiteData.ore.ToString();
-        rubyText.text = mainData.rubyData.ore.ToString();
-        emeraldText.text = mainData.emeraldData.ore.ToString();
-        diamondText.text = mainData.diamondData.ore.ToString();
-        onyxText.text = mainData.onyxData.ore.ToString();
-        sapphireText.text = mainData.sapphireData.ore.ToString();
-        tinText.text = mainData.tinData.ore.ToString();
         copperText.text = mainData.copperData.ore.ToString();
+        tinText.text = mainData.tinData.ore.ToString();
+        benitoiteText.text = mainData.benitoiteData.ore.ToString();
+        emeraldText.text = mainData.emeraldData.ore.ToString();
+        onyxText.text = mainData.onyxData.ore.ToString();
+        rubyText.text = mainData.rubyData.ore.ToString();
+        sapphireText.text = mainData.sapphireData.ore.ToString();
+        diamondText.text = mainData.diamondData.ore.ToString();
         amethystText.text = mainData.amethystData.ore.ToString();
     }
 
     public void OnEarn(MainData mainData)
     {
-        /*float[] oreDropPrecentageMassive = new float[12]
+        float[] oreDropPrecentageMassive = new float[12]
         {
-            mainData.amethystData.amethystPercentage,
-            mineData.diamondPercentage,
-            mineData.sapphirePercentage,
-            mineData.rubyPercentage,
-            mineData.onyxPercentage,
-            mineData.emeraldPercentage,
-            mineData.benitoitePercentage,
-            mineData.tinPercentage,
-            mineData.copperPercentage,
-            mineData.goldPercentage,
-            mineData.ironPercentage,
-            mineData.stonePercentage,
-        };*/
+            mainData.amethystData.dropProcent,
+            mainData.diamondData.dropProcent,
+            mainData.sapphireData.dropProcent,
+            mainData.rubyData.dropProcent,
+            mainData.onyxData.dropProcent,
+            mainData.emeraldData.dropProcent,
+            mainData.benitoiteData.dropProcent,
+            mainData.tinData.dropProcent,
+            mainData.copperData.dropProcent,
+            mainData.goldData.dropProcent,
+            mainData.ironData.dropProcent,
+            mainData.stoneData.dropProcent,
+        };
         bool[] isOpenedMines = new bool[12]
         {
             mainData.amethystMineData.isItOpenedNow,
@@ -283,7 +283,18 @@ public class EarnResoursesMechanic : MonoBehaviour
             mainData.classicMineData.isItOpenedNow,
         };
 
-        //EarnMechanic(oreData, oreDropPrecentageMassive, isOpenedMines);
+        if (mainData.classicMineData.isItOpenedNow) EarnMechanic(mainData.stoneData, oreDropPrecentageMassive, isOpenedMines);
+        if (mainData.ironMineData.isItOpenedNow) EarnMechanic(mainData.ironData, oreDropPrecentageMassive, isOpenedMines);
+        if (mainData.goldMineData.isItOpenedNow) EarnMechanic(mainData.goldData, oreDropPrecentageMassive, isOpenedMines);
+        if (mainData.copperMineData.isItOpenedNow) EarnMechanic(mainData.copperData, oreDropPrecentageMassive, isOpenedMines);
+        if (mainData.tinMineData.isItOpenedNow) EarnMechanic(mainData.tinData, oreDropPrecentageMassive, isOpenedMines);
+        if (mainData.benitoiteMineData.isItOpenedNow) EarnMechanic(mainData.benitoiteData, oreDropPrecentageMassive, isOpenedMines);
+        if (mainData.emeraldMineData.isItOpenedNow) EarnMechanic(mainData.emeraldData, oreDropPrecentageMassive, isOpenedMines);
+        if (mainData.onyxMineData.isItOpenedNow) EarnMechanic(mainData.onyxData, oreDropPrecentageMassive, isOpenedMines);
+        if (mainData.rubyMineData.isItOpenedNow) EarnMechanic(mainData.rubyData, oreDropPrecentageMassive, isOpenedMines);
+        if (mainData.sapphireMineData.isItOpenedNow) EarnMechanic(mainData.sapphireData, oreDropPrecentageMassive, isOpenedMines);
+        if (mainData.diamondMineData.isItOpenedNow) EarnMechanic(mainData.diamondData, oreDropPrecentageMassive, isOpenedMines);
+        if (mainData.amethystMineData.isItOpenedNow) EarnMechanic(mainData.amethystData, oreDropPrecentageMassive, isOpenedMines);
     }
 
     private void EarnMechanic(OreData oreData, float[] precentageOre, bool[] isOpened)

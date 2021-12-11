@@ -16,9 +16,9 @@ MonoBehaviour:
   cost: 2500
   isUnlocked: 1
   isItOpenedNow: 0
-  stonePercentage: 0
-  ironPercentage: 0
-  goldPercentage: 0
+  stonePercentage: 80
+  ironPercentage: 50
+  goldPercentage: 5
   copperPercentage: 0
   tinPercentage: 0
   benitoitePercentage: 0
