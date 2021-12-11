@@ -1,6 +1,6 @@
 {
   "stoneData": {
-    "ore": 292,
+    "ore": 0,
     "recycleOre": 0.0,
     "recycleCount": 0.5,
     "recycleOreGive": 15,
@@ -15,7 +15,7 @@
     "hideFlags": 0
   },
   "ironData": {
-    "ore": 81,
+    "ore": 0,
     "recycleOre": 0.0,
     "recycleCount": 0.7,
     "recycleOreGive": 5,
@@ -30,7 +30,7 @@
     "hideFlags": 0
   },
   "goldData": {
-    "ore": 27,
+    "ore": 0,
     "recycleOre": 0.0,
     "recycleCount": 0.8,
     "recycleOreGive": 5,
@@ -45,7 +45,7 @@
     "hideFlags": 0
   },
   "benitoiteData": {
-    "ore": 16,
+    "ore": 0,
     "recycleOre": 0.0,
     "recycleCount": 0.0,
     "recycleOreGive": 3,
@@ -75,7 +75,7 @@
     "hideFlags": 0
   },
   "emeraldData": {
-    "ore": 3,
+    "ore": 0,
     "recycleOre": 0.0,
     "recycleCount": 0.0,
     "recycleOreGive": 2,
@@ -90,7 +90,7 @@
     "hideFlags": 0
   },
   "diamondData": {
-    "ore": 69,
+    "ore": 0,
     "recycleOre": 0.0,
     "recycleCount": 0.0,
     "recycleOreGive": 1,
@@ -105,13 +105,13 @@
     "hideFlags": 0
   },
   "onyxData": {
-    "ore": 34,
+    "ore": 0,
     "recycleOre": 0.0,
     "recycleCount": 0.0,
     "recycleOreGive": 2,
     "recycleOreCost": 167.9,
     "defaultOreCost": 167.9,
-    "dropProcent": 5.0,
+    "dropProcent": 0.5,
     "howMuchAmountOfRecycle": 0,
     "amountOfRecycle": 0,
     "amountOfRecycleReceive": 0.0,
@@ -126,7 +126,7 @@
     "recycleOreGive": 1,
     "recycleOreCost": 390.7,
     "defaultOreCost": 390.7,
-    "dropProcent": 0.3,
+    "dropProcent": 4.0,
     "howMuchAmountOfRecycle": 0,
     "amountOfRecycle": 0,
     "amountOfRecycleReceive": 0.0,
@@ -165,7 +165,7 @@
     "hideFlags": 0
   },
   "amethystData": {
-    "ore": 4,
+    "ore": 0,
     "recycleOre": 0.0,
     "recycleCount": 0.0,
     "recycleOreGive": 1,
@@ -181,7 +181,7 @@
   },
   "otherData": {
     "money": 0.0,
-    "timer": 557.0,
+    "timer": 591.0,
     "lvl": 1,
     "exp": 0,
     "maxExp": 10,
@@ -252,7 +252,7 @@
   "benitoiteMineData": {
     "levelOfPrestige": 6,
     "cost": 12000.0,
-    "isUnlocked": true,
+    "isUnlocked": false,
     "isItOpenedNow": false,
     "stonePercentage": 80.0,
     "ironPercentage": 20.0,
@@ -272,7 +272,7 @@
   "diamondMineData": {
     "levelOfPrestige": 8,
     "cost": 25000.0,
-    "isUnlocked": true,
+    "isUnlocked": false,
     "isItOpenedNow": false,
     "stonePercentage": 80.0,
     "ironPercentage": 20.0,
@@ -292,7 +292,7 @@
   "amethystMineData": {
     "levelOfPrestige": 7,
     "cost": 20000.0,
-    "isUnlocked": true,
+    "isUnlocked": false,
     "isItOpenedNow": false,
     "stonePercentage": 80.0,
     "ironPercentage": 25.0,
@@ -312,7 +312,7 @@
   "rubyMineData": {
     "levelOfPrestige": 6,
     "cost": 16000.0,
-    "isUnlocked": true,
+    "isUnlocked": false,
     "isItOpenedNow": false,
     "stonePercentage": 80.0,
     "ironPercentage": 20.0,
@@ -332,7 +332,7 @@
   "copperMineData": {
     "levelOfPrestige": 8,
     "cost": 19000.0,
-    "isUnlocked": true,
+    "isUnlocked": false,
     "isItOpenedNow": false,
     "stonePercentage": 80.0,
     "ironPercentage": 20.0,
@@ -352,7 +352,7 @@
   "tinMineData": {
     "levelOfPrestige": 8,
     "cost": 24000.0,
-    "isUnlocked": true,
+    "isUnlocked": false,
     "isItOpenedNow": false,
     "stonePercentage": 80.0,
     "ironPercentage": 20.0,
@@ -372,8 +372,8 @@
   "sapphireMineData": {
     "levelOfPrestige": 7,
     "cost": 15000.0,
-    "isUnlocked": true,
-    "isItOpenedNow": false,
+    "isUnlocked": false,
+    "isItOpenedNow": true,
     "stonePercentage": 80.0,
     "ironPercentage": 20.0,
     "goldPercentage": 5.0,
@@ -392,8 +392,8 @@
   "onyxMineData": {
     "levelOfPrestige": 6,
     "cost": 21000.0,
-    "isUnlocked": true,
-    "isItOpenedNow": true,
+    "isUnlocked": false,
+    "isItOpenedNow": false,
     "stonePercentage": 80.0,
     "ironPercentage": 20.0,
     "goldPercentage": 5.0,
@@ -412,7 +412,7 @@
   "emeraldMineData": {
     "levelOfPrestige": 6,
     "cost": 10000.0,
-    "isUnlocked": true,
+    "isUnlocked": false,
     "isItOpenedNow": false,
     "stonePercentage": 80.0,
     "ironPercentage": 20.0,
