@@ -46,8 +46,22 @@ public class EarnResoursesMechanic : MonoBehaviour
     [SerializeField] private GameObject chooseOfOnyxMine;
     [SerializeField] private GameObject chooseOfEmeraldMine;
 
+    [SerializeField] private float stoneDropSave;
+    [SerializeField] private float ironDropSave;
+    [SerializeField] private float goldDropSave;
+    [SerializeField] private float copperDropSave;
+    [SerializeField] private float tinDropSave;
+    [SerializeField] private float benitoiteDropSave;
+    [SerializeField] private float emeraldDropSave;
+    [SerializeField] private float onyxDropSave;
+    [SerializeField] private float rubyDropSave;
+    [SerializeField] private float sapphireDropSave;
+    [SerializeField] private float diamondDropSave;
+    [SerializeField] private float amethystDropSave;
+
     [SerializeField] private int howManyOres = 12;
     [SerializeField] private OreData oreData;
+    [SerializeField] private MineData mineData;
 
     private void Start()
     {
@@ -57,6 +71,7 @@ public class EarnResoursesMechanic : MonoBehaviour
     private void Update()
     {
         UpdateUI();
+        UpdatePrecentage();
     }
 
     public void ClassicMineStart()
@@ -236,7 +251,46 @@ public class EarnResoursesMechanic : MonoBehaviour
         amethystText.text = mainData.amethystData.ore.ToString();
     }
 
-    public void OnEarn()
+    private void UpdatePrecentage()
+    {
+        float[] massOfSavePrecent = new float[12]
+        {
+            stoneDropSave,
+            ironDropSave,
+            goldDropSave,
+            copperDropSave,
+            tinDropSave,
+            benitoiteDropSave,
+            emeraldDropSave,
+            onyxDropSave,
+            rubyDropSave,
+            sapphireDropSave,
+            diamondDropSave,
+            amethystDropSave
+        };
+        float[] massOfPrecent = new float[12]
+        {
+            mainData.stoneData.dropProcent,
+            mainData.ironData.dropProcent,
+            mainData.goldData.dropProcent,
+            mainData.copperData.dropProcent,
+            mainData.tinData.dropProcent,
+            mainData.benitoiteData.dropProcent,
+            mainData.emeraldData.dropProcent,
+            mainData.onyxData.dropProcent,
+            mainData.rubyData.dropProcent,
+            mainData.sapphireData.dropProcent,
+            mainData.diamondData.dropProcent,
+            mainData.amethystData.dropProcent,
+        };
+
+        for (int i = 0; i < massOfSavePrecent.Length; i++)
+        {
+            mainData.stoneData.dropProcent = massOfSavePrecent[i];
+        }
+    }
+
+    public void OnEarn(MainData mainData)
     {
         float[] oreDropPrecentageMassive = new float[12]
         {
@@ -253,28 +307,32 @@ public class EarnResoursesMechanic : MonoBehaviour
             mainData.ironData.dropProcent,
             mainData.stoneData.dropProcent,
         };
+        bool[] isOpenedMines = new bool[12]
+        {
+            mainData.amethystMineData.isItOpenedNow,
+            mainData.diamondMineData.isItOpenedNow,
+            mainData.sapphireMineData.isItOpenedNow,
+            mainData.rubyMineData.isItOpenedNow,
+            mainData.onyxMineData.isItOpenedNow,
+            mainData.emeraldMineData.isItOpenedNow,
+            mainData.benitoiteMineData.isItOpenedNow,
+            mainData.tinMineData.isItOpenedNow,
+            mainData.copperMineData.isItOpenedNow,
+            mainData.goldMineData.isItOpenedNow,
+            mainData.ironMineData.isItOpenedNow,
+            mainData.classicMineData.isItOpenedNow,
+        };
 
-        if (mainData.classicMineData.isItOpenedNow) EarnMechanic(mainData.classicMineData, mainData.stoneData, oreDropPrecentageMassive, 80);
-        if (mainData.ironMineData.isItOpenedNow) EarnMechanic(mainData.ironMineData, mainData.ironData, oreDropPrecentageMassive, 50);
-        if (mainData.goldMineData.isItOpenedNow) EarnMechanic(mainData.goldMineData, mainData.goldData, oreDropPrecentageMassive, 25);
-        if (mainData.benitoiteMineData.isItOpenedNow) EarnMechanic(mainData.benitoiteMineData, mainData.benitoiteData, oreDropPrecentageMassive, 15);
-        if (mainData.rubyMineData.isItOpenedNow) EarnMechanic(mainData.rubyMineData, mainData.rubyData, oreDropPrecentageMassive, 14);
-        if (mainData.emeraldMineData.isItOpenedNow) EarnMechanic(mainData.emeraldMineData, mainData.emeraldData, oreDropPrecentageMassive, 13);
-        if (mainData.diamondMineData.isItOpenedNow) EarnMechanic(mainData.diamondMineData, mainData.diamondData, oreDropPrecentageMassive, 12);
-        if (mainData.onyxMineData.isItOpenedNow) EarnMechanic(mainData.onyxMineData, mainData.onyxData, oreDropPrecentageMassive, 11);
-        if (mainData.sapphireMineData.isItOpenedNow) EarnMechanic(mainData.sapphireMineData, mainData.sapphireData, oreDropPrecentageMassive, 10);
-        if (mainData.tinMineData.isItOpenedNow) EarnMechanic(mainData.tinMineData, mainData.tinData, oreDropPrecentageMassive, 9);
-        if (mainData.copperMineData.isItOpenedNow) EarnMechanic(mainData.copperMineData, mainData.copperData, oreDropPrecentageMassive, 8);
-        if (mainData.amethystMineData.isItOpenedNow) EarnMechanic(mainData.amethystMineData, mainData.amethystData, oreDropPrecentageMassive, 7);
+        EarnMechanic(oreData, oreDropPrecentageMassive, mineData);
     }
 
-    private void EarnMechanic(MineData mineData, OreData oreData, float[] precentageOre, int chanceOfOre)
+    private void EarnMechanic(OreData oreData, float[] precentageOre, MineData mineData)
     {
         float rnd = Random.Range(0, 101);
 
         for (int i = -1; i <= howManyOres; i++)
         {
-            if (chanceOfOre > rnd) { oreData.ore++; break; }
+
             if (i == 0 && precentageOre[i] > rnd) { mainData.amethystData.ore++; break; }
             if (i == 1 && precentageOre[i] > rnd) { mainData.diamondData.ore++; break; }
             if (i == 2 && precentageOre[i] > rnd) { mainData.sapphireData.ore++; break; }

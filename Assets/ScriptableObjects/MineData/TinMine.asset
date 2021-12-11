@@ -16,3 +16,4 @@ MonoBehaviour:
   cost: 24000
   isUnlocked: 1
   isItOpenedNow: 0
+  howManyProcentInOre: 6.5
