@@ -16,4 +16,15 @@ MonoBehaviour:
   cost: 20000
   isUnlocked: 1
   isItOpenedNow: 0
-  howManyProcentInOre: 3
+  stonePercentage: 80
+  ironPercentage: 25
+  goldPercentage: 5
+  copperPercentage: 0.9
+  tinPercentage: 0.8
+  benitoitePercentage: 0.7
+  emeraldPercentage: 0.6
+  onyxPercentage: 0.5
+  rubyPercentage: 0.4
+  sapphirePercentage: 0.3
+  diamondPercentage: 0.2
+  amethystPercentage: 3

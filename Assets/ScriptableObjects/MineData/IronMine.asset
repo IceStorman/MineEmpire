@@ -14,6 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelOfPrestige: 2
   cost: 2500
-  isUnlocked: 0
-  isItOpenedNow: 1
-  howManyProcentInOre: 30
+  isUnlocked: 1
+  isItOpenedNow: 0
+  stonePercentage: 0
+  ironPercentage: 0
+  goldPercentage: 0
+  copperPercentage: 0
+  tinPercentage: 0
+  benitoitePercentage: 0
+  emeraldPercentage: 0
+  onyxPercentage: 0
+  rubyPercentage: 0
+  sapphirePercentage: 0
+  diamondPercentage: 0
+  amethystPercentage: 0

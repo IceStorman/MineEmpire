@@ -20,19 +20,6 @@ public class EarnResoursesMechanic : MonoBehaviour
     [SerializeField] private Text copperText;
     [SerializeField] private Text amethystText;
 
-    /*[SerializeField] private bool classicMineOpened = true;
-    [SerializeField] private bool ironMineOpened = false;
-    [SerializeField] private bool goldMineOpened = false;
-    [SerializeField] private bool benitoiteMineOpened = false;
-    [SerializeField] private bool diamondMineOpened = false;
-    [SerializeField] private bool amethystMineOpened = false;
-    [SerializeField] private bool rubyMineOpened = false;
-    [SerializeField] private bool copperMineOpened = false;
-    [SerializeField] private bool tinMineOpened = false;
-    [SerializeField] private bool sapphireMineOpened = false;
-    [SerializeField] private bool onyxMineOpened = false;
-    [SerializeField] private bool emeraldMineOpened = false;*/
-
     [SerializeField] private GameObject chooseOfClassicMine;
     [SerializeField] private GameObject chooseOfIronMine;
     [SerializeField] private GameObject chooseOfGoldMine;
@@ -46,22 +33,7 @@ public class EarnResoursesMechanic : MonoBehaviour
     [SerializeField] private GameObject chooseOfOnyxMine;
     [SerializeField] private GameObject chooseOfEmeraldMine;
 
-    [SerializeField] private float stoneDropSave;
-    [SerializeField] private float ironDropSave;
-    [SerializeField] private float goldDropSave;
-    [SerializeField] private float copperDropSave;
-    [SerializeField] private float tinDropSave;
-    [SerializeField] private float benitoiteDropSave;
-    [SerializeField] private float emeraldDropSave;
-    [SerializeField] private float onyxDropSave;
-    [SerializeField] private float rubyDropSave;
-    [SerializeField] private float sapphireDropSave;
-    [SerializeField] private float diamondDropSave;
-    [SerializeField] private float amethystDropSave;
-
     [SerializeField] private int howManyOres = 12;
-    [SerializeField] private OreData oreData;
-    [SerializeField] private MineData mineData;
 
     private void Start()
     {
@@ -71,7 +43,6 @@ public class EarnResoursesMechanic : MonoBehaviour
     private void Update()
     {
         UpdateUI();
-        UpdatePrecentage();
     }
 
     public void ClassicMineStart()
@@ -80,6 +51,7 @@ public class EarnResoursesMechanic : MonoBehaviour
         mainData.classicMineData.isItOpenedNow = true;
         CloseChoosen();
         chooseOfClassicMine.SetActive(true);
+        ChangePerctentages(mainData.classicMineData);
     }
 
     public void IronMineStart()
@@ -90,6 +62,7 @@ public class EarnResoursesMechanic : MonoBehaviour
             mainData.ironMineData.isItOpenedNow = true;
             CloseChoosen();
             chooseOfIronMine.SetActive(true);
+            ChangePerctentages(mainData.ironMineData);
         }
     }
 
@@ -101,50 +74,7 @@ public class EarnResoursesMechanic : MonoBehaviour
             mainData.goldMineData.isItOpenedNow = true;
             CloseChoosen();
             chooseOfGoldMine.SetActive(true);
-        }
-    }
-
-    public void BenitoiteMineStart()
-    {
-        if (mainData.benitoiteMineData.isUnlocked)
-        {
-            CloseMines();
-            mainData.benitoiteMineData.isItOpenedNow = true;
-            CloseChoosen();
-            chooseOfBenitoiteMine.SetActive(true);
-        }
-    }
-
-    public void DiamondMineStart()
-    {
-        if (mainData.diamondMineData.isUnlocked)
-        {
-            CloseMines();
-            mainData.diamondMineData.isItOpenedNow = true;
-            CloseChoosen();
-            chooseOfDiamondMine.SetActive(true);
-        }
-    }
-
-    public void AmethystMineStart()
-    {
-        if (mainData.amethystMineData.isUnlocked)
-        {
-            CloseMines();
-            mainData.amethystMineData.isItOpenedNow = true;
-            CloseChoosen();
-            chooseOfAmethystMine.SetActive(true);
-        }
-    }
-
-    public void RubyMineStart()
-    {
-        if (mainData.rubyMineData.isUnlocked)
-        {
-            CloseMines();
-            mainData.rubyMineData.isItOpenedNow = true;
-            CloseChoosen();
-            chooseOfRubyMine.SetActive(true);
+            ChangePerctentages(mainData.goldMineData);
         }
     }
 
@@ -156,6 +86,7 @@ public class EarnResoursesMechanic : MonoBehaviour
             mainData.copperMineData.isItOpenedNow = true;
             CloseChoosen();
             chooseOfCopperMine.SetActive(true);
+            ChangePerctentages(mainData.copperMineData);
         }
     }
 
@@ -167,28 +98,19 @@ public class EarnResoursesMechanic : MonoBehaviour
             mainData.tinMineData.isItOpenedNow = true;
             CloseChoosen();
             chooseOfTinMine.SetActive(true);
+            ChangePerctentages(mainData.tinMineData);
         }
     }
 
-    public void SapphireMineStart()
+    public void BenitoiteMineStart()
     {
-        if (mainData.sapphireMineData.isUnlocked)
+        if (mainData.benitoiteMineData.isUnlocked)
         {
             CloseMines();
-            mainData.sapphireMineData.isItOpenedNow = true;
+            mainData.benitoiteMineData.isItOpenedNow = true;
             CloseChoosen();
-            chooseOfSapphireMine.SetActive(true);
-        }
-    }
-
-    public void OnyxMineStart()
-    {
-        if (mainData.onyxMineData.isUnlocked)
-        {
-            CloseMines();
-            mainData.onyxMineData.isItOpenedNow = true;
-            CloseChoosen();
-            chooseOfOnyxMine.SetActive(true);
+            chooseOfBenitoiteMine.SetActive(true);
+            ChangePerctentages(mainData.benitoiteMineData);
         }
     }
 
@@ -200,7 +122,84 @@ public class EarnResoursesMechanic : MonoBehaviour
             mainData.emeraldMineData.isItOpenedNow = true;
             CloseChoosen();
             chooseOfEmeraldMine.SetActive(true);
+            ChangePerctentages(mainData.emeraldMineData);
         }
+    }
+
+    public void OnyxMineStart()
+    {
+        if (mainData.onyxMineData.isUnlocked)
+        {
+            CloseMines();
+            mainData.onyxMineData.isItOpenedNow = true;
+            CloseChoosen();
+            chooseOfOnyxMine.SetActive(true);
+            ChangePerctentages(mainData.onyxMineData);
+        }
+    }
+
+    public void RubyMineStart()
+    {
+        if (mainData.rubyMineData.isUnlocked)
+        {
+            CloseMines();
+            mainData.rubyMineData.isItOpenedNow = true;
+            CloseChoosen();
+            chooseOfRubyMine.SetActive(true);
+            ChangePerctentages(mainData.rubyMineData);
+        }
+    }
+
+    public void SapphireMineStart()
+    {
+        if (mainData.sapphireMineData.isUnlocked)
+        {
+            CloseMines();
+            mainData.sapphireMineData.isItOpenedNow = true;
+            CloseChoosen();
+            chooseOfSapphireMine.SetActive(true);
+            ChangePerctentages(mainData.sapphireMineData);
+        }
+    }
+
+    public void DiamondMineStart()
+    {
+        if (mainData.diamondMineData.isUnlocked)
+        {
+            CloseMines();
+            mainData.diamondMineData.isItOpenedNow = true;
+            CloseChoosen();
+            chooseOfDiamondMine.SetActive(true);
+            ChangePerctentages(mainData.diamondMineData);
+        }
+    }
+
+    public void AmethystMineStart()
+    {
+        if (mainData.amethystMineData.isUnlocked)
+        {
+            CloseMines();
+            mainData.amethystMineData.isItOpenedNow = true;
+            CloseChoosen();
+            chooseOfAmethystMine.SetActive(true);
+            ChangePerctentages(mainData.amethystMineData);
+        }
+    }
+
+    private void ChangePerctentages(MineData mineData)
+    {
+        mainData.stoneData.dropProcent = mineData.stonePercentage;
+        mainData.ironData.dropProcent = mineData.ironPercentage;
+        mainData.goldData.dropProcent = mineData.goldPercentage;
+        mainData.copperData.dropProcent = mineData.copperPercentage;
+        mainData.tinData.dropProcent = mineData.tinPercentage;
+        mainData.benitoiteData.dropProcent = mineData.benitoitePercentage;
+        mainData.emeraldData.dropProcent = mineData.emeraldPercentage;
+        mainData.onyxData.dropProcent = mineData.onyxPercentage;
+        mainData.rubyData.dropProcent = mineData.rubyPercentage;
+        mainData.sapphireData.dropProcent = mineData.sapphirePercentage;
+        mainData.diamondData.dropProcent = mineData.diamondPercentage;
+        mainData.amethystData.dropProcent = mineData.amethystPercentage;
     }
 
     private void CloseMines()
@@ -251,62 +250,23 @@ public class EarnResoursesMechanic : MonoBehaviour
         amethystText.text = mainData.amethystData.ore.ToString();
     }
 
-    private void UpdatePrecentage()
-    {
-        float[] massOfSavePrecent = new float[12]
-        {
-            stoneDropSave,
-            ironDropSave,
-            goldDropSave,
-            copperDropSave,
-            tinDropSave,
-            benitoiteDropSave,
-            emeraldDropSave,
-            onyxDropSave,
-            rubyDropSave,
-            sapphireDropSave,
-            diamondDropSave,
-            amethystDropSave
-        };
-        float[] massOfPrecent = new float[12]
-        {
-            mainData.stoneData.dropProcent,
-            mainData.ironData.dropProcent,
-            mainData.goldData.dropProcent,
-            mainData.copperData.dropProcent,
-            mainData.tinData.dropProcent,
-            mainData.benitoiteData.dropProcent,
-            mainData.emeraldData.dropProcent,
-            mainData.onyxData.dropProcent,
-            mainData.rubyData.dropProcent,
-            mainData.sapphireData.dropProcent,
-            mainData.diamondData.dropProcent,
-            mainData.amethystData.dropProcent,
-        };
-
-        for (int i = 0; i < massOfSavePrecent.Length; i++)
-        {
-            mainData.stoneData.dropProcent = massOfSavePrecent[i];
-        }
-    }
-
     public void OnEarn(MainData mainData)
     {
-        float[] oreDropPrecentageMassive = new float[12]
+        /*float[] oreDropPrecentageMassive = new float[12]
         {
-            mainData.amethystData.dropProcent,
-            mainData.diamondData.dropProcent,
-            mainData.sapphireData.dropProcent,
-            mainData.rubyData.dropProcent,
-            mainData.onyxData.dropProcent,
-            mainData.emeraldData.dropProcent,
-            mainData.benitoiteData.dropProcent,
-            mainData.tinData.dropProcent,
-            mainData.copperData.dropProcent,
-            mainData.goldData.dropProcent,
-            mainData.ironData.dropProcent,
-            mainData.stoneData.dropProcent,
-        };
+            mainData.amethystData.amethystPercentage,
+            mineData.diamondPercentage,
+            mineData.sapphirePercentage,
+            mineData.rubyPercentage,
+            mineData.onyxPercentage,
+            mineData.emeraldPercentage,
+            mineData.benitoitePercentage,
+            mineData.tinPercentage,
+            mineData.copperPercentage,
+            mineData.goldPercentage,
+            mineData.ironPercentage,
+            mineData.stonePercentage,
+        };*/
         bool[] isOpenedMines = new bool[12]
         {
             mainData.amethystMineData.isItOpenedNow,
@@ -323,28 +283,27 @@ public class EarnResoursesMechanic : MonoBehaviour
             mainData.classicMineData.isItOpenedNow,
         };
 
-        EarnMechanic(oreData, oreDropPrecentageMassive, mineData);
+        //EarnMechanic(oreData, oreDropPrecentageMassive, isOpenedMines);
     }
 
-    private void EarnMechanic(OreData oreData, float[] precentageOre, MineData mineData)
+    private void EarnMechanic(OreData oreData, float[] precentageOre, bool[] isOpened)
     {
         float rnd = Random.Range(0, 101);
 
         for (int i = -1; i <= howManyOres; i++)
         {
-
-            if (i == 0 && precentageOre[i] > rnd) { mainData.amethystData.ore++; break; }
-            if (i == 1 && precentageOre[i] > rnd) { mainData.diamondData.ore++; break; }
-            if (i == 2 && precentageOre[i] > rnd) { mainData.sapphireData.ore++; break; }
-            if (i == 3 && precentageOre[i] > rnd) { mainData.rubyData.ore++; break; }
-            if (i == 4 && precentageOre[i] > rnd) { mainData.onyxData.ore++; break; }
-            if (i == 5 && precentageOre[i] > rnd) { mainData.emeraldData.ore++; break; }
-            if (i == 6 && precentageOre[i] > rnd) { mainData.benitoiteData.ore++; break; }
-            if (i == 7 && precentageOre[i] > rnd) { mainData.tinData.ore++; break; }
-            if (i == 8 && precentageOre[i] > rnd) { mainData.copperData.ore++; break; }
-            if (i == 9 && precentageOre[i] > rnd) { mainData.goldData.ore++; break; }
-            if (i == 10 && precentageOre[i] > rnd) { mainData.ironData.ore++; break; }
-            if (i == 11 && precentageOre[i] > rnd) { mainData.stoneData.ore++; break; }
+            if (i == 0 && precentageOre[i] > rnd && !isOpened[i]) { mainData.amethystData.ore++; break; }
+            if (i == 1 && precentageOre[i] > rnd && !isOpened[i]) { mainData.diamondData.ore++; break; }
+            if (i == 2 && precentageOre[i] > rnd && !isOpened[i]) { mainData.sapphireData.ore++; break; }
+            if (i == 3 && precentageOre[i] > rnd && !isOpened[i]) { mainData.rubyData.ore++; break; }
+            if (i == 4 && precentageOre[i] > rnd && !isOpened[i]) { mainData.onyxData.ore++; break; }
+            if (i == 5 && precentageOre[i] > rnd && !isOpened[i]) { mainData.emeraldData.ore++; break; }
+            if (i == 6 && precentageOre[i] > rnd && !isOpened[i]) { mainData.benitoiteData.ore++; break; }
+            if (i == 7 && precentageOre[i] > rnd && !isOpened[i]) { mainData.tinData.ore++; break; }
+            if (i == 8 && precentageOre[i] > rnd && !isOpened[i]) { mainData.copperData.ore++; break; }
+            if (i == 9 && precentageOre[i] > rnd && !isOpened[i]) { mainData.goldData.ore++; break; }
+            if (i == 10 && precentageOre[i] > rnd && !isOpened[i]) { mainData.ironData.ore++; break; }
+            if (i == 11 && precentageOre[i] > rnd && !isOpened[i]) { mainData.stoneData.ore++; break; }
             if (i == 12) oreData.ore++;
         }
     }
