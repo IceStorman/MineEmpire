@@ -62,5 +62,6 @@ public class Reset : MonoBehaviour
         oreData.ore = 0;
         oreData.recycleOre = 0;
         oreData.recycleOreCost = oreData.defaultOreCost;
+        oreData.numberNeededToDecrease = 50;
     }
 }

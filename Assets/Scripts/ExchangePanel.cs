@@ -71,9 +71,18 @@ public class ExchangePanel : MonoBehaviour
 
         if (mainData.otherData.timer <= 0)
         {
-            ChangeCourse(mainData.stoneData, recycleStoneCostText);
-            ChangeCourse(mainData.ironData, recycleIronCostText);
-            ChangeCourse(mainData.goldData, recycleGoldCostText);
+            ChangeCourse(mainData.stoneData);
+            ChangeCourse(mainData.ironData);
+            ChangeCourse(mainData.goldData);
+            ChangeCourse(mainData.tinData);
+            ChangeCourse(mainData.copperData);
+            ChangeCourse(mainData.benitoiteData);
+            ChangeCourse(mainData.onyxData);
+            ChangeCourse(mainData.emeraldData);
+            ChangeCourse(mainData.rubyData);
+            ChangeCourse(mainData.diamondData);
+            ChangeCourse(mainData.sapphireData);
+            ChangeCourse(mainData.amethystData);
 
             mainData.otherData.timer = 600;
             timerText.text = mainData.otherData.timer.ToString();
@@ -94,16 +103,30 @@ public class ExchangePanel : MonoBehaviour
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
-    private void ChangeCourse(OreData oreData, Text resourceText)
+    private void ChangeCourse(OreData oreData)
     {
-        int rnd = 1;
-        int rndWhere = Random.Range(0, 2);
+        int rndWhere = Random.Range(1, 101);
 
-        if (rndWhere == 0) rnd = Random.Range(3, 10);
-        else rnd = Random.Range(11, 31);
+        if (rndWhere <= oreData.numberNeededToDecrease)
+        {       
+            if (oreData.numberNeededToDecrease > 5) oreData.numberNeededToDecrease -= 5;
+            Decrease(oreData);
+        }
+        else
+        {
+            if (oreData.numberNeededToDecrease < 95) oreData.numberNeededToDecrease += 5;
+            Increase(oreData);
+        }
+    }
 
-        oreData.recycleOreCost = (oreData.recycleOreCost * rnd) / 10;
-        resourceText.text = oreData.recycleOreCost.ToString("F2");
+    private void Increase(OreData oreData)
+    {
+        oreData.recycleOreCost += (oreData.recycleOreCost * 5) / 100;
+    }
+
+    private void Decrease(OreData oreData)
+    {
+        oreData.recycleOreCost = (oreData.recycleOreCost * 95) / 100;
     }
 
     private void Repeat()
