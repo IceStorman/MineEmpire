@@ -102,6 +102,7 @@ public class Save : MonoBehaviour
             jsonOreData.recycleCount = 0;
             jsonOreData.recycleOre = 0;
             jsonOreData.recycleOreCost = jsonOreData.defaultOreCost;
+            oreData.numberNeededToDecrease = 50;
             return;
         }
         oreData.amountOfRecycle = jsonOreData.amountOfRecycle;
@@ -111,6 +112,7 @@ public class Save : MonoBehaviour
         oreData.recycleOre = jsonOreData.recycleOre;
         oreData.recycleOreCost = jsonOreData.recycleOreCost;
         oreData.recycleOreGive = jsonOreData.recycleOreGive;
+        oreData.numberNeededToDecrease = jsonOreData.numberNeededToDecrease;
     }
 
     private void LoadMineData(MineData mineData, MineData m)

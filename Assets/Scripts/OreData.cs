@@ -13,4 +13,5 @@ public class OreData : ScriptableObject
     public int howMuchAmountOfRecycle;
     public int amountOfRecycle;
     public float amountOfRecycleReceive;
+    public int numberNeededToDecrease;
 }
