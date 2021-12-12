@@ -20,6 +20,15 @@ public class Reset : MonoBehaviour
         ResetMineData(mainData.classicMineData, true);
         ResetMineData(mainData.ironMineData, false);
         ResetMineData(mainData.goldMineData, false);
+        ResetMineData(mainData.tinMineData, false);
+        ResetMineData(mainData.copperMineData, false);
+        ResetMineData(mainData.benitoiteMineData, false);
+        ResetMineData(mainData.diamondMineData, false);
+        ResetMineData(mainData.emeraldMineData, false);
+        ResetMineData(mainData.rubyMineData, false);
+        ResetMineData(mainData.onyxMineData, false);
+        ResetMineData(mainData.sapphireMineData, false);
+        ResetMineData(mainData.amethystMineData, false);
         ResetOreData(mainData.stoneData);
         ResetOreData(mainData.ironData);
         ResetOreData(mainData.goldData);
