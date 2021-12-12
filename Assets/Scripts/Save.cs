@@ -5,10 +5,6 @@ using System.IO;
 public class Save : MonoBehaviour
 {
     [SerializeField] private MainData mainData;
-    [SerializeField] private StreamWriter sw;
-    [SerializeField] private StreamReader sr;
-    [SerializeField] private MainData jsonMainData;
-    [SerializeField] private string saveData;
 
     private void Start()
     {
@@ -19,19 +15,25 @@ public class Save : MonoBehaviour
     public void SaveData()
     {
         Debug.Log("starting save");
-        saveData = JsonConvert.SerializeObject(mainData);
+        string saveData = JsonConvert.SerializeObject(mainData, Formatting.Indented);
 
-        sw = new StreamWriter("SaveFile.svdata");
+        StreamWriter sw = new StreamWriter("SaveFile.svdata");
+        sw.WriteLine(EncryptionMechanic.Shifrovka(saveData, "password"));
+        sw.Close();
+
+        sw = new StreamWriter("SaveFile.json");
         sw.WriteLine(saveData);
         sw.Close();
+
         Debug.Log($"Data has been saved {Time.realtimeSinceStartup}");
     }
 
     public void LoadData()
     {
         Debug.Log("starting load");
-        sr = new StreamReader("SaveFile.svdata");
-        jsonMainData = JsonConvert.DeserializeObject<MainData>(sr.ReadLine());
+        StreamReader sr = new StreamReader("SaveFile.svdata");
+        string encryptedData = EncryptionMechanic.DeShifrovka(sr.ReadLine(), "password");
+        MainData jsonMainData = JsonConvert.DeserializeObject<MainData>(encryptedData);
 
         LoadOtherData(jsonMainData.otherData);
 
@@ -100,6 +102,7 @@ public class Save : MonoBehaviour
             jsonOreData.recycleCount = 0;
             jsonOreData.recycleOre = 0;
             jsonOreData.recycleOreCost = jsonOreData.defaultOreCost;
+            oreData.numberNeededToDecrease = 50;
             return;
         }
         oreData.amountOfRecycle = jsonOreData.amountOfRecycle;
@@ -109,6 +112,7 @@ public class Save : MonoBehaviour
         oreData.recycleOre = jsonOreData.recycleOre;
         oreData.recycleOreCost = jsonOreData.recycleOreCost;
         oreData.recycleOreGive = jsonOreData.recycleOreGive;
+        oreData.numberNeededToDecrease = jsonOreData.numberNeededToDecrease;
     }
 
     private void LoadMineData(MineData mineData, MineData m)
