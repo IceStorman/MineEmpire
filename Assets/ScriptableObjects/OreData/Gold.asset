@@ -20,5 +20,5 @@ MonoBehaviour:
   defaultOreCost: 42.3
   dropProcent: 5
   howMuchAmountOfRecycle: 0
-  amountOfRecycle: 1
-  amountOfRecycleReceive: 0.8
+  amountOfRecycle: 50
+  amountOfRecycleReceive: 40

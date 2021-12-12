@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68fd01e644279614997c47ec8a306fc8, type: 3}
   m_Name: Diamond
   m_EditorClassIdentifier: 
-  ore: 1
-  recycleOre: 0
-  recycleCount: 0
+  ore: 0
+  recycleOre: 0.8
+  recycleCount: 0.8
   recycleOreGive: 1
   recycleOreCost: 314.6
   defaultOreCost: 314.6
   dropProcent: 0.2
-  howMuchAmountOfRecycle: 0
-  amountOfRecycle: 0
-  amountOfRecycleReceive: 0
+  amountOfRecycle: 1
+  amountOfRecycleReceive: 0.8

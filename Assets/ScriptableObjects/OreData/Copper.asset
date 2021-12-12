@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68fd01e644279614997c47ec8a306fc8, type: 3}
   m_Name: Copper
   m_EditorClassIdentifier: 
-  ore: 23
-  recycleOre: 0
-  recycleCount: 0
+  ore: 0
+  recycleOre: 25.2
+  recycleCount: 0.7
   recycleOreGive: 3
   recycleOreCost: 94.7
   defaultOreCost: 94.7
   dropProcent: 0.9
-  howMuchAmountOfRecycle: 0
-  amountOfRecycle: 0
-  amountOfRecycleReceive: 0
+  amountOfRecycle: 6
+  amountOfRecycleReceive: 4.2

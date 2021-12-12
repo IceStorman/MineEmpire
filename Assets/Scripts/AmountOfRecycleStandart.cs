@@ -9,10 +9,6 @@ public class AmountOfRecycleStandart : MonoBehaviour
     [SerializeField] private Text amountOfRecycleIronText;
     [SerializeField] private Text amountOfRecycleGoldText;
 
-    [SerializeField] private Text howMuchAmountOfRecycleStoneText;
-    [SerializeField] private Text howMuchAmountOfRecycleIronText;
-    [SerializeField] private Text howMuchAmountOfRecycleGoldText;
-
     [SerializeField] private Slider stoneSlider;
     [SerializeField] private Slider ironSlider;
     [SerializeField] private Slider goldSlider;
