@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68fd01e644279614997c47ec8a306fc8, type: 3}
   m_Name: Amethyst
   m_EditorClassIdentifier: 
-  ore: 115
+  ore: 129
   recycleOre: 0
-  recycleCount: 0
+  recycleCount: 0.7
   recycleOreGive: 1
   recycleOreCost: 489.1
   defaultOreCost: 489.1
   dropProcent: 0.1
-  howMuchAmountOfRecycle: 0
-  amountOfRecycle: 0
-  amountOfRecycleReceive: 0
+  amountOfRecycle: 9
+  amountOfRecycleReceive: 6.2999997

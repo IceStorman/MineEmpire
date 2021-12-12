@@ -9,10 +9,16 @@ public class RentMechanic : MonoBehaviour
     [SerializeField] private AllPlantsData allPlantsData;
 
     [SerializeField] private GameObject firstSpecialPanel;
+    [SerializeField] private GameObject secondSpecialPanel;
+    [SerializeField] private GameObject thirdSpecialPanel;
 
     [SerializeField] private Text rentFirstSpecialSectionText;
+    [SerializeField] private Text rentSecondSpecialSectionText;
+    [SerializeField] private Text rentThirdSpecialSectionText;
 
     [SerializeField] private Text firstSpecialSectionTimeLeftText;
+    [SerializeField] private Text secondSpecialSectionTimeLeftText;
+    [SerializeField] private Text thirdSpecialSectionTimeLeftText;
 
     private void Start()
     {
@@ -22,6 +28,14 @@ public class RentMechanic : MonoBehaviour
     public void EnterFirstSpecialSection()
     {
         ClickMechanic(allPlantsData.firstSpecialSectionData, allPlantsData.defaultFirstSpecialSectionData, firstSpecialPanel, firstSpecialSectionTimeLeftText);
+    }
+    public void EnterSecondSpecialSection()
+    {
+        ClickMechanic(allPlantsData.secondSpecialSectionData, allPlantsData.defaulSecondSpecialSectionData, secondSpecialPanel, secondSpecialSectionTimeLeftText);
+    }
+    public void EnterThirdSpecialSection()
+    {
+        ClickMechanic(allPlantsData.thirdSpecialSectionData, allPlantsData.defaultThirdSpecialSectionData, thirdSpecialPanel, thirdSpecialSectionTimeLeftText);
     }
 
     private void ClickMechanic(PlantsData plantsData, DefaultPlantData defaultPlantData, GameObject plantPanel, Text plantSectionLeftTime)
