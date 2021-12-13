@@ -10799,7 +10799,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 503.11203, y: -46.664253}
+  m_AnchoredPosition: {x: 503.11203, y: -46.664246}
   m_SizeDelta: {x: 160, y: 83.772}
   m_Pivot: {x: 0.49999994, y: 0.50000024}
 --- !u!114 &517499848
@@ -19156,7 +19156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 223.99202, y: -51.02433}
+  m_AnchoredPosition: {x: 223.99202, y: -51.024323}
   m_SizeDelta: {x: 181.278, y: 92.48999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &816384532
@@ -43602,10 +43602,10 @@ MonoBehaviour:
       - m_Target: {fileID: 1093185021}
         m_TargetAssemblyTypeName: AchivementMechanic, Assembly-CSharp
         m_MethodName: Click
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1895778044}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

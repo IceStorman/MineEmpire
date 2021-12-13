@@ -34,9 +34,9 @@ public class AchivementMechanic : MonoBehaviour
         }
     }
 
-    public void Click()
+    public void Click(Button button)
     {
-        buttonPrefab.image = checkerOn;
+        button.image = checkerOn;
     }
 
     public void OpenClose()
