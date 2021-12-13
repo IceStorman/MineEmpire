@@ -4,8 +4,7 @@ using UnityEngine.UI;
 public class IventoryFirstSpecial : MonoBehaviour
 {
     [SerializeField] private GameObject InventoryFirstSpecialPlant;
-    [SerializeField] private GameObject FirstSpecialPlant;
-
+  
     [SerializeField] private Text benitoiteText;
     [SerializeField] private Text copperText;
     [SerializeField] private Text diamondText;
@@ -50,7 +49,7 @@ public class IventoryFirstSpecial : MonoBehaviour
             InventoryFirstSpecialPlant.SetActive(true);
             isOpen = true;
         }
-        else if (isOpen)
+        else 
         {
             InventoryFirstSpecialPlant.SetActive(false);
             isOpen = false;
