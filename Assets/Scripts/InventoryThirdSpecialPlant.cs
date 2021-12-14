@@ -4,7 +4,6 @@ using UnityEngine.UI;
 public class InventoryThirdSpecialPlant : MonoBehaviour
 {
     [SerializeField] private GameObject InventoryFirstSpecialPlant;
-    [SerializeField] private GameObject ThirdSpecialPlant;
 
     [SerializeField] private Text emeraldText;
     [SerializeField] private Text rubyText;

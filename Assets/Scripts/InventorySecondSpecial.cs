@@ -4,7 +4,6 @@ using UnityEngine.UI;
 public class InventorySecondSpecial : MonoBehaviour
 {
     [SerializeField] private GameObject InventorySecondSpecialPlantPanel;
-    [SerializeField] private GameObject SecondSpecialPlant;
 
     [SerializeField] private Text sapphireText;
     [SerializeField] private Text amethystText;

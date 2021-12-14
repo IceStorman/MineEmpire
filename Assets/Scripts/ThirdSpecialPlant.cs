@@ -78,7 +78,7 @@ public class ThirdSpecialPlant : MonoBehaviour
         RecycleResource(mainData.rubyData, rubyText, recycleRubyText);
     }
 
-    public void RecycleOnyx()
+    public void RecycleTin()
     {
         RecycleResource(mainData.tinData, tinText, recycleTinText);
     }

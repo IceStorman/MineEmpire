@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Emerald
   m_EditorClassIdentifier: 
   ore: 0
-  recycleOre: 0
-  recycleCount: 0
+  recycleOre: 1
+  recycleCount: 0.5
   recycleOreGive: 2
-  recycleOreCost: 189.1
+  recycleOreCost: 198.05862
   defaultOreCost: 189.1
   dropProcent: 0
-  howMuchAmountOfRecycle: 0
-  amountOfRecycle: 0
-  amountOfRecycleReceive: 0
+  amountOfRecycle: 9
+  amountOfRecycleReceive: 4.5
+  numberNeededToDecrease: 55
