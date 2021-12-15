@@ -10,11 +10,20 @@ public class AchivementMechanic : MonoBehaviour
     [SerializeField] private Text textPrefab;
     public List<int> moneysList = new List<int>();
     [SerializeField] Image checkerOn;
+    [SerializeField] MainData mainData;
 
     void Start()
     {
         SpawnPefabs();
         panel.SetActive(false);
+    }
+
+    public void Update()
+    {
+        /*for (int i = 0; i < moneysList.Count; i++)
+        {
+            if (mainData.otherData.money >= moneysList[i] || mainData.achivementData.moneysAchivementList[i]) { return; }
+        }*/
     }
 
     void SpawnPefabs()

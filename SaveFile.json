@@ -169,7 +169,7 @@
   },
   "otherData": {
     "money": 15.4006653,
-    "timer": 375.0,
+    "timer": 177.0,
     "lvl": 1,
     "exp": 0,
     "maxExp": 10,
@@ -525,6 +525,21 @@
     "giveExp": 1400,
     "thingID": 10,
     "name": "PlanetData",
+    "hideFlags": 0
+  },
+  "achivementData": {
+    "secondmoneyAchivement": false,
+    "thirdmoneyAchivement": false,
+    "fourthmoneyAchivement": false,
+    "fifthmoneyAchivement": false,
+    "sixthmoneyAchivement": false,
+    "sevnthmoneyAchivement": false,
+    "eighthmoneyAchivement": false,
+    "ninethmoneyAchivement": false,
+    "moneysAchivementList": [
+      false
+    ],
+    "name": "AchivementData",
     "hideFlags": 0
   },
   "name": "MainData",

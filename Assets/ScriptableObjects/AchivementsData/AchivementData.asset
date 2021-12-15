@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d198ba8a71eae7540bb552e8672de713, type: 3}
+  m_Name: AchivementData
+  m_EditorClassIdentifier: 
+  secondmoneyAchivement: 0
+  thirdmoneyAchivement: 0
+  fourthmoneyAchivement: 0
+  fifthmoneyAchivement: 0
+  sixthmoneyAchivement: 0
+  sevnthmoneyAchivement: 0
+  eighthmoneyAchivement: 0
+  ninethmoneyAchivement: 0
+  moneysAchivementList: 00

@@ -47,3 +47,4 @@ MonoBehaviour:
   privatePlaneData: {fileID: 11400000, guid: dc4b19ece9b5f684db124e26f771f0bc, type: 2}
   rocketData: {fileID: 11400000, guid: d923d68ff45482540b0e8a8338b4a381, type: 2}
   planetData: {fileID: 11400000, guid: 0c5c692f1b12ce84dbcc3497501cc5b2, type: 2}
+  achivementData: {fileID: 11400000, guid: 45c1e6a162e08814a84824303e2bd11d, type: 2}

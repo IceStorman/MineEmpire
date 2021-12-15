@@ -41,4 +41,6 @@ public class MainData : ScriptableObject
     public PrestigeData privatePlaneData;
     public PrestigeData rocketData;
     public PrestigeData planetData;
+
+    public AchivementData achivementData;
 }
