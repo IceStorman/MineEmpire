@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68fd01e644279614997c47ec8a306fc8, type: 3}
   m_Name: Sapphire
   m_EditorClassIdentifier: 
-  ore: 0
-  recycleOre: 0.5
+  ore: 31
+  recycleOre: 0
   recycleCount: 0.5
   recycleOreGive: 1
-  recycleOreCost: 409.20944
+  recycleOreCost: 352.60675
   defaultOreCost: 390.7
   dropProcent: 0.3
-  amountOfRecycle: 15
-  amountOfRecycleReceive: 7.5
-  numberNeededToDecrease: 55
+  amountOfRecycle: 23
+  amountOfRecycleReceive: 11.5
+  numberNeededToDecrease: 40

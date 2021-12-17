@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68fd01e644279614997c47ec8a306fc8, type: 3}
   m_Name: Tin
   m_EditorClassIdentifier: 
-  ore: 0
-  recycleOre: 2
+  ore: 20
+  recycleOre: 0
   recycleCount: 0.8
   recycleOreGive: 3
-  recycleOreCost: 99.18641
+  recycleOreCost: 85.46674
   defaultOreCost: 94.7
   dropProcent: 0.8
-  amountOfRecycle: 20
-  amountOfRecycleReceive: 16
-  numberNeededToDecrease: 55
+  amountOfRecycle: 5
+  amountOfRecycleReceive: 0
+  numberNeededToDecrease: 40

@@ -54,8 +54,15 @@ public class RentMechanic : MonoBehaviour
                 StartCoroutine(Timer(plantsData, plantSectionLeftTime));
                 plantsData.isRented = true;
                 rentFirstSpecialSectionText.text = "Enter";
+                plantPanel.SetActive(true);
+            }
+            if (mainData.otherData.money >= plantsData.rentCost)
+            {
+                mainData.otherData.money -= plantsData.rentCost;
+                plantsData.rentTime = defaultPlantData.defaultRentTime;
+                StartCoroutine(Timer(plantsData, plantSectionLeftTime));
+                plantsData.isRented = true;
                 rentSecondSpecialSectionText.text = "Enter";
-                rentThirdSpecialSectionText.text = "Enter";
                 plantPanel.SetActive(true);
             }
         }
