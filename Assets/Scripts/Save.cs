@@ -53,6 +53,15 @@ public class Save : MonoBehaviour
         LoadMineData(mainData.classicMineData, jsonMainData.classicMineData);
         LoadMineData(mainData.ironMineData, jsonMainData.ironMineData);
         LoadMineData(mainData.goldMineData, jsonMainData.goldMineData);
+        LoadMineData(mainData.benitoiteMineData, jsonMainData.benitoiteMineData);
+        LoadMineData(mainData.diamondMineData, jsonMainData.diamondMineData);
+        LoadMineData(mainData.amethystMineData, jsonMainData.amethystMineData);
+        LoadMineData(mainData.rubyMineData, jsonMainData.rubyMineData);
+        LoadMineData(mainData.copperMineData, jsonMainData.copperMineData);
+        LoadMineData(mainData.tinMineData, jsonMainData.tinMineData);
+        LoadMineData(mainData.sapphireMineData, jsonMainData.sapphireMineData);
+        LoadMineData(mainData.onyxMineData, jsonMainData.onyxMineData);
+        LoadMineData(mainData.emeraldMineData, jsonMainData.emeraldMineData);
 
         LoadPrestigeData(mainData.phoneData, jsonMainData.phoneData);
         LoadPrestigeData(mainData.PCData, jsonMainData.PCData);
@@ -115,16 +124,16 @@ public class Save : MonoBehaviour
         oreData.numberNeededToDecrease = jsonOreData.numberNeededToDecrease;
     }
 
-    private void LoadMineData(MineData mineData, MineData m)
+    private void LoadMineData(MineData mineData, MineData jsonMineData)
     {
-        mineData.isUnlocked = m.isUnlocked;
-        mineData.cost = m.cost;
+        mineData.isUnlocked = jsonMineData.isUnlocked;
+        mineData.cost = jsonMineData.cost;
     }
 
-    private void LoadPrestigeData(PrestigeData prestigeData, PrestigeData p)
+    private void LoadPrestigeData(PrestigeData prestigeData, PrestigeData jsonPrestigeData)
     {
-        prestigeData.canUpgrade = p.canUpgrade;
-        prestigeData.thingCost = p.thingCost;
-        prestigeData.wasBought = p.wasBought;
+        prestigeData.canUpgrade = jsonPrestigeData.canUpgrade;
+        prestigeData.thingCost = jsonPrestigeData.thingCost;
+        prestigeData.wasBought = jsonPrestigeData.wasBought;
     }
 }

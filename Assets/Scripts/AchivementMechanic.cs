@@ -12,7 +12,7 @@ public class AchivementMechanic : MonoBehaviour
     [SerializeField] Image checkerOn;
     [SerializeField] MainData mainData;
 
-    void Start()
+    private void Start()
     {
         SpawnPefabs();
         panel.SetActive(false);
@@ -26,19 +26,17 @@ public class AchivementMechanic : MonoBehaviour
         }*/
     }
 
-    void SpawnPefabs()
+    private void SpawnPefabs()
     {
         for (int i = 0; i < 9; i++)
         {
             Vector2 spawnPointButton = new Vector2(-493, 426 - (i * 12.5f));
-            Button buttonClone;
-            buttonClone = Instantiate(buttonPrefab, spawnPointButton, Quaternion.identity);
+            Button buttonClone = Instantiate(buttonPrefab, spawnPointButton, Quaternion.identity);
             buttonClone.transform.parent = GameObject.Find("AchivementPanel").transform;
 
             textPrefab.text = $"Earn {moneysList[i]} Money";
             Vector2 spawnPointText = new Vector2(-405, 420 - (i * 12.5f));
-            Text textClone;
-            textClone = Instantiate(textPrefab, spawnPointText, Quaternion.identity);
+            Text textClone = Instantiate(textPrefab, spawnPointText, Quaternion.identity);
             textClone.transform.parent = GameObject.Find("AchivementPanel").transform;
         }
     }
