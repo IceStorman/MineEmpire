@@ -43,4 +43,6 @@ public class MainData : ScriptableObject
     public PrestigeData planetData;
 
     public AchivementData achivementData;
+
+    public AllPlantsData allPlantsData;
 }

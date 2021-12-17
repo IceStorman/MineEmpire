@@ -41,6 +41,9 @@ public class Reset : MonoBehaviour
         ResetOreData(mainData.rubyData);
         ResetOreData(mainData.sapphireData);
         ResetOreData(mainData.tinData);
+        ResetPlantData(mainData.allPlantsData.firstSpecialSectionData);
+        ResetPlantData(mainData.allPlantsData.secondSpecialSectionData);
+        ResetPlantData(mainData.allPlantsData.thirdSpecialSectionData);
         Debug.LogWarning("Reseted");
     }
 
@@ -72,5 +75,11 @@ public class Reset : MonoBehaviour
         oreData.recycleOre = 0;
         oreData.recycleOreCost = oreData.defaultOreCost;
         oreData.numberNeededToDecrease = 50;
+    }
+
+    private void ResetPlantData(PlantsData plantsData)
+    {
+        plantsData.isRented = false;
+        plantsData.rentTime = 0;
     }
 }

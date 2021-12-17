@@ -168,8 +168,8 @@
     "hideFlags": 0
   },
   "otherData": {
-    "money": 0.0,
-    "timer": 561.0,
+    "money": 9499.0,
+    "timer": 573.0,
     "lvl": 1,
     "exp": 0,
     "maxExp": 10,
@@ -541,6 +541,40 @@
     ],
     "name": "AchivementData",
     "hideFlags": 0
+  },
+  "allPlantsData": {
+    "standartSectionData": {
+      "isRented": false,
+      "rentCost": 0.0,
+      "rentTime": 0.0
+    },
+    "firstSpecialSectionData": {
+      "isRented": false,
+      "rentCost": 0.0,
+      "rentTime": 0.0
+    },
+    "secondSpecialSectionData": {
+      "isRented": false,
+      "rentCost": 0.0,
+      "rentTime": 0.0
+    },
+    "thirdSpecialSectionData": {
+      "isRented": false,
+      "rentCost": 0.0,
+      "rentTime": 0.0
+    },
+    "defaultFirstSpecialSectionData": {
+      "defaultRentCost": 0.0,
+      "defaultRentTime": 0.0
+    },
+    "defaulSecondSpecialSectionData": {
+      "defaultRentCost": 0.0,
+      "defaultRentTime": 0.0
+    },
+    "defaultThirdSpecialSectionData": {
+      "defaultRentCost": 0.0,
+      "defaultRentTime": 0.0
+    }
   },
   "name": "MainData",
   "hideFlags": 0

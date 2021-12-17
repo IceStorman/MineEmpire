@@ -74,6 +74,13 @@ public class Save : MonoBehaviour
         LoadPrestigeData(mainData.rocketData, jsonMainData.rocketData);
         LoadPrestigeData(mainData.planetData, jsonMainData.planetData);
 
+        LoadPlantData(mainData.allPlantsData.firstSpecialSectionData, 
+            jsonMainData.allPlantsData.firstSpecialSectionData);
+        LoadPlantData(mainData.allPlantsData.secondSpecialSectionData,
+            jsonMainData.allPlantsData.secondSpecialSectionData);
+        LoadPlantData(mainData.allPlantsData.thirdSpecialSectionData,
+            jsonMainData.allPlantsData.thirdSpecialSectionData);
+
         sr.Close();
         Debug.Log("Load has been ended");
     }
@@ -135,5 +142,12 @@ public class Save : MonoBehaviour
         prestigeData.canUpgrade = jsonPrestigeData.canUpgrade;
         prestigeData.thingCost = jsonPrestigeData.thingCost;
         prestigeData.wasBought = jsonPrestigeData.wasBought;
+    }
+
+    private void LoadPlantData(PlantsData plantsData, PlantsData jsonPlantsData)
+    {
+        plantsData.isRented = jsonPlantsData.isRented;
+        plantsData.rentCost = jsonPlantsData.rentCost;
+        plantsData.rentTime = jsonPlantsData.rentTime;
     }
 }

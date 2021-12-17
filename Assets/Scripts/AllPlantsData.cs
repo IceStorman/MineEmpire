@@ -1,5 +1,5 @@
 [System.Serializable]
-public struct AllPlantsData
+public class AllPlantsData
 {
     public PlantsData standartSectionData;
     public PlantsData firstSpecialSectionData;
