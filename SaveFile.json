@@ -1,6 +1,6 @@
 {
   "stoneData": {
-    "ore": 0,
+    "ore": 2,
     "recycleOre": 0.0,
     "recycleCount": 0.5,
     "recycleOreGive": 15,
@@ -168,8 +168,8 @@
     "hideFlags": 0
   },
   "otherData": {
-    "money": 9499.0,
-    "timer": 569.0,
+    "money": 2500.0,
+    "timer": 332.0,
     "lvl": 1,
     "exp": 0,
     "maxExp": 10,
@@ -528,15 +528,15 @@
     "hideFlags": 0
   },
   "achivementData": {
-    "secondmoneyAchivement": false,
-    "thirdmoneyAchivement": false,
-    "fourthmoneyAchivement": false,
-    "fifthmoneyAchivement": false,
-    "sixthmoneyAchivement": false,
-    "sevnthmoneyAchivement": false,
-    "eighthmoneyAchivement": false,
-    "ninethmoneyAchivement": false,
     "moneysAchivementList": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
       false
     ],
     "name": "AchivementData",

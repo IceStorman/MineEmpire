@@ -19,16 +19,19 @@ public class AchivementMechanic : MonoBehaviour
         panel.SetActive(false);
     }
 
-    /*public void Update()
+    private void Update()
     {
-        for (int i = 0; i < 9; i++)
+        if (buttonsMass[9])
         {
-            if (mainData.otherData.money >= moneysList[i + 1] || mainData.achivementData.moneysAchivementList[i])
+            for (int i = 0; i < 9; i++)
             {
-                buttonsMass[i].image = checkerOn;
+                if (mainData.otherData.money <= moneysList[i] || mainData.achivementData.moneysAchivementList[i])
+                {
+                    buttonsMass[i].image = checkerOn;
+                }
             }
         }
-    }*/
+    }
 
     private void SpawnPefabs()
     {

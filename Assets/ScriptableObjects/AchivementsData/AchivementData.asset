@@ -12,12 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d198ba8a71eae7540bb552e8672de713, type: 3}
   m_Name: AchivementData
   m_EditorClassIdentifier: 
-  secondmoneyAchivement: 0
-  thirdmoneyAchivement: 0
-  fourthmoneyAchivement: 0
-  fifthmoneyAchivement: 0
-  sixthmoneyAchivement: 0
-  sevnthmoneyAchivement: 0
-  eighthmoneyAchivement: 0
-  ninethmoneyAchivement: 0
-  moneysAchivementList: 00
+  moneysAchivementList: 000000000000000000

@@ -4,17 +4,25 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Achivement data", menuName = "AchivementData", order = 55)]
 public class AchivementData : ScriptableObject
 {
-    static bool firstmoneyAchivement;
-    public bool secondmoneyAchivement;
-    public bool thirdmoneyAchivement;
-    public bool fourthmoneyAchivement;
-    public bool fifthmoneyAchivement;
-    public bool sixthmoneyAchivement;
-    public bool sevnthmoneyAchivement;
-    public bool eighthmoneyAchivement;
-    public bool ninethmoneyAchivement;
+    /*static bool firstmoneyAchivement;
+    static bool secondmoneyAchivement;
+    static bool thirdmoneyAchivement;
+    static bool fourthmoneyAchivement;
+    static bool fifthmoneyAchivement;
+    static bool sixthmoneyAchivement;
+    static bool sevnthmoneyAchivement;
+    static bool eighthmoneyAchivement;
+    static bool ninethmoneyAchivement;*/
     public List<bool> moneysAchivementList = new List<bool>
     {
-        firstmoneyAchivement
+        /*firstmoneyAchivement,
+        secondmoneyAchivement,
+        thirdmoneyAchivement,
+        fourthmoneyAchivement,
+        fifthmoneyAchivement,
+        sixthmoneyAchivement,
+        sevnthmoneyAchivement,
+        eighthmoneyAchivement,
+        ninethmoneyAchivement*/
     };
 }
