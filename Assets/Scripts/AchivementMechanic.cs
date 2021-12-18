@@ -12,27 +12,15 @@ public class AchivementMechanic : MonoBehaviour
     [SerializeField] Image checkerOn;
     [SerializeField] MainData mainData;
 
-    [SerializeField] static Image image1;
-    [SerializeField] static Image image2;
-    [SerializeField] static Image image3;
-    [SerializeField] static Image image4;
-    [SerializeField] static Image image5;
-    [SerializeField] static Image image6;
-    [SerializeField] static Image image7;
-    [SerializeField] static Image image8;
-    [SerializeField] static Image image9;
-    [SerializeField] Image[] imagesMass = 
-    {
-        image1,
-        image2,
-        image3,
-        image4,
-        image5,
-        image6,
-        image7,
-        image8,
-        image9,
-    };
+    public Image image1;
+    public Image image2;
+    public Image image3;
+    public Image image4;
+    public Image image5;
+    public Image image6;
+    public Image image7;
+    public Image image8;
+    public Image image9;
 
     private void Start()
     {
@@ -41,13 +29,28 @@ public class AchivementMechanic : MonoBehaviour
 
     private void Update()
     {
-        for (int i = 0; i < 9; i++)
+        /*Image[] imagesMass =
+        {
+            image1,
+            image2,
+            image3,
+            image4,
+            image5,
+            image6,
+            image7,
+            image8,
+            image9,
+        };*/
+
+        //if (mainData.otherData.money <= moneysList[0])
+
+        /*for (int i = 0; i < 9; i++)
         {
             if (mainData.otherData.money <= moneysList[i] || mainData.achivementData.moneysAchivementList[i])
             {
                 imagesMass[i] = checkerOn;
             }
-        }
+        }*/
     }
 
     public void Click(Button button)
