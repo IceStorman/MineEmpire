@@ -35255,6 +35255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1093185005}
+  - component: {fileID: 1093185021}
   - component: {fileID: 1093185004}
   - component: {fileID: 1093185006}
   - component: {fileID: 1093185007}
@@ -35271,7 +35272,6 @@ GameObject:
   - component: {fileID: 1093185018}
   - component: {fileID: 1093185019}
   - component: {fileID: 1093185020}
-  - component: {fileID: 1093185021}
   - component: {fileID: 1093185023}
   - component: {fileID: 1093185022}
   - component: {fileID: 1093185024}
@@ -35746,8 +35746,8 @@ MonoBehaviour:
   buttonPrefab: {fileID: 0}
   textPrefab: {fileID: 3691020337244978781, guid: cca298d58d2b12347a163b6ea6491ec5, type: 3}
   moneysList: e8030000c40900008813000010270000204e000050c30000a0860100400d030040420f00
-  checkerOn: {fileID: 1815544323}
   mainData: {fileID: 11400000, guid: e91ed92415be5fa488ac8a6ba8215bf5, type: 2}
+  checkerOn: {fileID: 21300000, guid: 24f0fb39578ca5d4fb9227f9e11f3742, type: 3}
   image1: {fileID: 1815544323}
   image2: {fileID: 1450905272}
   image3: {fileID: 1616397993}
