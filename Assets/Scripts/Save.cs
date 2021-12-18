@@ -117,7 +117,8 @@ public class Save : MonoBehaviour
             jsonOreData.ore = 0;
             jsonOreData.recycleCount = 0;
             jsonOreData.recycleOre = 0;
-            jsonOreData.recycleOreCost = jsonOreData.defaultOreCost;
+            jsonOreData.recycleOreSellCost = jsonOreData.defaultOreSellCost;
+            oreData.recycleOreBuyCost = (jsonOreData.defaultOreSellCost * 93) / 100;
             oreData.numberNeededToDecrease = 50;
             return;
         }
@@ -126,7 +127,8 @@ public class Save : MonoBehaviour
         oreData.ore = jsonOreData.ore;
         oreData.recycleCount = jsonOreData.recycleCount;
         oreData.recycleOre = jsonOreData.recycleOre;
-        oreData.recycleOreCost = jsonOreData.recycleOreCost;
+        oreData.recycleOreSellCost = jsonOreData.recycleOreSellCost;
+        oreData.recycleOreBuyCost = jsonOreData.recycleOreBuyCost;
         oreData.recycleOreGive = jsonOreData.recycleOreGive;
         oreData.numberNeededToDecrease = jsonOreData.numberNeededToDecrease;
     }

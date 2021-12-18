@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: Benitoite
   m_EditorClassIdentifier: 
   ore: 0
-  recycleOre: 1
+  recycleOre: 0
   recycleCount: 0.5
   recycleOreGive: 3
-  recycleOreCost: 138.35825
-  defaultOreCost: 132.1
+  recycleOreSellCost: 132.1
+  defaultOreSellCost: 132.1
+  recycleOreBuyCost: 0
   dropProcent: 0.7
-  amountOfRecycle: 50
-  amountOfRecycleReceive: 25
-  numberNeededToDecrease: 55
+  amountOfRecycle: 7
+  amountOfRecycleReceive: 3.5
+  numberNeededToDecrease: 50

@@ -6,8 +6,11 @@ public class ExchangePanel : MonoBehaviour
 {
     [SerializeField] private GameObject exchangePanel;
     [SerializeField] private GameObject inventoryPanel;
+    [SerializeField] private GameObject buyPanel;
+    [SerializeField] private GameObject sellPanel;
 
-    private bool isOpened;
+    private bool isOpenedExchangePanel;
+    private bool isOpenBuyPanel = true;
 
     [SerializeField] private Text recycleStoneText;
     [SerializeField] private Text recycleIronText;
@@ -35,6 +38,19 @@ public class ExchangePanel : MonoBehaviour
     [SerializeField] private Text recycleSapphireCostText;
     [SerializeField] private Text recycleAmethystCostText;
 
+    [SerializeField] private Text recycleStoneBuyCostText;
+    [SerializeField] private Text recycleIronBuyCostText;
+    [SerializeField] private Text recycleGoldBuyCostText;
+    [SerializeField] private Text recycleTinBuyCostText;
+    [SerializeField] private Text recycleCopperBuyCostText;
+    [SerializeField] private Text recycleBenitoiteBuyCostText;
+    [SerializeField] private Text recycleOnyxBuyCostText;
+    [SerializeField] private Text recycleEmeraldBuyCostText;
+    [SerializeField] private Text recycleRubyBuyCostText;
+    [SerializeField] private Text recycleDiamondBuyCostText;
+    [SerializeField] private Text recycleSapphireBuyCostText;
+    [SerializeField] private Text recycleAmethystBuyCostText;
+
     [SerializeField] private Text moneyText;
 
     [SerializeField] private Text timerText;
@@ -45,20 +61,34 @@ public class ExchangePanel : MonoBehaviour
     {
         exchangePanel.SetActive(false);
         inventoryPanel.SetActive(false);
+        buyPanel.SetActive(false);
         StartCoroutine(Timer());
+
+        ChangeOreBuyCost(mainData.stoneData);
+        ChangeOreBuyCost(mainData.ironData);
+        ChangeOreBuyCost(mainData.goldData);
+        ChangeOreBuyCost(mainData.tinData);
+        ChangeOreBuyCost(mainData.copperData);
+        ChangeOreBuyCost(mainData.benitoiteData);
+        ChangeOreBuyCost(mainData.onyxData);
+        ChangeOreBuyCost(mainData.emeraldData);
+        ChangeOreBuyCost(mainData.rubyData);
+        ChangeOreBuyCost(mainData.diamondData);
+        ChangeOreBuyCost(mainData.sapphireData);
+        ChangeOreBuyCost(mainData.amethystData);
     }
 
     public void OpenInventory()
     {
-        if (isOpened)
+        if (isOpenedExchangePanel)
         {
             inventoryPanel.SetActive(false);
-            isOpened = !isOpened;
+            isOpenedExchangePanel = !isOpenedExchangePanel;
         }
         else
         {
             inventoryPanel.SetActive(true);
-            isOpened = !isOpened;
+            isOpenedExchangePanel = !isOpenedExchangePanel;
         }
     }
 
@@ -117,16 +147,23 @@ public class ExchangePanel : MonoBehaviour
             if (oreData.numberNeededToDecrease < 95) oreData.numberNeededToDecrease += 5;
             Increase(oreData);
         }
+
+        ChangeOreBuyCost(oreData);
     }
 
     private void Increase(OreData oreData)
     {
-        oreData.recycleOreCost += (oreData.recycleOreCost * 5) / 100;
+        oreData.recycleOreSellCost += (oreData.recycleOreSellCost * 5) / 100;
     }
 
     private void Decrease(OreData oreData)
     {
-        oreData.recycleOreCost = (oreData.recycleOreCost * 95) / 100;
+        oreData.recycleOreSellCost = (oreData.recycleOreSellCost * 95) / 100;
+    }
+
+    private void ChangeOreBuyCost(OreData oreData)
+    {
+        oreData.recycleOreBuyCost = (oreData.recycleOreSellCost * 93) / 100;
     }
 
     private void Repeat()
@@ -142,25 +179,26 @@ public class ExchangePanel : MonoBehaviour
 
     private void UpdateAllUI()
     {
-        UpdateUI(recycleStoneText, recycleStoneCostText, mainData.stoneData);
-        UpdateUI(recycleIronText, recycleIronCostText, mainData.ironData);
-        UpdateUI(recycleGoldText, recycleGoldCostText, mainData.goldData);
-        UpdateUI(recycleTinText, recycleTinCostText, mainData.tinData);
-        UpdateUI(recycleCopperText, recycleCopperCostText, mainData.copperData);
-        UpdateUI(recycleBenitoiteText, recycleBenitoiteCostText, mainData.benitoiteData);
-        UpdateUI(recycleOnyxText, recycleOnyxCostText, mainData.onyxData);
-        UpdateUI(recycleEmeraldText, recycleEmeraldCostText, mainData.emeraldData);
-        UpdateUI(recycleRubyText, recycleRubyCostText, mainData.rubyData);
-        UpdateUI(recycleDiamondCostText, recycleDiamondCostText, mainData.diamondData);
-        UpdateUI(recycleSapphireText, recycleSapphireCostText, mainData.sapphireData);
-        UpdateUI(recycleAmethystText, recycleAmethystCostText, mainData.amethystData);
+        UpdateUI(recycleStoneText, recycleStoneCostText, recycleStoneBuyCostText, mainData.stoneData);
+        UpdateUI(recycleIronText, recycleIronCostText, recycleIronBuyCostText, mainData.ironData);
+        UpdateUI(recycleGoldText, recycleGoldCostText, recycleGoldBuyCostText, mainData.goldData);
+        UpdateUI(recycleTinText, recycleTinCostText, recycleTinBuyCostText, mainData.tinData);
+        UpdateUI(recycleCopperText, recycleCopperCostText, recycleCopperBuyCostText, mainData.copperData);
+        UpdateUI(recycleBenitoiteText, recycleBenitoiteCostText, recycleBenitoiteBuyCostText, mainData.benitoiteData);
+        UpdateUI(recycleOnyxText, recycleOnyxCostText, recycleOnyxBuyCostText, mainData.onyxData);
+        UpdateUI(recycleEmeraldText, recycleEmeraldCostText, recycleEmeraldBuyCostText, mainData.emeraldData);
+        UpdateUI(recycleRubyText, recycleRubyCostText, recycleRubyBuyCostText, mainData.rubyData);
+        UpdateUI(recycleDiamondCostText, recycleDiamondCostText, recycleDiamondBuyCostText, mainData.diamondData);
+        UpdateUI(recycleSapphireText, recycleSapphireCostText, recycleSapphireBuyCostText, mainData.sapphireData);
+        UpdateUI(recycleAmethystText, recycleAmethystCostText, recycleAmethystBuyCostText, mainData.amethystData);
     }
 
-    public void UpdateUI(Text recycleResourceText, Text recycleResourceCostText, OreData oreData)
+    public void UpdateUI(Text recycleResourceText, Text recycleResourceCostText, Text recycleRecourceBuyCost, OreData oreData)
     {
         moneyText.text = mainData.otherData.money.ToString("F2");
         recycleResourceText.text = oreData.recycleOre.ToString("F2");
-        recycleResourceCostText.text = oreData.recycleOreCost.ToString("F2");
+        recycleResourceCostText.text = oreData.recycleOreSellCost.ToString("F2");
+        recycleRecourceBuyCost.text = oreData.recycleOreBuyCost.ToString("F2");
     }
 
     public void TradeResources(OreData oreData)
@@ -168,7 +206,7 @@ public class ExchangePanel : MonoBehaviour
         if (oreData.recycleOre >= oreData.recycleOreGive)
         {
             oreData.recycleOre -= oreData.recycleOreGive;
-            mainData.otherData.money += oreData.recycleOreCost;
+            mainData.otherData.money += oreData.recycleOreSellCost;
         }
     }
 
@@ -180,5 +218,12 @@ public class ExchangePanel : MonoBehaviour
     public void Close()
     {
         exchangePanel.SetActive(false);
+    }
+
+    public void OpenBuyPanel()
+    {
+        buyPanel.SetActive(isOpenBuyPanel);
+        sellPanel.SetActive(!isOpenBuyPanel);
+        isOpenBuyPanel = !isOpenBuyPanel;
     }
 }

@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: Diamond
   m_EditorClassIdentifier: 
   ore: 0
-  recycleOre: 55
+  recycleOre: 0
   recycleCount: 0.8
   recycleOreGive: 1
-  recycleOreCost: 298.12283
-  defaultOreCost: 314.6
+  recycleOreSellCost: 0
+  defaultOreSellCost: 314.6
+  recycleOreBuyCost: 0
   dropProcent: 0
-  amountOfRecycle: 50
-  amountOfRecycleReceive: 40
-  numberNeededToDecrease: 45
+  amountOfRecycle: 9
+  amountOfRecycleReceive: 7.2000003
+  numberNeededToDecrease: 50

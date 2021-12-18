@@ -73,7 +73,8 @@ public class Reset : MonoBehaviour
     {
         oreData.ore = 0;
         oreData.recycleOre = 0;
-        oreData.recycleOreCost = oreData.defaultOreCost;
+        oreData.recycleOreSellCost = oreData.defaultOreSellCost;
+        oreData.recycleOreBuyCost = (oreData.defaultOreSellCost * 93) / 100;
         oreData.numberNeededToDecrease = 50;
     }
 
