@@ -4,8 +4,6 @@ using UnityEngine.Audio;
 public class Songs : MonoBehaviour
 {
     [SerializeField] private AudioSource classicMineTheme;
-    [SerializeField] private AudioSource specialMineTheme;
-    [SerializeField] private AudioSource oldestMineTheme;
     [SerializeField] private AudioSource exchancheTheme;
     [SerializeField] private AudioSource plantTheme;
     [SerializeField] private AudioSource prestigePanelTheme;

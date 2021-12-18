@@ -16,7 +16,7 @@
   },
   "ironData": {
     "ore": 0,
-    "recycleOre": 180.0,
+    "recycleOre": 0.0,
     "recycleCount": 0.7,
     "recycleOreGive": 5,
     "recycleOreSellCost": 23.7,
@@ -180,8 +180,8 @@
     "hideFlags": 0
   },
   "otherData": {
-    "money": 106.41301,
-    "timer": 449.0,
+    "money": 0.0,
+    "timer": 593.0,
     "lvl": 1,
     "exp": 0,
     "maxExp": 10,
