@@ -11,41 +11,42 @@ public class AchivementMechanic : MonoBehaviour
     public List<int> moneysList = new List<int>(9);
     [SerializeField] Image checkerOn;
     [SerializeField] MainData mainData;
-    private Button[] buttonsMass = new Button[9];
+
+    [SerializeField] static Image image1;
+    [SerializeField] static Image image2;
+    [SerializeField] static Image image3;
+    [SerializeField] static Image image4;
+    [SerializeField] static Image image5;
+    [SerializeField] static Image image6;
+    [SerializeField] static Image image7;
+    [SerializeField] static Image image8;
+    [SerializeField] static Image image9;
+    [SerializeField] Image[] imagesMass = 
+    {
+        image1,
+        image2,
+        image3,
+        image4,
+        image5,
+        image6,
+        image7,
+        image8,
+        image9,
+    };
 
     private void Start()
     {
-        SpawnPefabs();
         panel.SetActive(false);
     }
 
     private void Update()
     {
-        if (buttonsMass[9])
-        {
-            for (int i = 0; i < 9; i++)
-            {
-                if (mainData.otherData.money <= moneysList[i] || mainData.achivementData.moneysAchivementList[i])
-                {
-                    buttonsMass[i].image = checkerOn;
-                }
-            }
-        }
-    }
-
-    private void SpawnPefabs()
-    {
         for (int i = 0; i < 9; i++)
         {
-            Vector2 spawnPointButton = new Vector2(-493, 426 - (i * 12.5f));
-            Button buttonClone = Instantiate(buttonPrefab, spawnPointButton, Quaternion.identity);
-            buttonClone.transform.parent = GameObject.Find("AchivementPanel").transform;
-            buttonsMass[i] = buttonClone;
-
-            textPrefab.text = $"Earn {moneysList[i]} Money";
-            Vector2 spawnPointText = new Vector2(-405, 420 - (i * 12.5f));
-            Text textClone = Instantiate(textPrefab, spawnPointText, Quaternion.identity);
-            textClone.transform.parent = GameObject.Find("AchivementPanel").transform;
+            if (mainData.otherData.money <= moneysList[i] || mainData.achivementData.moneysAchivementList[i])
+            {
+                imagesMass[i] = checkerOn;
+            }
         }
     }
 
