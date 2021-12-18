@@ -8,6 +8,8 @@ public class ExchangePanel : MonoBehaviour
     [SerializeField] private GameObject inventoryPanel;
     [SerializeField] private GameObject buyPanel;
     [SerializeField] private GameObject sellPanel;
+    [SerializeField] private GameObject lockSprite;
+    [SerializeField] private GameObject lockText;
 
     private bool isOpenedExchangePanel;
     private bool isOpenBuyPanel = true;
@@ -199,6 +201,18 @@ public class ExchangePanel : MonoBehaviour
         recycleResourceText.text = oreData.recycleOre.ToString("F2");
         recycleResourceCostText.text = oreData.recycleOreSellCost.ToString("F2");
         recycleRecourceBuyCost.text = oreData.recycleOreBuyCost.ToString("F2");
+        if (mainData.otherData.lvl >= 6)
+        {
+            lockSprite.SetActive(false);
+            lockText.SetActive(false);
+        }
+        else
+        {
+            lockSprite.SetActive(true);
+            buyPanel.SetActive(false);
+            sellPanel.SetActive(true);
+            lockText.SetActive(true);
+        } 
     }
 
     public void SellResources(OreData oreData)
@@ -231,8 +245,11 @@ public class ExchangePanel : MonoBehaviour
 
     public void OpenBuyPanel()
     {
-        buyPanel.SetActive(isOpenBuyPanel);
-        sellPanel.SetActive(!isOpenBuyPanel);
-        isOpenBuyPanel = !isOpenBuyPanel;
+        if(mainData.otherData.lvl >= 6)
+        {
+            buyPanel.SetActive(isOpenBuyPanel);
+            sellPanel.SetActive(!isOpenBuyPanel);
+            isOpenBuyPanel = !isOpenBuyPanel;
+        }
     }
 }
