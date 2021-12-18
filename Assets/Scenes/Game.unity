@@ -2034,7 +2034,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: SellResources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 1b7624ce9af207f4aad77d5c567ed95c, type: 2}
@@ -2626,7 +2626,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -206.92891, y: -82.101}
+  m_AnchoredPosition: {x: -206.92892, y: -82.101}
   m_SizeDelta: {x: 61.7207, y: 48.293}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &102927011
@@ -4182,7 +4182,7 @@ GameObject:
   - component: {fileID: 142993031}
   - component: {fileID: 142993030}
   m_Layer: 5
-  m_Name: SellRecycleResourceButton
+  m_Name: BuyRecycleResourceButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4266,7 +4266,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: BuyRecources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 09cc6cc328d25954e8b04e1f03c8b3af, type: 2}
@@ -4403,7 +4403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 153375660}
   m_Layer: 5
-  m_Name: SellRecycleCopperUI
+  m_Name: BuyRecycleCopperUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5996,7 +5996,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: SellResources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 598ec7cfe7abe0b42a9772c1b53c31d1, type: 2}
@@ -7378,7 +7378,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -307.20062}
+  m_AnchoredPosition: {x: 0, y: -307.20065}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &257646356
@@ -7434,7 +7434,7 @@ GameObject:
   - component: {fileID: 264354376}
   - component: {fileID: 264354375}
   m_Layer: 5
-  m_Name: SellRecycleResourceButton
+  m_Name: BuyRecycleResourceButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7518,7 +7518,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: BuyRecources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 1b7624ce9af207f4aad77d5c567ed95c, type: 2}
@@ -9593,7 +9593,7 @@ GameObject:
   - component: {fileID: 340666997}
   - component: {fileID: 340666996}
   m_Layer: 5
-  m_Name: SellRecycleResourceButton
+  m_Name: BuyRecycleResourceButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9677,7 +9677,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: BuyRecources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: cdaea835918d47349ad5faeaea64b044, type: 2}
@@ -9896,7 +9896,7 @@ GameObject:
   m_Component:
   - component: {fileID: 359912477}
   m_Layer: 5
-  m_Name: SellRecycleIronUI
+  m_Name: BuyRecycleIronUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11333,7 +11333,7 @@ GameObject:
   - component: {fileID: 395519573}
   - component: {fileID: 395519572}
   m_Layer: 5
-  m_Name: SellRecycleResourceButton
+  m_Name: BuyRecycleResourceButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11417,7 +11417,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: BuyRecources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: cb45ff081e9749d43a605991cd6869f5, type: 2}
@@ -11918,7 +11918,7 @@ GameObject:
   m_Component:
   - component: {fileID: 422530081}
   m_Layer: 5
-  m_Name: SellRecycleSapphireUI
+  m_Name: BuyRecycleSapphireUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12486,7 +12486,7 @@ GameObject:
   m_Component:
   - component: {fileID: 453469944}
   m_Layer: 5
-  m_Name: SellRecycleStoneUI
+  m_Name: BuyRecycleStoneUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15907,7 +15907,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -307.20062}
+  m_AnchoredPosition: {x: 0, y: -307.20065}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &544715229
@@ -18919,7 +18919,7 @@ GameObject:
   - component: {fileID: 630258150}
   - component: {fileID: 630258149}
   m_Layer: 5
-  m_Name: SellRecycleResourceButton
+  m_Name: BuyRecycleResourceButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19003,7 +19003,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: BuyRecources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 598ec7cfe7abe0b42a9772c1b53c31d1, type: 2}
@@ -19731,7 +19731,7 @@ GameObject:
   - component: {fileID: 643219803}
   - component: {fileID: 643219802}
   m_Layer: 5
-  m_Name: SellRecycleResourceButton
+  m_Name: BuyRecycleResourceButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19815,7 +19815,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: BuyRecources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 8a42d5a5bee46df458099ab20a342c96, type: 2}
@@ -22749,7 +22749,7 @@ GameObject:
   m_Component:
   - component: {fileID: 723439223}
   m_Layer: 5
-  m_Name: SellRecycleRubyUI
+  m_Name: BuyRecycleRubyUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23364,7 +23364,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: SellResources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: cea39e15754f6f54db666de025dff45f, type: 2}
@@ -26817,7 +26817,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: SellResources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: cdaea835918d47349ad5faeaea64b044, type: 2}
@@ -27810,7 +27810,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: SellResources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: f908f65115a2fc24dbf1f01844512079, type: 2}
@@ -28283,7 +28283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 920178267}
   m_Layer: 5
-  m_Name: SellRecycleEmeraldUI
+  m_Name: BuyRecycleEmeraldUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30207,7 +30207,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: SellResources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 743eb541b5692d742ae7bff6bba0738b, type: 2}
@@ -31967,7 +31967,7 @@ GameObject:
   - component: {fileID: 1026006055}
   - component: {fileID: 1026006054}
   m_Layer: 5
-  m_Name: SellRecycleResourceButton
+  m_Name: BuyRecycleResourceButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32051,7 +32051,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: BuyRecources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: f908f65115a2fc24dbf1f01844512079, type: 2}
@@ -32191,7 +32191,7 @@ GameObject:
   - component: {fileID: 1027882216}
   - component: {fileID: 1027882215}
   m_Layer: 5
-  m_Name: SellRecycleResourceButton
+  m_Name: BuyRecycleResourceButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32275,7 +32275,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: BuyRecources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: cea39e15754f6f54db666de025dff45f, type: 2}
@@ -32769,7 +32769,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -213.7, y: -82.761}
+  m_AnchoredPosition: {x: -213.69998, y: -82.761}
   m_SizeDelta: {x: 67.1423, y: 48.292}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1043893931
@@ -33969,7 +33969,7 @@ GameObject:
   - component: {fileID: 1077547066}
   - component: {fileID: 1077547065}
   m_Layer: 5
-  m_Name: SellRecycleResourceButton
+  m_Name: BuyRecycleResourceButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34053,7 +34053,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: BuyRecources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: cb4ad2ecb56963a4fbdc7df5b2e60b11, type: 2}
@@ -40396,7 +40396,7 @@ GameObject:
   - component: {fileID: 1277580471}
   - component: {fileID: 1277580470}
   m_Layer: 5
-  m_Name: SellRecycleResourceButton
+  m_Name: BuyRecycleResourceButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40480,7 +40480,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: BuyRecources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 79ae735faa7aecb4197bb3fb533d076e, type: 2}
@@ -43031,15 +43031,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.6984879, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 57dea044d6288ff43988bbf82a080c6d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -44533,7 +44533,7 @@ GameObject:
   - component: {fileID: 1387464383}
   - component: {fileID: 1387464382}
   m_Layer: 5
-  m_Name: SellRecycleResourceButton
+  m_Name: BuyRecycleResourceButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44617,7 +44617,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: BuyRecources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 93913b281dcbea9498d3e2c9fd5bb4dc, type: 2}
@@ -45065,7 +45065,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: SellResources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: cb45ff081e9749d43a605991cd6869f5, type: 2}
@@ -45810,7 +45810,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: SellResources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 8a42d5a5bee46df458099ab20a342c96, type: 2}
@@ -46674,7 +46674,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1455077571}
   m_Layer: 5
-  m_Name: SellRecycleOnyxUI
+  m_Name: BuyRecycleOnyxUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48456,7 +48456,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: SellResources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 09cc6cc328d25954e8b04e1f03c8b3af, type: 2}
@@ -52359,7 +52359,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: SellResources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: cb4ad2ecb56963a4fbdc7df5b2e60b11, type: 2}
@@ -55228,7 +55228,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: SellResources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 79ae735faa7aecb4197bb3fb533d076e, type: 2}
@@ -56088,7 +56088,7 @@ GameObject:
   - component: {fileID: 1749767542}
   - component: {fileID: 1749767541}
   m_Layer: 5
-  m_Name: SellRecycleResourceButton
+  m_Name: BuyRecycleResourceButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56172,7 +56172,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: BuyRecources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 743eb541b5692d742ae7bff6bba0738b, type: 2}
@@ -56256,7 +56256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -216.93996, y: -82.858}
+  m_AnchoredPosition: {x: -216.93997, y: -82.858}
   m_SizeDelta: {x: 67.8099, y: 48.485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1752456125
@@ -56936,7 +56936,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1777560135}
   m_Layer: 5
-  m_Name: SellRecycleGoldUI
+  m_Name: BuyRecycleGoldUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57704,7 +57704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1802837498}
   m_Layer: 5
-  m_Name: SellRecycleAmethystUI
+  m_Name: BuyRecycleAmethystUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59120,7 +59120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1849496663}
   m_Layer: 5
-  m_Name: SellRecycleTinUI
+  m_Name: BuyRecycleTinUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59246,7 +59246,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185006}
         m_TargetAssemblyTypeName: ExchangePanel, Assembly-CSharp
-        m_MethodName: TradeResources
+        m_MethodName: SellResources
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 93913b281dcbea9498d3e2c9fd5bb4dc, type: 2}
@@ -66014,7 +66014,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2111108254}
   m_Layer: 5
-  m_Name: SellRecycleBenitoiteUI
+  m_Name: BuyRecycleBenitoiteUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66289,7 +66289,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2120598709}
   m_Layer: 5
-  m_Name: SellRecycleDiamondUI
+  m_Name: BuyRecycleDiamondUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

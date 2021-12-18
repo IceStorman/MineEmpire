@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Iron
   m_EditorClassIdentifier: 
   ore: 0
-  recycleOre: 0
+  recycleOre: 180
   recycleCount: 0.7
   recycleOreGive: 5
   recycleOreSellCost: 23.7
   defaultOreSellCost: 23.7
-  recycleOreBuyCost: 0
+  recycleOreBuyCost: 22.041
   dropProcent: 20
   amountOfRecycle: 17
   amountOfRecycleReceive: 11.9

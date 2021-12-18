@@ -201,12 +201,21 @@ public class ExchangePanel : MonoBehaviour
         recycleRecourceBuyCost.text = oreData.recycleOreBuyCost.ToString("F2");
     }
 
-    public void TradeResources(OreData oreData)
+    public void SellResources(OreData oreData)
     {
         if (oreData.recycleOre >= oreData.recycleOreGive)
         {
             oreData.recycleOre -= oreData.recycleOreGive;
             mainData.otherData.money += oreData.recycleOreSellCost;
+        }
+    }
+
+    public void BuyRecources(OreData oreData)
+    {
+        if(mainData.otherData.money >= oreData.recycleOreBuyCost)
+        {
+            mainData.otherData.money -= oreData.recycleOreBuyCost;
+            oreData.recycleOre += oreData.recycleOreGive;
         }
     }
 

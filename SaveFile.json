@@ -16,7 +16,7 @@
   },
   "ironData": {
     "ore": 0,
-    "recycleOre": 0.0,
+    "recycleOre": 180.0,
     "recycleCount": 0.7,
     "recycleOreGive": 5,
     "recycleOreSellCost": 23.7,
@@ -180,8 +180,8 @@
     "hideFlags": 0
   },
   "otherData": {
-    "money": 0.0,
-    "timer": 587.0,
+    "money": 106.41301,
+    "timer": 453.0,
     "lvl": 1,
     "exp": 0,
     "maxExp": 10,
@@ -540,15 +540,15 @@
     "hideFlags": 0
   },
   "achivementData": {
-    "secondmoneyAchivement": false,
-    "thirdmoneyAchivement": false,
-    "fourthmoneyAchivement": false,
-    "fifthmoneyAchivement": false,
-    "sixthmoneyAchivement": false,
-    "sevnthmoneyAchivement": false,
-    "eighthmoneyAchivement": false,
-    "ninethmoneyAchivement": false,
     "moneysAchivementList": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
       false
     ],
     "name": "AchivementData",
