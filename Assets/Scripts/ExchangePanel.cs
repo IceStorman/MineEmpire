@@ -165,7 +165,7 @@ public class ExchangePanel : MonoBehaviour
 
     private void ChangeOreBuyCost(OreData oreData)
     {
-        oreData.recycleOreBuyCost = (oreData.recycleOreSellCost * 93) / 100;
+        oreData.recycleOreBuyCost = (oreData.recycleOreSellCost * 107) / 100;
     }
 
     private void Repeat()
