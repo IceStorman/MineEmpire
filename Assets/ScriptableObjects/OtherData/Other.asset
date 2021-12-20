@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0b2f660b905f748b738f0920e450c9, type: 3}
   m_Name: Other
   m_EditorClassIdentifier: 
-  money: 5000
-  timer: 544
-  lvl: 3
-  exp: 15
-  maxExp: 40
+  money: 5426842
+  timer: 526
+  lvl: 5
+  exp: 85
+  maxExp: 160
   lastIndex: 0

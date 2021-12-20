@@ -35,6 +35,10 @@ public class EarnResoursesMechanic : MonoBehaviour
 
     [SerializeField] private int howManyOres = 12;
 
+    [SerializeField] private Button button;
+
+    [SerializeField] private Animator clickAnim;
+
     private void Start()
     {
         minePanel.SetActive(true);
@@ -43,6 +47,17 @@ public class EarnResoursesMechanic : MonoBehaviour
     private void Update()
     {
         UpdateUI();
+    }
+
+    public void OnClick()
+    {
+        clickAnim.SetBool("click", false);
+        Invoke("TurnOn", 0.01f);
+    }
+
+    private void TurnOn()
+    {
+        clickAnim.SetBool("click", true);
     }
 
     public void ClassicMineStart()
