@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Reset : MonoBehaviour
@@ -44,7 +45,14 @@ public class Reset : MonoBehaviour
         ResetPlantData(mainData.allPlantsData.firstSpecialSectionData);
         ResetPlantData(mainData.allPlantsData.secondSpecialSectionData);
         ResetPlantData(mainData.allPlantsData.thirdSpecialSectionData);
+        ResetAchivementData(mainData.achivementData.moneysAchivementList, mainData.achivementData.haveYouEarned);
         Debug.LogWarning("Reseted");
+    }
+
+    private void ResetAchivementData(List<bool> list, List<bool> list2)
+    {
+        for (int i = 0; i < list.Count; i++) list[i] = false;
+        for (int i = 0; i < list2.Count; i++) list2[i] = false;
     }
 
     private void ResetPrestigeData(PrestigeData prestigeData, float classicPrize, bool standartBool)

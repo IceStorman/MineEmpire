@@ -46,11 +46,6 @@ public class AchivementMechanic : MonoBehaviour
         mainData.achivementData.moneysAchivementList[i] = true;
     }
 
-    public void Click(Button button)
-    {
-        button.image.sprite = checkerOn;
-    }
-
     public void OpenClose()
     {
         if (!isOpened)
@@ -62,6 +57,15 @@ public class AchivementMechanic : MonoBehaviour
         {
             panel.SetActive(false);
             isOpened = !isOpened;
+        }
+    }
+
+    public void Earn(int num)
+    {
+        if (moneysList[num] <= mainData.otherData.money && !mainData.achivementData.haveYouEarned[num])
+        {
+            mainData.otherData.exp += 10 + (num * 5);
+            mainData.achivementData.haveYouEarned[num] = true;
         }
     }
 }

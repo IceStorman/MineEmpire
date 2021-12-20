@@ -180,11 +180,11 @@
     "hideFlags": 0
   },
   "otherData": {
-    "money": 0.0,
-    "timer": 595.0,
-    "lvl": 1,
-    "exp": 0,
-    "maxExp": 10,
+    "money": 5426842.0,
+    "timer": 530.0,
+    "lvl": 5,
+    "exp": 85,
+    "maxExp": 160,
     "lastIndex": 0,
     "name": "Other",
     "hideFlags": 0
@@ -541,6 +541,17 @@
   },
   "achivementData": {
     "moneysAchivementList": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "haveYouEarned": [
       true,
       true,
       true,
