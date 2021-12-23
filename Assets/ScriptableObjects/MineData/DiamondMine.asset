@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: DiamondMine
   m_EditorClassIdentifier: 
   levelOfPrestige: 8
-  cost: 25000
-  isUnlocked: 1
+  cost: 48000
+  isUnlocked: 0
   isItOpenedNow: 1
   stonePercentage: 80
   ironPercentage: 20

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EmeraldMine
   m_EditorClassIdentifier: 
   levelOfPrestige: 6
-  cost: 10000
+  cost: 23000
   isUnlocked: 1
   isItOpenedNow: 0
   stonePercentage: 80

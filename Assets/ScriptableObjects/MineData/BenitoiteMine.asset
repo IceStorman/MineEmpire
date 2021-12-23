@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BenitoiteMine
   m_EditorClassIdentifier: 
   levelOfPrestige: 6
-  cost: 12000
+  cost: 17000
   isUnlocked: 1
   isItOpenedNow: 0
   stonePercentage: 80

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: TinMine
   m_EditorClassIdentifier: 
   levelOfPrestige: 8
-  cost: 24000
-  isUnlocked: 1
+  cost: 13000
+  isUnlocked: 0
   isItOpenedNow: 0
   stonePercentage: 80
   ironPercentage: 20

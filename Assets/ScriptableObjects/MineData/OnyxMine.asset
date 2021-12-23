@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: OnyxMine
   m_EditorClassIdentifier: 
   levelOfPrestige: 6
-  cost: 21000
+  cost: 28000
   isUnlocked: 1
   isItOpenedNow: 0
   stonePercentage: 80

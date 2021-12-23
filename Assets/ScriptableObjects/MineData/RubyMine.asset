@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RubyMine
   m_EditorClassIdentifier: 
   levelOfPrestige: 6
-  cost: 16000
+  cost: 33000
   isUnlocked: 1
   isItOpenedNow: 0
   stonePercentage: 80

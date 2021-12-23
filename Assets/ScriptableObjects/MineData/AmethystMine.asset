@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: AmethystMine
   m_EditorClassIdentifier: 
   levelOfPrestige: 7
-  cost: 20000
-  isUnlocked: 1
+  cost: 60000
+  isUnlocked: 0
   isItOpenedNow: 0
   stonePercentage: 80
   ironPercentage: 25

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: SapphireMine
   m_EditorClassIdentifier: 
   levelOfPrestige: 7
-  cost: 15000
-  isUnlocked: 1
+  cost: 41000
+  isUnlocked: 0
   isItOpenedNow: 0
   stonePercentage: 80
   ironPercentage: 20

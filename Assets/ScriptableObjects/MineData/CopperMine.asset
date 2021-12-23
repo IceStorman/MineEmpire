@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: CopperMine
   m_EditorClassIdentifier: 
   levelOfPrestige: 8
-  cost: 19000
-  isUnlocked: 1
+  cost: 10000
+  isUnlocked: 0
   isItOpenedNow: 0
   stonePercentage: 80
   ironPercentage: 20
