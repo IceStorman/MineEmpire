@@ -12362,7 +12362,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 54.86499, y: -26.301514}
+  m_AnchoredPosition: {x: 54.86499, y: -26.301498}
   m_SizeDelta: {x: -406.32, y: -179.4989}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &399750097
@@ -14089,18 +14089,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1093185004}
-        m_TargetAssemblyTypeName: EarnResoursesMechanic, Assembly-CSharp
-        m_MethodName: OnEarn
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: e91ed92415be5fa488ac8a6ba8215bf5, type: 2}
-          m_ObjectArgumentAssemblyTypeName: MainData, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1093185010}
         m_TargetAssemblyTypeName: Songs, Assembly-CSharp
         m_MethodName: ClickEffect
@@ -14115,11 +14103,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1093185004}
         m_TargetAssemblyTypeName: EarnResoursesMechanic, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
+        m_MethodName: OnEarn
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: e91ed92415be5fa488ac8a6ba8215bf5, type: 2}
+          m_ObjectArgumentAssemblyTypeName: MainData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -36953,6 +36941,9 @@ MonoBehaviour:
   firstSpecialSectionTimeLeftText: {fileID: 1484586067}
   secondSpecialSectionTimeLeftText: {fileID: 507363804}
   thirdSpecialSectionTimeLeftText: {fileID: 1014748228}
+  first: 250$ / 5min
+  second: 400$ / 7min
+  third: 600$ / 10min
 --- !u!114 &1093185020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37325,7 +37316,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 54.86499, y: -26.301514}
+  m_AnchoredPosition: {x: 54.86499, y: -26.301498}
   m_SizeDelta: {x: -406.32, y: -179.4989}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1097643885
@@ -58403,7 +58394,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 168.42896, y: -106.74603}
+  m_AnchoredPosition: {x: 168.42896, y: -106.74602}
   m_SizeDelta: {x: -332.68, y: -151.55013}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1728036798
