@@ -20,6 +20,9 @@ public class RentMechanic : MonoBehaviour
     [SerializeField] private Text secondSpecialSectionTimeLeftText;
     [SerializeField] private Text thirdSpecialSectionTimeLeftText;
 
+    [SerializeField] private string first = "250$ / 5min";
+    [SerializeField] private string second = "400$ / 7min";
+    [SerializeField] private string third = "600$ / 10min";
     private void Start()
     {
         firstSpecialPanel.SetActive(false);
@@ -27,18 +30,18 @@ public class RentMechanic : MonoBehaviour
 
     public void EnterFirstSpecialSection()
     {
-        ClickMechanic(allPlantsData.firstSpecialSectionData, allPlantsData.defaultFirstSpecialSectionData, firstSpecialPanel, firstSpecialSectionTimeLeftText);
+        ClickMechanic(allPlantsData.firstSpecialSectionData, allPlantsData.defaultFirstSpecialSectionData, firstSpecialPanel, firstSpecialSectionTimeLeftText, rentFirstSpecialSectionText);
     }
     public void EnterSecondSpecialSection()
     {
-        ClickMechanic(allPlantsData.secondSpecialSectionData, allPlantsData.defaulSecondSpecialSectionData, secondSpecialPanel, secondSpecialSectionTimeLeftText);
+        ClickMechanic(allPlantsData.secondSpecialSectionData, allPlantsData.defaulSecondSpecialSectionData, secondSpecialPanel, secondSpecialSectionTimeLeftText, rentSecondSpecialSectionText);
     }
     public void EnterThirdSpecialSection()
     {
-        ClickMechanic(allPlantsData.thirdSpecialSectionData, allPlantsData.defaultThirdSpecialSectionData, thirdSpecialPanel, thirdSpecialSectionTimeLeftText);
+        ClickMechanic(allPlantsData.thirdSpecialSectionData, allPlantsData.defaultThirdSpecialSectionData, thirdSpecialPanel, thirdSpecialSectionTimeLeftText, rentThirdSpecialSectionText);
     }
 
-    private void ClickMechanic(PlantsData plantsData, DefaultPlantData defaultPlantData, GameObject plantPanel, Text plantSectionLeftTime)
+    private void ClickMechanic(PlantsData plantsData, DefaultPlantData defaultPlantData, GameObject plantPanel, Text plantSectionLeftTime, Text SpecialSectionText)
     {
         if (plantsData.isRented)
         {
@@ -50,23 +53,14 @@ public class RentMechanic : MonoBehaviour
             {
                 mainData.otherData.money -= plantsData.rentCost;
                 plantsData.rentTime = defaultPlantData.defaultRentTime;
-                StopAllCoroutines();
+                //StopAllCoroutines();
                 StartCoroutine(Timer(plantsData, plantSectionLeftTime));
                 plantsData.isRented = true;
-                rentFirstSpecialSectionText.text = "Enter";
-                plantPanel.SetActive(true);
-            }
-            if (mainData.otherData.money >= plantsData.rentCost)
-            {
-                mainData.otherData.money -= plantsData.rentCost;
-                plantsData.rentTime = defaultPlantData.defaultRentTime;
-                StartCoroutine(Timer(plantsData, plantSectionLeftTime));
-                plantsData.isRented = true;
-                rentSecondSpecialSectionText.text = "Enter";
+                SpecialSectionText.text = "Enter";
                 plantPanel.SetActive(true);
             }
         }
-    }
+    }    
 
     private IEnumerator Timer(PlantsData plantsData, Text plantSectionLeftTime)
     {
@@ -79,11 +73,11 @@ public class RentMechanic : MonoBehaviour
         {
             plantsData.isRented = false;
             plantSectionLeftTime.text = "";
-            rentFirstSpecialSectionText.text = "250$ / 5min";
-            rentSecondSpecialSectionText.text = "400$ / 7min";
-            rentThirdSpecialSectionText.text = "600$ / 10min";
+            if(allPlantsData.firstSpecialSectionData.rentTime <= 0) rentFirstSpecialSectionText.text = "250$ / 5min";
+            if (allPlantsData.secondSpecialSectionData.rentTime <= 0) rentSecondSpecialSectionText.text = "400$ / 7min";
+            if (allPlantsData.thirdSpecialSectionData.rentTime <= 0) rentThirdSpecialSectionText.text = "600$ / 10min";
         }
-
+        
         DisplayTime(plantsData.rentTime, plantSectionLeftTime);
         Repeat(plantsData, plantSectionLeftTime);
     }
