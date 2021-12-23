@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f0037ad9216924b8dc0ecd5dfeb031, type: 3}
   m_Name: TinMine
   m_EditorClassIdentifier: 
-  levelOfPrestige: 8
+  levelOfPrestige: 5
   cost: 13000
   isUnlocked: 0
   isItOpenedNow: 0

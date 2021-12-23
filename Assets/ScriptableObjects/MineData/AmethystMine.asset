@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f0037ad9216924b8dc0ecd5dfeb031, type: 3}
   m_Name: AmethystMine
   m_EditorClassIdentifier: 
-  levelOfPrestige: 7
+  levelOfPrestige: 8
   cost: 60000
   isUnlocked: 0
   isItOpenedNow: 0

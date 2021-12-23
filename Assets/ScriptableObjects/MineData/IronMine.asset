@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f0037ad9216924b8dc0ecd5dfeb031, type: 3}
   m_Name: IronMine
   m_EditorClassIdentifier: 
-  levelOfPrestige: 2
+  levelOfPrestige: 3
   cost: 2500
   isUnlocked: 1
   isItOpenedNow: 0
