@@ -45,8 +45,7 @@ public class Reset : MonoBehaviour
         ResetPlantData(mainData.allPlantsData.firstSpecialSectionData);
         ResetPlantData(mainData.allPlantsData.secondSpecialSectionData);
         ResetPlantData(mainData.allPlantsData.thirdSpecialSectionData);
-        ResetAchivementData(mainData.achivementData.haveYouDone, mainData.achivementData.haveYouEarned);
-        ResetAchivementData(mainData.achivementData.haveYouDone2, mainData.achivementData.haveYouEarned2);
+        ResetAchivementData(mainData.achivementData.moneysAchivementList, mainData.achivementData.haveYouEarned);
         Debug.LogWarning("Reseted");
     }
 
