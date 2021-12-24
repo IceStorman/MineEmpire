@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ore: 0
   recycleOre: 0
-  recycleCount: 0
+  recycleCount: 0.8
   recycleOreGive: 2
-  recycleOreSellCost: 0
+  recycleOreSellCost: 167.9
   defaultOreSellCost: 167.9
-  recycleOreBuyCost: 0
+  recycleOreBuyCost: 179.653
   dropProcent: 0.5
   amountOfRecycle: 0
   amountOfRecycleReceive: 0
