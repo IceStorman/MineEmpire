@@ -181,7 +181,7 @@
   },
   "otherData": {
     "money": 5338462.5,
-    "timer": 212.0,
+    "timer": 198.0,
     "lvl": 6,
     "exp": 223,
     "maxExp": 320,
@@ -552,7 +552,7 @@
       true
     ],
     "haveYouEarned": [
-      false,
+      true,
       false,
       false,
       false,
