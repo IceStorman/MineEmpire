@@ -180,8 +180,8 @@
     "hideFlags": 0
   },
   "otherData": {
-    "money": 7100.0,
-    "timer": 232.0,
+    "money": 0.0,
+    "timer": 596.0,
     "lvl": 1,
     "exp": 0,
     "maxExp": 10,
@@ -541,12 +541,12 @@
   },
   "achivementData": {
     "moneysAchivementList": [
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
       false,
       false,
       false
