@@ -190,7 +190,7 @@ public class ExchangePanel : MonoBehaviour
         UpdateUI(recycleOnyxText, recycleOnyxCostText, recycleOnyxBuyCostText, mainData.onyxData);
         UpdateUI(recycleEmeraldText, recycleEmeraldCostText, recycleEmeraldBuyCostText, mainData.emeraldData);
         UpdateUI(recycleRubyText, recycleRubyCostText, recycleRubyBuyCostText, mainData.rubyData);
-        UpdateUI(recycleDiamondCostText, recycleDiamondCostText, recycleDiamondBuyCostText, mainData.diamondData);
+        UpdateUI(recycleDiamondText, recycleDiamondCostText, recycleDiamondBuyCostText, mainData.diamondData);
         UpdateUI(recycleSapphireText, recycleSapphireCostText, recycleSapphireBuyCostText, mainData.sapphireData);
         UpdateUI(recycleAmethystText, recycleAmethystCostText, recycleAmethystBuyCostText, mainData.amethystData);
     }

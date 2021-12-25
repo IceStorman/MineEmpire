@@ -15,7 +15,7 @@ MonoBehaviour:
   levelOfPrestige: 7
   cost: 48000
   isUnlocked: 0
-  isItOpenedNow: 1
+  isItOpenedNow: 0
   stonePercentage: 80
   ironPercentage: 20
   goldPercentage: 5
