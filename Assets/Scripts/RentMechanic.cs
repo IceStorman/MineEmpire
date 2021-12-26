@@ -20,9 +20,6 @@ public class RentMechanic : MonoBehaviour
     [SerializeField] private Text secondSpecialSectionTimeLeftText;
     [SerializeField] private Text thirdSpecialSectionTimeLeftText;
 
-    [SerializeField] private string first = "250$ / 5min";
-    [SerializeField] private string second = "400$ / 7min";
-    [SerializeField] private string third = "600$ / 10min";
     private void Start()
     {
         firstSpecialPanel.SetActive(false);

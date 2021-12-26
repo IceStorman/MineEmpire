@@ -18,7 +18,7 @@ MonoBehaviour:
   recycleOreGive: 3
   recycleOreSellCost: 94.7
   defaultOreSellCost: 94.7
-  recycleOreBuyCost: 0
+  recycleOreBuyCost: 101.328995
   dropProcent: 0.9
   amountOfRecycle: 1
   amountOfRecycleReceive: 0.7

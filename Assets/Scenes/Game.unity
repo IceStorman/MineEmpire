@@ -39841,9 +39841,6 @@ MonoBehaviour:
   firstSpecialSectionTimeLeftText: {fileID: 1484586067}
   secondSpecialSectionTimeLeftText: {fileID: 507363804}
   thirdSpecialSectionTimeLeftText: {fileID: 1014748228}
-  first: 250$ / 5min
-  second: 400$ / 7min
-  third: 600$ / 10min
 --- !u!114 &1093185020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52982,7 +52979,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1452862063
 RectTransform:
   m_ObjectHideFlags: 0
@@ -53000,7 +52997,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 101, y: 46.640015}
+  m_AnchoredPosition: {x: 88.76306, y: 64.08801}
   m_SizeDelta: {x: 168.3062, y: 36.848404}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1452862064
