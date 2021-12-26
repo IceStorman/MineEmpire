@@ -32,7 +32,7 @@ public class Save : MonoBehaviour
     {
         Debug.Log("starting load");
         StreamReader sr = new StreamReader("SaveFile.svdata");
-        string encryptedData = EncryptionMechanic.DeShifrovka(sr.ReadLine(), "password");
+        string encryptedData = EncryptionMechanic.DeShifrovka(sr.ReadToEnd(), "password");
         MainData jsonMainData = JsonConvert.DeserializeObject<MainData>(encryptedData);
 
         LoadOtherData(jsonMainData.otherData);
