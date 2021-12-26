@@ -21,5 +21,5 @@ MonoBehaviour:
   recycleOreBuyCost: 228.124
   dropProcent: 0.4
   amountOfRecycle: 1
-  amountOfRecycleReceive: 1
+  amountOfRecycleReceive: 0.7
   numberNeededToDecrease: 50
