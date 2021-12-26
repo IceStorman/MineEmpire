@@ -314,9 +314,11 @@ public class EarnResoursesMechanic : MonoBehaviour
 
     private void EarnMechanic(OreData oreData, float[] precentageOre, bool[] isOpened)
     {
-        float rnd = Random.Range(0, 101);
+        float rnd = Random.Range(0f, 100f);
 
-        for (int i = -1; i <= howManyOres; i++)
+        Debug.LogWarning(rnd);
+
+        for (int i = 0; i <= howManyOres; i++)
         {
             if (i == 0 && precentageOre[i] > rnd && !isOpened[i]) { mainData.amethystData.ore++; break; }
             if (i == 1 && precentageOre[i] > rnd && !isOpened[i]) { mainData.diamondData.ore++; break; }

@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class MinesMechanic : MonoBehaviour
 {
@@ -26,12 +25,12 @@ public class MinesMechanic : MonoBehaviour
         if (mainData.benitoiteMineData.isUnlocked) lockOfBenitoiteMine.SetActive(false);
         if (mainData.diamondMineData.isUnlocked) lockOfDiamondMine.SetActive(false);
         if (mainData.amethystMineData.isUnlocked) lockOfAmethystMine.SetActive(false);
-        if (mainData.amethystMineData.isUnlocked) lockOfRubyMine.SetActive(false);
+        if (mainData.rubyMineData.isUnlocked) lockOfRubyMine.SetActive(false);
         if (mainData.copperMineData.isUnlocked) lockOfCopperMine.SetActive(false);
-        if (mainData.copperMineData.isUnlocked) lockOfTinMine.SetActive(false);
+        if (mainData.tinMineData.isUnlocked) lockOfTinMine.SetActive(false);
         if (mainData.sapphireMineData.isUnlocked) lockOfSapphireMine.SetActive(false);
-        if (mainData.sapphireMineData.isUnlocked) lockOfOnyxMine.SetActive(false);
-        if (mainData.sapphireMineData.isUnlocked) lockOfEmeraldMine.SetActive(false);
+        if (mainData.onyxMineData.isUnlocked) lockOfOnyxMine.SetActive(false);
+        if (mainData.emeraldMineData.isUnlocked) lockOfEmeraldMine.SetActive(false);
     }
 
     public void TryToOpenClassicMine()
