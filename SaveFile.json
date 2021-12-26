@@ -181,7 +181,7 @@
   },
   "otherData": {
     "money": 0.0,
-    "timer": 598.0,
+    "timer": 594.0,
     "lvl": 1,
     "exp": 0,
     "maxExp": 10,
@@ -541,26 +541,26 @@
   },
   "achivementData": {
     "haveYouDone": [
-      false,
-      false,
-      false,
-      false,
-      false,
-      false,
-      false,
-      false,
-      false
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
     ],
     "haveYouEarned": [
-      false,
-      false,
-      false,
-      false,
-      false,
-      false,
-      false,
-      false,
-      false
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
     ],
     "name": "AchivementData",
     "hideFlags": 0

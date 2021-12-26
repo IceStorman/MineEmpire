@@ -21,6 +21,15 @@ public class InventoryMechanic : MonoBehaviour
     [SerializeField] private Text recycleStoneText;
     [SerializeField] private Text recycleIronText;
     [SerializeField] private Text recycleGoldText;
+    [SerializeField] private Text recycleBenitoiteText;
+    [SerializeField] private Text recycleRubyText;
+    [SerializeField] private Text recycleEmeraldText;
+    [SerializeField] private Text recycleDiamondText;
+    [SerializeField] private Text recycleOnyxText;
+    [SerializeField] private Text recycleSapphireText;
+    [SerializeField] private Text recycleTinText;
+    [SerializeField] private Text recycleCopperText;
+    [SerializeField] private Text recycleAmethystText;
 
     [SerializeField] private MainData mainData;
 
@@ -54,6 +63,15 @@ public class InventoryMechanic : MonoBehaviour
         recycleStoneText.text = mainData.stoneData.recycleOre.ToString("F2");
         recycleIronText.text = mainData.ironData.recycleOre.ToString("F2");
         recycleGoldText.text = mainData.goldData.recycleOre.ToString("F2");
+        recycleCopperText.text = mainData.copperData.recycleOre.ToString("F2");
+        recycleTinText.text = mainData.tinData.recycleOre.ToString("F2");
+        recycleBenitoiteText.text = mainData.benitoiteData.recycleOre.ToString("F2");
+        recycleEmeraldText.text = mainData.emeraldData.recycleOre.ToString("F2");
+        recycleRubyText.text = mainData.rubyData.recycleOre.ToString("F2");
+        recycleOnyxText.text = mainData.onyxData.recycleOre.ToString("F2");
+        recycleSapphireText.text = mainData.sapphireData.recycleOre.ToString("F2");
+        recycleDiamondText.text = mainData.diamondData.recycleOre.ToString("F2");
+        recycleAmethystText.text = mainData.amethystData.recycleOre.ToString("F2");
     }
 
     public void Click()
