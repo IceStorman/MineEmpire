@@ -181,7 +181,7 @@
   },
   "otherData": {
     "money": 0.0,
-    "timer": 539.0,
+    "timer": 535.0,
     "lvl": 1,
     "exp": 0,
     "maxExp": 10,
@@ -541,7 +541,7 @@
   },
   "achivementData": {
     "moneysAchivementList": [
-      false,
+      true,
       false,
       false,
       false,
@@ -552,7 +552,7 @@
       false
     ],
     "haveYouEarned": [
-      false,
+      true,
       false,
       false,
       false,

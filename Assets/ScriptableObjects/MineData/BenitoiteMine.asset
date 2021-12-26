@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelOfPrestige: 5
   cost: 17000
-  isUnlocked: 1
+  isUnlocked: 0
   isItOpenedNow: 0
   stonePercentage: 80
   ironPercentage: 20
