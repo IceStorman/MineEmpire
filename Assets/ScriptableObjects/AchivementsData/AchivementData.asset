@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d198ba8a71eae7540bb552e8672de713, type: 3}
   m_Name: AchivementData
   m_EditorClassIdentifier: 
-  haveYouDone: 010101010101010101
-  haveYouEarned: 010101010101010101
+  haveYouDone: 000000000000000000
+  haveYouEarned: 000000000000000000
