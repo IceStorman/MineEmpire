@@ -11,7 +11,8 @@
     "amountOfRecycle": 1,
     "amountOfRecycleReceive": 0.5,
     "numberNeededToDecrease": 50,
-    "name": "Stone"
+    "name": "Stone",
+    "hideFlags": 0
   },
   "ironData": {
     "ore": 10,
@@ -25,7 +26,8 @@
     "amountOfRecycle": 1,
     "amountOfRecycleReceive": 0.7,
     "numberNeededToDecrease": 50,
-    "name": "Iron"
+    "name": "Iron",
+    "hideFlags": 0
   },
   "goldData": {
     "ore": 2,
@@ -39,7 +41,8 @@
     "amountOfRecycle": 1,
     "amountOfRecycleReceive": 0.8,
     "numberNeededToDecrease": 50,
-    "name": "Gold"
+    "name": "Gold",
+    "hideFlags": 0
   },
   "benitoiteData": {
     "ore": 0,
@@ -53,7 +56,8 @@
     "amountOfRecycle": 1,
     "amountOfRecycleReceive": 0.5,
     "numberNeededToDecrease": 50,
-    "name": "Benitoite"
+    "name": "Benitoite",
+    "hideFlags": 0
   },
   "rubyData": {
     "ore": 0,
@@ -67,7 +71,8 @@
     "amountOfRecycle": 1,
     "amountOfRecycleReceive": 0.7,
     "numberNeededToDecrease": 50,
-    "name": "Ruby"
+    "name": "Ruby",
+    "hideFlags": 0
   },
   "emeraldData": {
     "ore": 0,
@@ -81,7 +86,8 @@
     "amountOfRecycle": 1,
     "amountOfRecycleReceive": 0.5,
     "numberNeededToDecrease": 50,
-    "name": "Emerald"
+    "name": "Emerald",
+    "hideFlags": 0
   },
   "diamondData": {
     "ore": 0,
@@ -95,7 +101,8 @@
     "amountOfRecycle": 1,
     "amountOfRecycleReceive": 0.8,
     "numberNeededToDecrease": 50,
-    "name": "Diamond"
+    "name": "Diamond",
+    "hideFlags": 0
   },
   "onyxData": {
     "ore": 0,
@@ -109,7 +116,8 @@
     "amountOfRecycle": 1,
     "amountOfRecycleReceive": 0.8,
     "numberNeededToDecrease": 50,
-    "name": "Onyx"
+    "name": "Onyx",
+    "hideFlags": 0
   },
   "sapphireData": {
     "ore": 0,
@@ -123,7 +131,8 @@
     "amountOfRecycle": 1,
     "amountOfRecycleReceive": 0.5,
     "numberNeededToDecrease": 50,
-    "name": "Sapphire"
+    "name": "Sapphire",
+    "hideFlags": 0
   },
   "tinData": {
     "ore": 0,
@@ -137,7 +146,8 @@
     "amountOfRecycle": 1,
     "amountOfRecycleReceive": 0.8,
     "numberNeededToDecrease": 50,
-    "name": "Tin"
+    "name": "Tin",
+    "hideFlags": 0
   },
   "copperData": {
     "ore": 0,
@@ -151,7 +161,8 @@
     "amountOfRecycle": 1,
     "amountOfRecycleReceive": 0.7,
     "numberNeededToDecrease": 50,
-    "name": "Copper"
+    "name": "Copper",
+    "hideFlags": 0
   },
   "amethystData": {
     "ore": 0,
@@ -165,16 +176,18 @@
     "amountOfRecycle": 1,
     "amountOfRecycleReceive": 0.7,
     "numberNeededToDecrease": 50,
-    "name": "Amethyst"
+    "name": "Amethyst",
+    "hideFlags": 0
   },
   "otherData": {
-    "money": 0.0,
-    "timer": 584.0,
-    "lvl": 1,
-    "exp": 0,
-    "maxExp": 10,
+    "money": 700000.0,
+    "timer": 488.0,
+    "lvl": 7,
+    "exp": 290,
+    "maxExp": 640,
     "lastIndex": 0,
-    "name": "Other"
+    "name": "Other",
+    "hideFlags": 0
   },
   "classicMineData": {
     "levelOfPrestige": 1,
@@ -193,14 +206,15 @@
     "sapphirePercentage": 0.0,
     "diamondPercentage": 0.0,
     "amethystPercentage": 0.0,
-    "name": "ClassicMine"
+    "name": "ClassicMine",
+    "hideFlags": 0
   },
   "ironMineData": {
     "levelOfPrestige": 3,
     "cost": 2500.0,
     "isUnlocked": false,
     "isItOpenedNow": false,
-    "stonePercentage": 80.0,
+    "stonePercentage": 50.0,
     "ironPercentage": 50.0,
     "goldPercentage": 5.0,
     "copperPercentage": 0.0,
@@ -212,7 +226,8 @@
     "sapphirePercentage": 0.0,
     "diamondPercentage": 0.0,
     "amethystPercentage": 0.0,
-    "name": "IronMine"
+    "name": "IronMine",
+    "hideFlags": 0
   },
   "goldMineData": {
     "levelOfPrestige": 3,
@@ -231,7 +246,8 @@
     "sapphirePercentage": 0.0,
     "diamondPercentage": 0.0,
     "amethystPercentage": 0.0,
-    "name": "GoldMine"
+    "name": "GoldMine",
+    "hideFlags": 0
   },
   "benitoiteMineData": {
     "levelOfPrestige": 5,
@@ -250,7 +266,8 @@
     "sapphirePercentage": 0.3,
     "diamondPercentage": 0.2,
     "amethystPercentage": 0.1,
-    "name": "BenitoiteMine"
+    "name": "BenitoiteMine",
+    "hideFlags": 0
   },
   "diamondMineData": {
     "levelOfPrestige": 7,
@@ -269,7 +286,8 @@
     "sapphirePercentage": 0.3,
     "diamondPercentage": 3.5,
     "amethystPercentage": 0.1,
-    "name": "DiamondMine"
+    "name": "DiamondMine",
+    "hideFlags": 0
   },
   "amethystMineData": {
     "levelOfPrestige": 8,
@@ -288,7 +306,8 @@
     "sapphirePercentage": 0.3,
     "diamondPercentage": 0.2,
     "amethystPercentage": 3.0,
-    "name": "AmethystMine"
+    "name": "AmethystMine",
+    "hideFlags": 0
   },
   "rubyMineData": {
     "levelOfPrestige": 6,
@@ -307,7 +326,8 @@
     "sapphirePercentage": 0.3,
     "diamondPercentage": 0.2,
     "amethystPercentage": 0.1,
-    "name": "RubyMine"
+    "name": "RubyMine",
+    "hideFlags": 0
   },
   "copperMineData": {
     "levelOfPrestige": 5,
@@ -326,7 +346,8 @@
     "sapphirePercentage": 0.3,
     "diamondPercentage": 0.2,
     "amethystPercentage": 0.1,
-    "name": "CopperMine"
+    "name": "CopperMine",
+    "hideFlags": 0
   },
   "tinMineData": {
     "levelOfPrestige": 5,
@@ -345,7 +366,8 @@
     "sapphirePercentage": 0.3,
     "diamondPercentage": 0.2,
     "amethystPercentage": 0.1,
-    "name": "TinMine"
+    "name": "TinMine",
+    "hideFlags": 0
   },
   "sapphireMineData": {
     "levelOfPrestige": 7,
@@ -364,7 +386,8 @@
     "sapphirePercentage": 4.0,
     "diamondPercentage": 0.2,
     "amethystPercentage": 0.1,
-    "name": "SapphireMine"
+    "name": "SapphireMine",
+    "hideFlags": 0
   },
   "onyxMineData": {
     "levelOfPrestige": 6,
@@ -383,7 +406,8 @@
     "sapphirePercentage": 0.3,
     "diamondPercentage": 0.2,
     "amethystPercentage": 0.1,
-    "name": "OnyxMine"
+    "name": "OnyxMine",
+    "hideFlags": 0
   },
   "emeraldMineData": {
     "levelOfPrestige": 6,
@@ -402,7 +426,8 @@
     "sapphirePercentage": 0.3,
     "diamondPercentage": 0.2,
     "amethystPercentage": 0.1,
-    "name": "EmeraldMine"
+    "name": "EmeraldMine",
+    "hideFlags": 0
   },
   "phoneData": {
     "unlockThingText": "Upgrade phone",
@@ -412,7 +437,8 @@
     "thingCost": 400.0,
     "giveExp": 4,
     "thingID": 1,
-    "name": "PhoneData"
+    "name": "PhoneData",
+    "hideFlags": 0
   },
   "PCData": {
     "unlockThingText": "Upgrade PC",
@@ -422,7 +448,8 @@
     "thingCost": 1300.0,
     "giveExp": 11,
     "thingID": 2,
-    "name": "PCData"
+    "name": "PCData",
+    "hideFlags": 0
   },
   "flatData": {
     "unlockThingText": "Upgrade flat",
@@ -432,7 +459,8 @@
     "thingCost": 7000.0,
     "giveExp": 39,
     "thingID": 3,
-    "name": "FlatData"
+    "name": "FlatData",
+    "hideFlags": 0
   },
   "carData": {
     "unlockThingText": "Upgrade car",
@@ -442,7 +470,8 @@
     "thingCost": 4500.0,
     "giveExp": 24,
     "thingID": 4,
-    "name": "CarData"
+    "name": "CarData",
+    "hideFlags": 0
   },
   "mansionData": {
     "unlockThingText": "Upgrade mansion",
@@ -452,7 +481,8 @@
     "thingCost": 10000.0,
     "giveExp": 68,
     "thingID": 5,
-    "name": "MansionData"
+    "name": "MansionData",
+    "hideFlags": 0
   },
   "helicopterData": {
     "unlockThingText": "Upgrade helicopter",
@@ -462,7 +492,8 @@
     "thingCost": 14000.0,
     "giveExp": 89,
     "thingID": 6,
-    "name": "HelicopterData"
+    "name": "HelicopterData",
+    "hideFlags": 0
   },
   "yachtData": {
     "unlockThingText": "Upgrade yacht",
@@ -472,7 +503,8 @@
     "thingCost": 19000.0,
     "giveExp": 125,
     "thingID": 7,
-    "name": "YachtData"
+    "name": "YachtData",
+    "hideFlags": 0
   },
   "privatePlaneData": {
     "unlockThingText": "Upgrade private plane",
@@ -482,7 +514,8 @@
     "thingCost": 25000.0,
     "giveExp": 210,
     "thingID": 8,
-    "name": "PrivatePlaneData"
+    "name": "PrivatePlaneData",
+    "hideFlags": 0
   },
   "rocketData": {
     "unlockThingText": "Buy rocket",
@@ -492,7 +525,8 @@
     "thingCost": 50000.0,
     "giveExp": 490,
     "thingID": 9,
-    "name": "RocketData"
+    "name": "RocketData",
+    "hideFlags": 0
   },
   "planetData": {
     "unlockThingText": "Buy planet",
@@ -502,32 +536,108 @@
     "thingCost": 200000.0,
     "giveExp": 1400,
     "thingID": 10,
-    "name": "PlanetData"
+    "name": "PlanetData",
+    "hideFlags": 0
   },
+  "pickaxesList": [
+    {
+      "prestigeLvl": 1,
+      "prize": 0.0,
+      "isBought": true,
+      "isPicked": true,
+      "canBuy": true,
+      "hp": 0,
+      "defaultHP": 0,
+      "amountProductionPerClick": 1,
+      "name": "x1PickaxeData",
+      "hideFlags": 0
+    },
+    {
+      "prestigeLvl": 2,
+      "prize": 800.0,
+      "isBought": false,
+      "isPicked": false,
+      "canBuy": true,
+      "hp": 100,
+      "defaultHP": 0,
+      "amountProductionPerClick": 2,
+      "name": "x2PickaxeData",
+      "hideFlags": 0
+    },
+    {
+      "prestigeLvl": 4,
+      "prize": 4000.0,
+      "isBought": false,
+      "isPicked": false,
+      "canBuy": true,
+      "hp": 150,
+      "defaultHP": 0,
+      "amountProductionPerClick": 5,
+      "name": "x5PickaxeData",
+      "hideFlags": 0
+    },
+    {
+      "prestigeLvl": 5,
+      "prize": 10000.0,
+      "isBought": false,
+      "isPicked": false,
+      "canBuy": true,
+      "hp": 150,
+      "defaultHP": 0,
+      "amountProductionPerClick": 10,
+      "name": "x10PickaxeData",
+      "hideFlags": 0
+    },
+    {
+      "prestigeLvl": 6,
+      "prize": 25000.0,
+      "isBought": false,
+      "isPicked": false,
+      "canBuy": true,
+      "hp": 200,
+      "defaultHP": 0,
+      "amountProductionPerClick": 20,
+      "name": "x20PickaxeData",
+      "hideFlags": 0
+    },
+    {
+      "prestigeLvl": 7,
+      "prize": 100000.0,
+      "isBought": false,
+      "isPicked": false,
+      "canBuy": true,
+      "hp": 200,
+      "defaultHP": 0,
+      "amountProductionPerClick": 30,
+      "name": "x30PickaxeData",
+      "hideFlags": 0
+    }
+  ],
   "achivementData": {
     "haveYouDone": [
-      false,
-      false,
-      false,
-      false,
-      false,
-      false,
-      false,
-      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
       false
     ],
     "haveYouEarned": [
-      false,
-      false,
-      false,
-      false,
-      false,
-      false,
-      false,
-      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
       false
     ],
-    "name": "AchivementData"
+    "name": "AchivementData",
+    "hideFlags": 0
   },
   "allPlantsData": {
     "standartSectionData": {
@@ -563,5 +673,6 @@
       "defaultRentTime": 0.0
     }
   },
-  "name": "MainData"
+  "name": "MainData",
+  "hideFlags": 0
 }
