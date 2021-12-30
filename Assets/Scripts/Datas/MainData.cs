@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 [CreateAssetMenu(fileName = "NewMainData", menuName = "MainData", order = 53)]
 public class MainData : ScriptableObject
@@ -41,6 +42,8 @@ public class MainData : ScriptableObject
     public PrestigeData privatePlaneData;
     public PrestigeData rocketData;
     public PrestigeData planetData;
+
+    public List<PickaxeData> pickaxesList = new List<PickaxeData>(6);
 
     public AchivementData achivementData;
 

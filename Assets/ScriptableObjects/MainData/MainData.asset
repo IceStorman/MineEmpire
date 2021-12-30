@@ -47,4 +47,37 @@ MonoBehaviour:
   privatePlaneData: {fileID: 11400000, guid: dc4b19ece9b5f684db124e26f771f0bc, type: 2}
   rocketData: {fileID: 11400000, guid: d923d68ff45482540b0e8a8338b4a381, type: 2}
   planetData: {fileID: 11400000, guid: 0c5c692f1b12ce84dbcc3497501cc5b2, type: 2}
+  pickaxesList:
+  - {fileID: 11400000, guid: 9f0dc87c280054440b38cd3361578096, type: 2}
+  - {fileID: 11400000, guid: e8ed273f34f807a4ea73db2f08fd4b41, type: 2}
+  - {fileID: 11400000, guid: bdc55d16491d3c24290a8a34005d1e93, type: 2}
+  - {fileID: 11400000, guid: e4c6275f4ca557441bd4b996388ba062, type: 2}
+  - {fileID: 11400000, guid: 017c0cd3d7b16a7479f5a15371956fc1, type: 2}
+  - {fileID: 11400000, guid: 65853c9c24815de47acc249fff0f463b, type: 2}
   achivementData: {fileID: 11400000, guid: 45c1e6a162e08814a84824303e2bd11d, type: 2}
+  allPlantsData:
+    standartSectionData:
+      isRented: 0
+      rentCost: 0
+      rentTime: 0
+    firstSpecialSectionData:
+      isRented: 0
+      rentCost: 0
+      rentTime: 0
+    secondSpecialSectionData:
+      isRented: 0
+      rentCost: 0
+      rentTime: 0
+    thirdSpecialSectionData:
+      isRented: 0
+      rentCost: 0
+      rentTime: 0
+    defaultFirstSpecialSectionData:
+      defaultRentCost: 0
+      defaultRentTime: 0
+    defaulSecondSpecialSectionData:
+      defaultRentCost: 0
+      defaultRentTime: 0
+    defaultThirdSpecialSectionData:
+      defaultRentCost: 0
+      defaultRentTime: 0

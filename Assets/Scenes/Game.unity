@@ -7258,7 +7258,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 225923178}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1093185010}
+        m_TargetAssemblyTypeName: Songs, Assembly-CSharp
+        m_MethodName: ClickEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &225923178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9943,7 +9955,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 309226879}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1093185010}
+        m_TargetAssemblyTypeName: Songs, Assembly-CSharp
+        m_MethodName: ClickEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &309226879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11579,6 +11603,7 @@ RectTransform:
   - {fileID: 1490838150}
   - {fileID: 1658961163}
   - {fileID: 1999745514}
+  - {fileID: 773777859}
   m_Father: {fileID: 286099409}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11630,7 +11655,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 346795513}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1093185010}
+        m_TargetAssemblyTypeName: Songs, Assembly-CSharp
+        m_MethodName: ClickEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &346795513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12338,7 +12375,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 361364995}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1093185010}
+        m_TargetAssemblyTypeName: Songs, Assembly-CSharp
+        m_MethodName: ClickEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &361364995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14120,7 +14169,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 54.86499, y: -26.301498}
+  m_AnchoredPosition: {x: 54.86499, y: -26.301514}
   m_SizeDelta: {x: -406.32, y: -179.4989}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &399750097
@@ -29200,6 +29249,81 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &773777858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 773777859}
+  - component: {fileID: 773777861}
+  - component: {fileID: 773777860}
+  m_Layer: 5
+  m_Name: Lock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &773777859
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773777858}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 346795511}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000015259, y: 0}
+  m_SizeDelta: {x: 70, y: 59.448}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &773777860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773777858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 2b0a4d437bf77ae44802ddd78b28e474, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &773777861
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773777858}
+  m_CullTransparentMesh: 1
 --- !u!1 &776085069
 GameObject:
   m_ObjectHideFlags: 0
@@ -31309,7 +31433,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 849977628}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1093185010}
+        m_TargetAssemblyTypeName: Songs, Assembly-CSharp
+        m_MethodName: ClickEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &849977628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41642,6 +41778,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickaxesPanel: {fileID: 1538749877}
+  pickaxesTextsList:
+  - {fileID: 1490838151}
+  - {fileID: 509864005}
+  - {fileID: 2098829822}
+  - {fileID: 1952743045}
+  - {fileID: 1049416987}
+  - {fileID: 1464303656}
+  pickaxesLocksList:
+  - {fileID: 773777858}
+  - {fileID: 996032680}
+  - {fileID: 1780443837}
+  - {fileID: 694379400}
+  - {fileID: 1216491247}
+  - {fileID: 1649206321}
+  pickaxesFramesList:
+  - {fileID: 1999745513}
+  - {fileID: 1071666409}
+  - {fileID: 418153863}
+  - {fileID: 1238001225}
+  - {fileID: 776085069}
+  - {fileID: 1447605180}
+  mainData: {fileID: 11400000, guid: e91ed92415be5fa488ac8a6ba8215bf5, type: 2}
 --- !u!1 &1097196869
 GameObject:
   m_ObjectHideFlags: 0
@@ -41758,7 +41916,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 54.86499, y: -26.301498}
+  m_AnchoredPosition: {x: 54.86499, y: -26.301514}
   m_SizeDelta: {x: -406.32, y: -179.4989}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1097643885
@@ -54819,7 +54977,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1452862063
 RectTransform:
   m_ObjectHideFlags: 0
@@ -65269,7 +65427,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 168.42896, y: -106.74602}
+  m_AnchoredPosition: {x: 168.42896, y: -106.74603}
   m_SizeDelta: {x: -332.68, y: -151.55013}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1728036798
@@ -70579,7 +70737,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1873440476
 RectTransform:
   m_ObjectHideFlags: 0
@@ -74019,7 +74177,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1961313340}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1093185010}
+        m_TargetAssemblyTypeName: Songs, Assembly-CSharp
+        m_MethodName: ClickEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1961313340
 MonoBehaviour:
   m_ObjectHideFlags: 0

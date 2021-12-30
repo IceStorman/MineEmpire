@@ -46,6 +46,7 @@ public class Reset : MonoBehaviour
         ResetPlantData(mainData.allPlantsData.secondSpecialSectionData);
         ResetPlantData(mainData.allPlantsData.thirdSpecialSectionData);
         ResetAchivementData(mainData.achivementData.haveYouDone, mainData.achivementData.haveYouEarned);
+        ResetPickaxeData(mainData.pickaxesList);
         Debug.LogWarning("Reseted");
     }
 
@@ -90,5 +91,17 @@ public class Reset : MonoBehaviour
     {
         plantsData.isRented = false;
         plantsData.rentTime = 0;
+    }
+
+    private void ResetPickaxeData(List<PickaxeData> pickaxeDatasList)
+    {
+        for(int i = 1; i < 6; i++)
+        {
+            pickaxeDatasList[i].canBuy = false;
+            pickaxeDatasList[i].isPicked = false;
+            pickaxeDatasList[i].canBuy = false;
+            pickaxeDatasList[i].hp = pickaxeDatasList[i].defaultHP;
+        }
+        pickaxeDatasList[0].isPicked = true;
     }
 }

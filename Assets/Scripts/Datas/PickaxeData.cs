@@ -7,6 +7,8 @@ public class PickaxeData : ScriptableObject
     public float prize;
     public bool isBought;
     public bool isPicked;
+    public bool canBuy;
     public int hp;
+    public int defaultHP;
     public int amountProductionPerClick;
 }
