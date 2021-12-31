@@ -181,12 +181,12 @@
   },
   "otherData": {
     "money": 0.0,
-    "timer": 599.0,
+    "timer": 598.0,
     "lvl": 1,
     "exp": 0,
     "maxExp": 10,
     "lastIndex": 0,
-    "amountProductionPerClick": 10,
+    "amountProductionPerClick": 30,
     "name": "Other",
     "hideFlags": 0
   },

@@ -36,6 +36,24 @@ public class PickaxesMechanics : MonoBehaviour
         }
     }
 
+    public void HPLogic()
+    {
+        for(int i = 1; i < 6; i++)
+        {
+            if (mainData.pickaxesList[i].isPicked)
+            {
+                mainData.pickaxesList[i].hp--;
+
+                if(mainData.pickaxesList[i].hp <= 0)
+                {
+                    mainData.pickaxesList[i].isBought = false;
+                    mainData.pickaxesList[i].isPicked = false;
+                    mainData.pickaxesList[0].isPicked = true;
+                }
+            }
+        }
+    }
+
     public void PickLogic(PickaxeData pickaxeData)
     {
         if (pickaxeData.isBought)
