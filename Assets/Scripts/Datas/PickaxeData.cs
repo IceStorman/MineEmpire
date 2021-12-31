@@ -11,4 +11,5 @@ public class PickaxeData : ScriptableObject
     public int hp;
     public int defaultHP;
     public int amountProductionPerClick;
+    public bool isTheX1Pickaxe;
 }

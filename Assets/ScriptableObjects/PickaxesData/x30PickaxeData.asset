@@ -16,5 +16,7 @@ MonoBehaviour:
   prize: 100000
   isBought: 0
   isPicked: 0
+  canBuy: 0
   hp: 200
+  defaultHP: 200
   amountProductionPerClick: 30

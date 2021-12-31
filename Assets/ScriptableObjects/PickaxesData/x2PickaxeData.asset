@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prestigeLvl: 2
   prize: 800
-  isBought: 0
+  isBought: 1
   isPicked: 0
+  canBuy: 0
   hp: 100
+  defaultHP: 100
   amountProductionPerClick: 2

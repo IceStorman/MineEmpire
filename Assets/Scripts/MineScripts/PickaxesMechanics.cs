@@ -20,18 +20,87 @@ public class PickaxesMechanics : MonoBehaviour
 
     private void Update()
     {
-        UpdateLvlUI(mainData.pickaxesList);
+        UpdateLvl(mainData.pickaxesList);
+        UpdateTextUI();
+        UpdateLocksAndFramesUI();
     }
 
-    private void UpdateLvlUI(List<PickaxeData> pickaxesList)
+    private void UpdateLvl(List<PickaxeData> pickaxesList)
     {
         for(int i = 1; i < 6; i++)
         {
             if(mainData.otherData.lvl >= pickaxesList[i].prestigeLvl && !pickaxesList[i].isBought)
             {
-                pickaxesTextsList[i].text = pickaxesList[i].prize.ToString();
-                pickaxesTextsList[i].color = Color.green;
                 pickaxesList[i].canBuy = true;
+            }
+        }
+    }
+
+    public void PickLogic(PickaxeData pickaxeData)
+    {
+        if (pickaxeData.isBought)
+        {
+            TurnOffAllFrames();
+            pickaxeData.isPicked = true;
+            UpdateLocksAndFramesUI();
+        }
+
+        if (pickaxeData.isPicked)
+        {
+            mainData.otherData.amountProductionPerClick = pickaxeData.amountProductionPerClick;
+        }
+    }
+
+    public void BuyLogic(PickaxeData pickaxeData)
+    {
+        if(pickaxeData.canBuy && !pickaxeData.isBought && mainData.otherData.money >= pickaxeData.prize)
+        {
+            mainData.otherData.money -= pickaxeData.prize;
+            pickaxeData.isBought = true;
+            UpdateTextUI();
+        }
+    }
+
+    private void UpdateTextUI()
+    {
+        for (int i = 1; i < 6; i++)
+        {
+            if (mainData.pickaxesList[i].isBought)
+            {
+                pickaxesTextsList[i].text = $"HP: {mainData.pickaxesList[i].hp}";
+                pickaxesTextsList[i].color = Color.red;
+            }
+
+            if (mainData.otherData.lvl >= mainData.pickaxesList[i].prestigeLvl 
+                && !mainData.pickaxesList[i].isBought)
+            {
+                pickaxesTextsList[i].text = $"{mainData.pickaxesList[i].prize}$";
+                pickaxesTextsList[i].color = Color.green;
+            }
+        }
+
+    }
+
+    private void UpdateLocksAndFramesUI()
+    {
+        for(int i = 0; i < 6; i++)
+        {
+            if (mainData.pickaxesList[i].isBought)
+            {
+                pickaxesLocksList[i].SetActive(false);
+            }
+            else
+            {
+                pickaxesLocksList[i].SetActive(true);
+            }
+
+            if (mainData.pickaxesList[i].isPicked)
+            {
+                pickaxesFramesList[i].SetActive(true);
+            }
+            else
+            {
+                pickaxesFramesList[i].SetActive(false);
             }
         }
     }
@@ -47,6 +116,14 @@ public class PickaxesMechanics : MonoBehaviour
         {
             pickaxesPanel.SetActive(false);
             isOpen = !isOpen;
+        }
+    }
+
+    private void TurnOffAllFrames()
+    {
+        for(int i = 0; i < 6; i++)
+        {
+            mainData.pickaxesList[i].isPicked = false;
         }
     }
 }

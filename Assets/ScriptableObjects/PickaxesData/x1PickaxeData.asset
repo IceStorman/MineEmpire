@@ -20,3 +20,4 @@ MonoBehaviour:
   hp: 0
   defaultHP: 0
   amountProductionPerClick: 1
+  isTheX1Pickaxe: 1

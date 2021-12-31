@@ -320,19 +320,19 @@ public class EarnResoursesMechanic : MonoBehaviour
 
         for (int i = 0; i <= howManyOres; i++)
         {
-            if (i == 0 && precentageOre[i] > rnd && !isOpened[i]) { mainData.amethystData.ore++; break; }
-            if (i == 1 && precentageOre[i] > rnd && !isOpened[i]) { mainData.diamondData.ore++; break; }
-            if (i == 2 && precentageOre[i] > rnd && !isOpened[i]) { mainData.sapphireData.ore++; break; }
-            if (i == 3 && precentageOre[i] > rnd && !isOpened[i]) { mainData.rubyData.ore++; break; }
-            if (i == 4 && precentageOre[i] > rnd && !isOpened[i]) { mainData.onyxData.ore++; break; }
-            if (i == 5 && precentageOre[i] > rnd && !isOpened[i]) { mainData.emeraldData.ore++; break; }
-            if (i == 6 && precentageOre[i] > rnd && !isOpened[i]) { mainData.benitoiteData.ore++; break; }
-            if (i == 7 && precentageOre[i] > rnd && !isOpened[i]) { mainData.tinData.ore++; break; }
-            if (i == 8 && precentageOre[i] > rnd && !isOpened[i]) { mainData.copperData.ore++; break; }
-            if (i == 9 && precentageOre[i] > rnd && !isOpened[i]) { mainData.goldData.ore++; break; }
-            if (i == 10 && precentageOre[i] > rnd && !isOpened[i]) { mainData.ironData.ore++; break; }
-            if (i == 11 && precentageOre[i] > rnd && !isOpened[i]) { mainData.stoneData.ore++; break; }
-            if (i == 12) oreData.ore++;
+            if (i == 0 && precentageOre[i] > rnd && !isOpened[i]) { mainData.amethystData.ore += mainData.otherData.amountProductionPerClick; break; }
+            if (i == 1 && precentageOre[i] > rnd && !isOpened[i]) { mainData.diamondData.ore += mainData.otherData.amountProductionPerClick; break; }
+            if (i == 2 && precentageOre[i] > rnd && !isOpened[i]) { mainData.sapphireData.ore += mainData.otherData.amountProductionPerClick; break; }
+            if (i == 3 && precentageOre[i] > rnd && !isOpened[i]) { mainData.rubyData.ore += mainData.otherData.amountProductionPerClick; break; }
+            if (i == 4 && precentageOre[i] > rnd && !isOpened[i]) { mainData.onyxData.ore += mainData.otherData.amountProductionPerClick; break; }
+            if (i == 5 && precentageOre[i] > rnd && !isOpened[i]) { mainData.emeraldData.ore += mainData.otherData.amountProductionPerClick; break; }
+            if (i == 6 && precentageOre[i] > rnd && !isOpened[i]) { mainData.benitoiteData.ore += mainData.otherData.amountProductionPerClick; break; }
+            if (i == 7 && precentageOre[i] > rnd && !isOpened[i]) { mainData.tinData.ore += mainData.otherData.amountProductionPerClick; break; }
+            if (i == 8 && precentageOre[i] > rnd && !isOpened[i]) { mainData.copperData.ore += mainData.otherData.amountProductionPerClick; break; }
+            if (i == 9 && precentageOre[i] > rnd && !isOpened[i]) { mainData.goldData.ore += mainData.otherData.amountProductionPerClick; break; }
+            if (i == 10 && precentageOre[i] > rnd && !isOpened[i]) { mainData.ironData.ore += mainData.otherData.amountProductionPerClick; break; }
+            if (i == 11 && precentageOre[i] > rnd && !isOpened[i]) { mainData.stoneData.ore += mainData.otherData.amountProductionPerClick; break; }
+            if (i == 12) oreData.ore += mainData.otherData.amountProductionPerClick;
         }
     }
 }

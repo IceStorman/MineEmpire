@@ -1,6 +1,7 @@
 using UnityEngine;
 using Newtonsoft.Json;
 using System.IO;
+using System.Collections.Generic;
 
 public class Save : MonoBehaviour
 {
@@ -80,6 +81,7 @@ public class Save : MonoBehaviour
             jsonMainData.allPlantsData.secondSpecialSectionData);
         LoadPlantData(mainData.allPlantsData.thirdSpecialSectionData,
             jsonMainData.allPlantsData.thirdSpecialSectionData);
+        LoadPickaxeData(mainData.pickaxesList, jsonMainData.pickaxesList);
 
         sr.Close();
         Debug.Log("Load has been ended");
@@ -151,5 +153,10 @@ public class Save : MonoBehaviour
         plantsData.isRented = jsonPlantsData.isRented;
         plantsData.rentCost = jsonPlantsData.rentCost;
         plantsData.rentTime = jsonPlantsData.rentTime;
+    }
+
+    private void LoadPickaxeData(List<PickaxeData> pickaxesList, List<PickaxeData> jsonPickaxesList)
+    {
+        pickaxesList = jsonPickaxesList;
     }
 }

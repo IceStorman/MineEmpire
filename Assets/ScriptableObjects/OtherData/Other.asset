@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Other
   m_EditorClassIdentifier: 
   money: 0
-  timer: 600
+  timer: 597
   lvl: 1
   exp: 0
   maxExp: 10
   lastIndex: 0
+  amountProductionPerClick: 1

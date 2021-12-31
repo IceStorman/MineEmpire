@@ -98,8 +98,8 @@ public class Reset : MonoBehaviour
         for(int i = 1; i < 6; i++)
         {
             pickaxeDatasList[i].canBuy = false;
+            pickaxeDatasList[i].isBought = false;
             pickaxeDatasList[i].isPicked = false;
-            pickaxeDatasList[i].canBuy = false;
             pickaxeDatasList[i].hp = pickaxeDatasList[i].defaultHP;
         }
         pickaxeDatasList[0].isPicked = true;
