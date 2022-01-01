@@ -12,6 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f982ffb8adc2da419d8202a61204df8, type: 3}
   m_Name: MainData
   m_EditorClassIdentifier: 
+  allOresDatas:
+  - {fileID: 11400000, guid: f908f65115a2fc24dbf1f01844512079, type: 2}
+  - {fileID: 11400000, guid: 1b7624ce9af207f4aad77d5c567ed95c, type: 2}
+  - {fileID: 11400000, guid: 598ec7cfe7abe0b42a9772c1b53c31d1, type: 2}
+  - {fileID: 11400000, guid: cdaea835918d47349ad5faeaea64b044, type: 2}
+  - {fileID: 11400000, guid: cea39e15754f6f54db666de025dff45f, type: 2}
+  - {fileID: 11400000, guid: cb45ff081e9749d43a605991cd6869f5, type: 2}
+  - {fileID: 11400000, guid: cb4ad2ecb56963a4fbdc7df5b2e60b11, type: 2}
+  - {fileID: 11400000, guid: 09cc6cc328d25954e8b04e1f03c8b3af, type: 2}
+  - {fileID: 11400000, guid: 8a42d5a5bee46df458099ab20a342c96, type: 2}
+  - {fileID: 11400000, guid: 93913b281dcbea9498d3e2c9fd5bb4dc, type: 2}
+  - {fileID: 11400000, guid: 79ae735faa7aecb4197bb3fb533d076e, type: 2}
+  - {fileID: 11400000, guid: 743eb541b5692d742ae7bff6bba0738b, type: 2}
   stoneData: {fileID: 11400000, guid: f908f65115a2fc24dbf1f01844512079, type: 2}
   ironData: {fileID: 11400000, guid: 1b7624ce9af207f4aad77d5c567ed95c, type: 2}
   goldData: {fileID: 11400000, guid: 598ec7cfe7abe0b42a9772c1b53c31d1, type: 2}

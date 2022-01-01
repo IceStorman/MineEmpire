@@ -4,6 +4,8 @@ using System.Collections.Generic;
 [CreateAssetMenu(fileName = "NewMainData", menuName = "MainData", order = 53)]
 public class MainData : ScriptableObject
 {
+    public List<OreData> allOresDatas = new List<OreData>(12);
+
     public OreData stoneData;
     public OreData ironData;
     public OreData goldData;

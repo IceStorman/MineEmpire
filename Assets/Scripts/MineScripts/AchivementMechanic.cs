@@ -5,7 +5,6 @@ using UnityEngine.UI;
 public class AchivementMechanic : MonoBehaviour
 {
     [SerializeField] private GameObject panel;
-    private bool isOpened = false;
     [SerializeField] private Button buttonPrefab;
     [SerializeField] private Text textPrefab;
     public List<int> moneysList = new List<int>(9);
@@ -75,18 +74,14 @@ public class AchivementMechanic : MonoBehaviour
         mainData.achivementData.haveYouDone[i] = true;
     }
 
-    public void OpenClose()
+    public void Close()
     {
-        if (!isOpened)
-        {
-            panel.SetActive(true);
-            isOpened = !isOpened;
-        }
-        else if (isOpened)
-        {
-            panel.SetActive(false);
-            isOpened = !isOpened;
-        }
+        panel.SetActive(false);
+    }
+
+    public void Open()
+    {
+        panel.SetActive(true);
     }
 
     public void Earn(int num)
