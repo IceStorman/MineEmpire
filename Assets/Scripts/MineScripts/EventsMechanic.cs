@@ -45,14 +45,16 @@ public class EventsMechanic : MonoBehaviour
     private void CheckAll()
     {
         bool isChanged = false;
+        int j = 0;
         for (int i = oldCosts.Count - 1; i >= 0; i--)
         {
             if (oldCosts[i] < mainData.allOresDatas[i].recycleOreSellCost)
             {
-                eventText.text = eventDialogs[i];
+                eventText.text = $"{eventDialogs[i]} it costs now {mainData.allOresDatas[j].recycleOreSellCost}$";
                 isChanged = true;
                 break;
             }
+            j++;
         }
         if (!isChanged) eventText.text = "Economic in whole world is crushing. Alll the ores sells pretty bad.";
     }
