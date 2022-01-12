@@ -25988,7 +25988,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &655255682
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26833,7 +26833,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &679937194
 RectTransform:
   m_ObjectHideFlags: 0
@@ -39271,7 +39271,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1003577476
 RectTransform:
   m_ObjectHideFlags: 0
@@ -39735,7 +39735,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1013135293
 RectTransform:
   m_ObjectHideFlags: 0
@@ -40089,7 +40089,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1022231666
 RectTransform:
   m_ObjectHideFlags: 0
@@ -44623,35 +44623,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389da5bca90f2c844aba25e0cc82dcdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventDialogs:
-  - Stone is selling in whole world really fast.
-  - Iron is selling in whole world really fast.
-  - Gold is selling in whole world really fast.
-  - Tin is selling in whole world really fast.
-  - Copper is selling in whole world really fast.
-  - Benitoite is selling in whole world really fast.
-  - Onyx is selling in whole world really fast.
-  - Emerald is selling in whole world really fast.
-  - Ruby is selling in whole world really fast.
-  - Sapphire is selling in whole world really fast.
-  - Diamond is selling in whole world really fast.
-  - Amethyst is selling in whole world really fast.
-  eventText: {fileID: 0}
-  mainData: {fileID: 11400000, guid: e91ed92415be5fa488ac8a6ba8215bf5, type: 2}
-  oldCosts:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  isTimerEnd: 0
 --- !u!1 &1097196869
 GameObject:
   m_ObjectHideFlags: 0
@@ -53594,7 +53565,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1328922107
 RectTransform:
   m_ObjectHideFlags: 0
@@ -54304,7 +54275,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1339362684
 RectTransform:
   m_ObjectHideFlags: 0
@@ -58751,7 +58722,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1452862063
 RectTransform:
   m_ObjectHideFlags: 0
@@ -70817,7 +70788,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1754445142
 RectTransform:
   m_ObjectHideFlags: 0
@@ -75028,7 +74999,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1873440476
 RectTransform:
   m_ObjectHideFlags: 0
@@ -82850,7 +82821,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2118557667
 RectTransform:
   m_ObjectHideFlags: 0
