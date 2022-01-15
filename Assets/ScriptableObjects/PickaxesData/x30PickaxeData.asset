@@ -17,6 +17,7 @@ MonoBehaviour:
   isBought: 0
   isPicked: 0
   canBuy: 0
-  hp: 200
+  hp: 0
   defaultHP: 200
   amountProductionPerClick: 30
+  isTheX1Pickaxe: 0

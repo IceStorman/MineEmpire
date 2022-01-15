@@ -57,7 +57,7 @@ public class Songs : MonoBehaviour
         mixer.audioMixer.SetFloat("MasterVolume", Mathf.Lerp(-80, 0, volume));
     }
 
-    private void StopAllMusics()
+    public void StopAllMusics()
     {
         classicMineTheme.Stop();
         exchancheTheme.Stop();
