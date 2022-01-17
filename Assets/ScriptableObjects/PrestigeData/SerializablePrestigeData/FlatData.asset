@@ -16,6 +16,6 @@ MonoBehaviour:
   lockThingText: ???
   canUpgrade: 0
   wasBought: 0
-  thingCost: 7000
+  thingCost: 5000
   giveExp: 39
   thingID: 3

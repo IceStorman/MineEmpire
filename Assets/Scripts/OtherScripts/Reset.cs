@@ -7,10 +7,10 @@ public class Reset : MonoBehaviour
 
     public void ResetProgress()
     {
-        ResetPrestigeData(mainData.phoneData, 400, true);
-        ResetPrestigeData(mainData.PCData, 1300, false);
-        ResetPrestigeData(mainData.flatData, 7000, false);
-        ResetPrestigeData(mainData.carData, 4500, false);
+        ResetPrestigeData(mainData.phoneData, 200, true);
+        ResetPrestigeData(mainData.PCData, 700, false);
+        ResetPrestigeData(mainData.flatData, 5000, false);
+        ResetPrestigeData(mainData.carData, 3500, false);
         ResetPrestigeData(mainData.mansionData, 10000, false);
         ResetPrestigeData(mainData.helicopterData, 14000, false);
         ResetPrestigeData(mainData.yachtData, 19000, false);
