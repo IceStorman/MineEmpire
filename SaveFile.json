@@ -2,21 +2,21 @@
   "allOresDatas": [
     {
       "ore": 0,
-      "recycleOre": 0.0,
+      "recycleOre": 13.5,
       "recycleCount": 0.5,
       "recycleOreGive": 15,
-      "recycleOreSellCost": 7.9,
+      "recycleOreSellCost": 13.9,
       "defaultOreSellCost": 7.9,
-      "recycleOreBuyCost": 8.453,
+      "recycleOreBuyCost": 14.8729992,
       "dropProcent": 80.0,
-      "amountOfRecycle": 1,
-      "amountOfRecycleReceive": 0.5,
+      "amountOfRecycle": 27,
+      "amountOfRecycleReceive": 13.5,
       "numberNeededToDecrease": 50,
       "name": "Stone",
       "hideFlags": 0
     },
     {
-      "ore": 0,
+      "ore": 37,
       "recycleOre": 0.0,
       "recycleCount": 0.7,
       "recycleOreGive": 5,
@@ -31,7 +31,7 @@
       "hideFlags": 0
     },
     {
-      "ore": 0,
+      "ore": 12,
       "recycleOre": 0.0,
       "recycleCount": 0.8,
       "recycleOreGive": 5,
@@ -183,21 +183,21 @@
   ],
   "stoneData": {
     "ore": 0,
-    "recycleOre": 0.0,
+    "recycleOre": 13.5,
     "recycleCount": 0.5,
     "recycleOreGive": 15,
-    "recycleOreSellCost": 7.9,
+    "recycleOreSellCost": 13.9,
     "defaultOreSellCost": 7.9,
-    "recycleOreBuyCost": 8.453,
+    "recycleOreBuyCost": 14.8729992,
     "dropProcent": 80.0,
-    "amountOfRecycle": 1,
-    "amountOfRecycleReceive": 0.5,
+    "amountOfRecycle": 27,
+    "amountOfRecycleReceive": 13.5,
     "numberNeededToDecrease": 50,
     "name": "Stone",
     "hideFlags": 0
   },
   "ironData": {
-    "ore": 0,
+    "ore": 37,
     "recycleOre": 0.0,
     "recycleCount": 0.7,
     "recycleOreGive": 5,
@@ -212,7 +212,7 @@
     "hideFlags": 0
   },
   "goldData": {
-    "ore": 0,
+    "ore": 12,
     "recycleOre": 0.0,
     "recycleCount": 0.8,
     "recycleOreGive": 5,
@@ -362,8 +362,8 @@
     "hideFlags": 0
   },
   "otherData": {
-    "money": 0.0,
-    "timer": 548.0,
+    "money": 69.5,
+    "timer": 369.0,
     "lvl": 1,
     "exp": 0,
     "maxExp": 10,
@@ -617,7 +617,7 @@
     "lockThingText": "???",
     "canUpgrade": true,
     "wasBought": false,
-    "thingCost": 200.0,
+    "thingCost": 80.0,
     "giveExp": 4,
     "thingID": 1,
     "name": "PhoneData",

@@ -65,6 +65,8 @@ public class PrestigeMechanics : MonoBehaviour
     [SerializeField] private MainData mainData;
     [SerializeField] private SpritesData spritesData;
 
+    private bool upgradePanOpened = false;
+
     private void Start()
     {
         prestigePanel.SetActive(false);
@@ -159,6 +161,9 @@ public class PrestigeMechanics : MonoBehaviour
 
     private void Update()
     {
+        if (!upgradePanOpened && Input.GetKeyDown(KeyCode.Escape)) prestigePanel.SetActive(false);
+        else if (upgradePanOpened && Input.GetKeyDown(KeyCode.Escape)) CloseUpgradePanel();
+
         CanBuyLogic(mainData.phoneData);
         CanBuyLogic(mainData.PCData);
         CanBuyLogic(mainData.flatData);
@@ -255,10 +260,12 @@ public class PrestigeMechanics : MonoBehaviour
     public void OpenUpgrdePanel()
     {
         upgradePanel.SetActive(true);
+        upgradePanOpened = true;
     }
 
     public void CloseUpgradePanel()
     {
         upgradePanel.SetActive(false);
+        upgradePanOpened = false;
     }
 }

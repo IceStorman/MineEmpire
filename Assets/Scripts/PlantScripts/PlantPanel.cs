@@ -15,6 +15,11 @@ public class PlantPanel : MonoBehaviour
         plantPanel.SetActive(true);
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape)) Close();
+    }
+
     public void Close()
     {
         plantPanel.SetActive(false);
