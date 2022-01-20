@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: x10PickaxeData
   m_EditorClassIdentifier: 
   prestigeLvl: 5
-  prize: 7000
+  prize: 3200
   isBought: 0
   isPicked: 0
-  canBuy: 1
-  hp: 150
-  defaultHP: 150
+  canBuy: 0
+  hp: 700
+  defaultHP: 700
   amountProductionPerClick: 10
   isTheX1Pickaxe: 0

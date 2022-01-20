@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: x30PickaxeData
   m_EditorClassIdentifier: 
   prestigeLvl: 7
-  prize: 80000
+  prize: 11000
   isBought: 0
   isPicked: 0
   canBuy: 0
-  hp: 0
-  defaultHP: 200
+  hp: 700
+  defaultHP: 700
   amountProductionPerClick: 30
   isTheX1Pickaxe: 0
