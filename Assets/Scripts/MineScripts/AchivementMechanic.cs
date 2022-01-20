@@ -47,8 +47,6 @@ public class AchivementMechanic : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Escape)) panel.SetActive(false);
-
         if (mainData.otherData.money >= moneysList[0] || mainData.achivementData.haveYouDone[0]) AchivementOn(image1, 0);
         if (mainData.otherData.money >= moneysList[1] || mainData.achivementData.haveYouDone[1]) AchivementOn(image2, 1);
         if (mainData.otherData.money >= moneysList[2] || mainData.achivementData.haveYouDone[2]) AchivementOn(image3, 2);

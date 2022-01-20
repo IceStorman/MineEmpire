@@ -175,7 +175,6 @@ public class ExchangePanel : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)) Close();
         DisplayTime(mainData.otherData.timer);
         UpdateAllUI();     
     }
