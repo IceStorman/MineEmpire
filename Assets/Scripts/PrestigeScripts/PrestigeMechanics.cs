@@ -4,7 +4,6 @@ using UnityEngine.UI;
 public class PrestigeMechanics : MonoBehaviour
 {
     [SerializeField] private GameObject prestigePanel;
-    [SerializeField] private GameObject upgradePanel;
 
     [SerializeField] private Text moneyText;
 
@@ -68,7 +67,6 @@ public class PrestigeMechanics : MonoBehaviour
     private void Start()
     {
         prestigePanel.SetActive(false);
-        upgradePanel.SetActive(false);
         UpdateUI(mainData.phoneData, spritesData.phoneSprites, phoneText, phoneCostText, phoneImage, buyPhoneButtonImage);
         UpdateUI(mainData.PCData, spritesData.pcSprites, pcText, pcCostText, pcImage, buyPcButtonImage);
         UpdateUI(mainData.flatData, spritesData.flatSprites, flatText, flatCostText, flatImage, buyFlatButtonImage);
@@ -250,15 +248,5 @@ public class PrestigeMechanics : MonoBehaviour
         CanBuyLogic(mainData.planetData);
         UpgradeThing(mainData.planetData);
         UpdateUI(mainData.planetData, spritesData.planetSprites, planetText, planetCostText, planetImage, buyPlanetButtonImage);
-    }
-
-    public void OpenUpgrdePanel()
-    {
-        upgradePanel.SetActive(true);
-    }
-
-    public void CloseUpgradePanel()
-    {
-        upgradePanel.SetActive(false);
     }
 }
