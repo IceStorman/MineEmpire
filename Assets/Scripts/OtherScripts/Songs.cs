@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class Songs : MonoBehaviour
 {
@@ -10,13 +11,19 @@ public class Songs : MonoBehaviour
     [SerializeField] private AudioSource clickEffect;
     [SerializeField] private AudioSource mineEffect;
 
-    public AudioMixerGroup mixer;
+    [SerializeField] private Slider masterSld;
+    [SerializeField] private Slider musicSld;
+    [SerializeField] private Slider sfxSld;
+
+    [SerializeField] private AudioMixerGroup mixer;
+
+    private float vol;
 
     private void Start()
     {
         classicMineTheme.Play();
     }
-    
+
     public void ChangeOnExchangeTheme()
     {
         StopAllMusics();
@@ -52,9 +59,19 @@ public class Songs : MonoBehaviour
         mineEffect.Play();
     }
 
-    public void ChangeMusicVolume(float volume)
+    public void ChangeMasterVolume()
     {
-        mixer.audioMixer.SetFloat("MasterVolume", Mathf.Lerp(-80, 0, volume));
+        mixer.audioMixer.SetFloat("MasterVolume", masterSld.value);
+    }
+
+    public void ChangeMusicVolume()
+    {
+        mixer.audioMixer.SetFloat("MusicVolume", musicSld.value);
+    }
+
+    public void ChangeSFXVolume()
+    {
+        mixer.audioMixer.SetFloat("SFXVolume", sfxSld.value);
     }
 
     public void StopAllMusics()
