@@ -5,17 +5,13 @@ using UnityEngine.UI;
 public class PauseSettings : MonoBehaviour
 {
     [SerializeField] private GameObject Pause;
-    [SerializeField] private Toggle fullscreenToggle;
+    [SerializeField] private GameObject creditsPanel;
 
     public void Start()
     {
         Close();
+        creditsPanel.SetActive(false);
     }
-
-    /*public void ChangeFullscreenMode()
-    {
-        Screen.fullScreen = !Screen.fullScreen;
-    }*/
 
     public void Open()
     {
@@ -25,5 +21,13 @@ public class PauseSettings : MonoBehaviour
     public void Close()
     {
         Pause.SetActive(false);
+    }
+
+    private bool isOpenedCredits = false;
+
+    public void CreditsMech()
+    {
+        if (isOpenedCredits) creditsPanel.SetActive(false);
+        else creditsPanel.SetActive(true);
     }
 }

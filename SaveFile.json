@@ -1,7 +1,7 @@
 {
   "allOresDatas": [
     {
-      "ore": 8,
+      "ore": 12,
       "recycleOre": 0.0,
       "recycleCount": 0.5,
       "recycleOreGive": 15,
@@ -16,7 +16,7 @@
       "hideFlags": 0
     },
     {
-      "ore": 1,
+      "ore": 3,
       "recycleOre": 0.0,
       "recycleCount": 0.7,
       "recycleOreGive": 5,
@@ -182,7 +182,7 @@
     }
   ],
   "stoneData": {
-    "ore": 8,
+    "ore": 12,
     "recycleOre": 0.0,
     "recycleCount": 0.5,
     "recycleOreGive": 15,
@@ -197,7 +197,7 @@
     "hideFlags": 0
   },
   "ironData": {
-    "ore": 1,
+    "ore": 3,
     "recycleOre": 0.0,
     "recycleCount": 0.7,
     "recycleOreGive": 5,
@@ -363,7 +363,7 @@
   },
   "otherData": {
     "money": 0.0,
-    "timer": 518.0,
+    "timer": 474.0,
     "lvl": 1,
     "exp": 0,
     "maxExp": 10,
