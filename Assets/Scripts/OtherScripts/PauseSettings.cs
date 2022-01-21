@@ -29,5 +29,6 @@ public class PauseSettings : MonoBehaviour
     {
         if (isOpenedCredits) creditsPanel.SetActive(false);
         else creditsPanel.SetActive(true);
+        isOpenedCredits = !isOpenedCredits;
     }
 }

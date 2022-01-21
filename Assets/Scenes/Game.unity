@@ -16739,7 +16739,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &440203259
 RectTransform:
   m_ObjectHideFlags: 0
@@ -45521,7 +45521,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prestigePanel: {fileID: 1892985305}
-  upgradePanel: {fileID: 0}
   moneyText: {fileID: 1498022725}
   expText: {fileID: 1210472468}
   maxExpText: {fileID: 376558129}
