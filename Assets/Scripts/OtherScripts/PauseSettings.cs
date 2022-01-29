@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class PauseSettings : MonoBehaviour
 {
     [SerializeField] private GameObject Pause;

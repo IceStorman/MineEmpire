@@ -27,8 +27,9 @@ public class TutorialMechanic : MonoBehaviour
         isTutor = true;
     }
 
-    private void EndTutorial()
+    public void EndTutorial()
     {
+        whatPageIsNow = 0;
         panel.SetActive(false);
         isTutor = false;
     }
@@ -37,13 +38,11 @@ public class TutorialMechanic : MonoBehaviour
     {
         if (whatPageIsNow >= pageImage.Count)
         {
-            whatPageIsNow = 0;
             EndTutorial();
             return;
         }
         tutorImage.sprite = pageImage[whatPageIsNow];
         tutorText.text = pageText[whatPageIsNow];
-
         whatPageIsNow++;
     }
 }
