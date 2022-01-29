@@ -49,6 +49,7 @@ public class PickaxesMechanics : MonoBehaviour
                     mainData.pickaxesList[i].isBought = false;
                     mainData.pickaxesList[i].isPicked = false;
                     mainData.pickaxesList[0].isPicked = true;
+                    mainData.otherData.amountProductionPerClick = 1;
                 }
             }
         }
@@ -74,6 +75,7 @@ public class PickaxesMechanics : MonoBehaviour
         if(pickaxeData.canBuy && !pickaxeData.isBought && mainData.otherData.money >= pickaxeData.prize)
         {
             mainData.otherData.money -= pickaxeData.prize;
+            pickaxeData.hp = pickaxeData.defaultHP;
             pickaxeData.isBought = true;
             UpdateTextUI();
         }
