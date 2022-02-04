@@ -24,7 +24,8 @@ public class StandartPlantPanel : MonoBehaviour
 
     private void FixedUpdate()
     {
-        UpdateUI();       
+        UpdateUI();
+        if (Input.GetKeyDown(KeyCode.Escape)) Close();
     }
 
     private void UpdateUI()

@@ -178,6 +178,7 @@ public class PrestigeMechanics : MonoBehaviour
         UpdateUI(mainData.rocketData, spritesData.rocketSprites, rocketText, rocketCostText, rocketImage, buyRocketButtonImage);
         UpdateUI(mainData.planetData, spritesData.planetSprites, planetText, planetCostText, planetImage, buyPlanetButtonImage);
         LevelUpMechanic();
+        if (Input.GetKeyDown(KeyCode.Escape)) ClosePanel();
     }
 
     public void UpgradePhone()

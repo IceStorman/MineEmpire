@@ -11,6 +11,12 @@ public class PauseSettings : MonoBehaviour
         Close();
         creditsPanel.SetActive(false);
     }
+    private void Update()
+    {
+        if (!isOpenedCredits && Input.GetKeyDown(KeyCode.Escape)) Close();
+        if (isOpenedCredits && Input.GetKeyDown(KeyCode.Escape)) 
+        { creditsPanel.SetActive(false); isOpenedCredits = !isOpenedCredits; }
+    }
 
     public void Open()
     {

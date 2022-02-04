@@ -66,6 +66,8 @@ public class AchivementMechanic : MonoBehaviour
         if (mainData.achivementData.haveYouEarned[6]) checkerImage7.SetActive(true);
         if (mainData.achivementData.haveYouEarned[7]) checkerImage8.SetActive(true);
         if (mainData.achivementData.haveYouEarned[8]) checkerImage9.SetActive(true);
+
+        if (Input.GetKeyDown(KeyCode.Escape)) Close();
     }
 
     private void AchivementOn(Image image, int i)

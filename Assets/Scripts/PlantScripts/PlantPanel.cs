@@ -9,7 +9,12 @@ public class PlantPanel : MonoBehaviour
     {
         plantPanel.SetActive(false);
     }
-    
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape)) Close();
+    }
+
     public void Open()
     {
         plantPanel.SetActive(true);

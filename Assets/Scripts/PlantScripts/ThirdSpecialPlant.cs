@@ -25,6 +25,7 @@ public class ThirdSpecialPlant : MonoBehaviour
     private void Update()
     {
         UpdateUI();
+        if (Input.GetKeyDown(KeyCode.Escape)) Close();
     }
 
     private void UpdateUI()
