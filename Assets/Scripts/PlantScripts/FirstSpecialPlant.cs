@@ -7,16 +7,13 @@ public class FirstSpecialPlant : MonoBehaviour
 
     [SerializeField] private Text benitoiteText;
     [SerializeField] private Text copperText;
-    [SerializeField] private Text diamondText;
+    [SerializeField] private Text tinText;
     [SerializeField] private Text recycleBenitoiteText;
     [SerializeField] private Text recycleCopperText;
-    [SerializeField] private Text recycleDiamondText;
-    [SerializeField] private Text amountOfRecycleBenitoiteText;
-    [SerializeField] private Text amountOfRecycleCopperText;
-    [SerializeField] private Text amountOfRecycleDiamondText;
+    [SerializeField] private Text recycleTinText;
     [SerializeField] private Text amountOfRecycleReciveBenitoiteText;
     [SerializeField] private Text amountOfRecycleReceiveCopperText;
-    [SerializeField] private Text amountOfRecycleReceiveDiamondText;
+    [SerializeField] private Text amountOfRecycleReceiveTinText;
 
     [SerializeField] private MainData mainData;
 
@@ -34,16 +31,13 @@ public class FirstSpecialPlant : MonoBehaviour
     {
         benitoiteText.text = mainData.benitoiteData.ore.ToString();
         copperText.text = mainData.copperData.ore.ToString();
-        diamondText.text = mainData.diamondData.ore.ToString();
+        tinText.text = mainData.tinData.ore.ToString();
         recycleBenitoiteText.text = mainData.benitoiteData.recycleOre.ToString("F2");
         recycleCopperText.text = mainData.copperData.recycleOre.ToString("F2");
-        recycleDiamondText.text = mainData.diamondData.recycleOre.ToString("F2");
-        amountOfRecycleBenitoiteText.text = mainData.benitoiteData.amountOfRecycle.ToString("00");
-        amountOfRecycleCopperText.text = mainData.copperData.amountOfRecycle.ToString("00");
-        amountOfRecycleDiamondText.text = mainData.diamondData.amountOfRecycle.ToString("00");
+        recycleTinText.text = mainData.tinData.recycleOre.ToString("F2");
         amountOfRecycleReciveBenitoiteText.text = mainData.benitoiteData.amountOfRecycleReceive.ToString("F2");
         amountOfRecycleReceiveCopperText.text = mainData.copperData.amountOfRecycleReceive.ToString("F2");
-        amountOfRecycleReceiveDiamondText.text = mainData.diamondData.amountOfRecycleReceive.ToString("F2");
+        amountOfRecycleReceiveTinText.text = mainData.tinData.amountOfRecycleReceive.ToString("F2");
     }
 
     public void Open()
@@ -56,30 +50,15 @@ public class FirstSpecialPlant : MonoBehaviour
         firstSpecialPlant.SetActive(false);
     }
 
-    private void RecycleResource(OreData oreData, Text recourceText, Text recycleRecourceText)
+    public void RecycleResource(OreData oreData)
     {
-        if (oreData.ore >= oreData.amountOfRecycle)
-        {
-            recourceText.text = oreData.ore.ToString();
-            oreData.recycleOre += (oreData.amountOfRecycle * oreData.recycleCount);
-            oreData.ore -= oreData.amountOfRecycle;
-            recycleRecourceText.text = oreData.recycleOre.ToString("F2");
-        }
+        oreData.recycleOre += oreData.amountOfRecycleReceive;
+        oreData.ore = 0;
+        oreData.amountOfRecycleReceive = 0;
+    }
+    public void OpenOre(OreData oreData)
+    {
+        oreData.amountOfRecycleReceive = (oreData.ore * oreData.recycleCount);
     }
 
-
-    public void RecycleBenitoite()
-    {
-        RecycleResource(mainData.benitoiteData, benitoiteText, recycleBenitoiteText);
-    }
-
-    public void RecycleCopper()
-    {
-        RecycleResource(mainData.copperData, copperText, recycleCopperText);
-    }
-
-    public void RecycleDiamond()
-    {
-        RecycleResource(mainData.diamondData, diamondText, recycleDiamondText);
-    }
 }

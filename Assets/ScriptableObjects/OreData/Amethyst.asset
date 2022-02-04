@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Amethyst
   m_EditorClassIdentifier: 
   ore: 0
-  recycleOre: 0
+  recycleOre: 3.5
   recycleCount: 0.7
   recycleOreGive: 1
-  recycleOreSellCost: 489.1
+  recycleOreSellCost: 440.30923
   defaultOreSellCost: 489.1
-  recycleOreBuyCost: 523.33704
+  recycleOreBuyCost: 471.1309
   dropProcent: 0
   amountOfRecycle: 50
-  amountOfRecycleReceive: 0.7
-  numberNeededToDecrease: 50
+  amountOfRecycleReceive: 0
+  numberNeededToDecrease: 40

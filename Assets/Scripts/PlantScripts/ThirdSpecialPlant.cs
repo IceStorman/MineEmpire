@@ -5,18 +5,15 @@ public class ThirdSpecialPlant : MonoBehaviour
 {
     [SerializeField] private GameObject thirdSpecialPlant;
 
-    [SerializeField] private Text emeraldText;
-    [SerializeField] private Text rubyText;
-    [SerializeField] private Text tinText;
-    [SerializeField] private Text recycleEmeraldText;
-    [SerializeField] private Text recycleRubyText;
-    [SerializeField] private Text recycleTinText;
-    [SerializeField] private Text amountOfRecycleEmeraldText;
-    [SerializeField] private Text amountOfRecycleRubyText;
-    [SerializeField] private Text amountOfRecycleTinText;
-    [SerializeField] private Text amountOfRecycleReciveEmeraldText;
-    [SerializeField] private Text amountOfRecycleReceiveRubyText;
-    [SerializeField] private Text amountOfRecycleReceiveTinText;
+    [SerializeField] private Text sapphireText;
+    [SerializeField] private Text amethystText;
+    [SerializeField] private Text diamondText;
+    [SerializeField] private Text recycleSapphireText;
+    [SerializeField] private Text recycleAmethystText;
+    [SerializeField] private Text recycleDiamondText;
+    [SerializeField] private Text amountOfRecycleReciveSapphireText;
+    [SerializeField] private Text amountOfRecycleReceiveAmethystText;
+    [SerializeField] private Text amountOfRecycleReceiveDiamondText;
 
     [SerializeField] private MainData mainData;
 
@@ -32,18 +29,15 @@ public class ThirdSpecialPlant : MonoBehaviour
 
     private void UpdateUI()
     {
-        emeraldText.text = mainData.emeraldData.ore.ToString();
-        rubyText.text = mainData.rubyData.ore.ToString();
-        tinText.text = mainData.tinData.ore.ToString();
-        recycleEmeraldText.text = mainData.emeraldData.recycleOre.ToString("F2");
-        recycleRubyText.text = mainData.rubyData.recycleOre.ToString("F2");
-        recycleTinText.text = mainData.tinData.recycleOre.ToString("F2");
-        amountOfRecycleEmeraldText.text = mainData.emeraldData.amountOfRecycle.ToString("00");
-        amountOfRecycleRubyText.text = mainData.rubyData.amountOfRecycle.ToString("00");
-        amountOfRecycleTinText.text = mainData.tinData.amountOfRecycle.ToString("00");
-        amountOfRecycleReciveEmeraldText.text = mainData.emeraldData.amountOfRecycleReceive.ToString("F2");
-        amountOfRecycleReceiveRubyText.text = mainData.rubyData.amountOfRecycleReceive.ToString("F2");
-        amountOfRecycleReceiveTinText.text = mainData.tinData.amountOfRecycleReceive.ToString("F2");
+        sapphireText.text = mainData.sapphireData.ore.ToString();
+        amethystText.text = mainData.amethystData.ore.ToString();
+        diamondText.text = mainData.diamondData.ore.ToString();
+        recycleSapphireText.text = mainData.sapphireData.recycleOre.ToString("F2");
+        recycleAmethystText.text = mainData.amethystData.recycleOre.ToString("F2");
+        recycleDiamondText.text = mainData.diamondData.recycleOre.ToString("F2");
+        amountOfRecycleReciveSapphireText.text = mainData.sapphireData.amountOfRecycleReceive.ToString("F2");
+        amountOfRecycleReceiveAmethystText.text = mainData.amethystData.amountOfRecycleReceive.ToString("F2");
+        amountOfRecycleReceiveDiamondText.text = mainData.diamondData.amountOfRecycleReceive.ToString("F2");
     }
 
     public void Open()
@@ -56,30 +50,14 @@ public class ThirdSpecialPlant : MonoBehaviour
         thirdSpecialPlant.SetActive(false);
     }
 
-    private void RecycleResource(OreData oreData, Text recourceText, Text recycleRecourceText)
+    public void RecycleResource(OreData oreData)
     {
-        if (oreData.ore >= oreData.amountOfRecycle)
-        {
-            recourceText.text = oreData.ore.ToString();
-            oreData.recycleOre += (oreData.amountOfRecycle * oreData.recycleCount);
-            oreData.ore -= oreData.amountOfRecycle;
-            recycleRecourceText.text = oreData.recycleOre.ToString("F2");
-        }
+        oreData.recycleOre += oreData.amountOfRecycleReceive;
+        oreData.ore = 0;
+        oreData.amountOfRecycleReceive = 0;
     }
-
-
-    public void RecycleEmerald()
+    public void OpenOre(OreData oreData)
     {
-        RecycleResource(mainData.emeraldData, emeraldText, recycleEmeraldText);
-    }
-
-    public void RecycleRuby()
-    {
-        RecycleResource(mainData.rubyData, rubyText, recycleRubyText);
-    }
-
-    public void RecycleTin()
-    {
-        RecycleResource(mainData.tinData, tinText, recycleTinText);
+        oreData.amountOfRecycleReceive = (oreData.ore * oreData.recycleCount);
     }
 }

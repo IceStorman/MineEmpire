@@ -11,9 +11,6 @@ public class StandartPlantPanel : MonoBehaviour
     [SerializeField] private Text recycleStoneText;
     [SerializeField] private Text recycleIronText;
     [SerializeField] private Text recycleGoldText;
-    [SerializeField] private Text amountOfRecycleStoneText;
-    [SerializeField] private Text amountOfRecycleIronText;
-    [SerializeField] private Text amountOfRecycleGoldText;
     [SerializeField] private Text amountOfRecycleStoneReciveText;
     [SerializeField] private Text amountOfRecycleReceiveIronText;
     [SerializeField] private Text amountOfRecycleReceiveGoldText;
@@ -25,9 +22,9 @@ public class StandartPlantPanel : MonoBehaviour
         standartPlantPanel.SetActive(false);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        UpdateUI();
+        UpdateUI();       
     }
 
     private void UpdateUI()
@@ -38,9 +35,6 @@ public class StandartPlantPanel : MonoBehaviour
         recycleStoneText.text = mainData.stoneData.recycleOre.ToString("F2");
         recycleIronText.text = mainData.ironData.recycleOre.ToString("F2");
         recycleGoldText.text = mainData.goldData.recycleOre.ToString("F2");
-        amountOfRecycleStoneText.text = mainData.stoneData.amountOfRecycle.ToString("00");
-        amountOfRecycleIronText.text = mainData.ironData.amountOfRecycle.ToString("00");
-        amountOfRecycleGoldText.text = mainData.goldData.amountOfRecycle.ToString("00");
         amountOfRecycleStoneReciveText.text = mainData.stoneData.amountOfRecycleReceive.ToString("F2");
         amountOfRecycleReceiveIronText.text = mainData.ironData.amountOfRecycleReceive.ToString("F2");
         amountOfRecycleReceiveGoldText.text = mainData.goldData.amountOfRecycleReceive.ToString("F2");
@@ -56,30 +50,15 @@ public class StandartPlantPanel : MonoBehaviour
         standartPlantPanel.SetActive(false);
     }
 
-    private void RecycleResource(OreData oreData, Text recourceText, Text recycleRecourceText)
-    {
-        if (oreData.ore >= oreData.amountOfRecycle)
-        {
-            recourceText.text = oreData.ore.ToString();
-            oreData.recycleOre += (oreData.amountOfRecycle * oreData.recycleCount);
-            oreData.ore -= oreData.amountOfRecycle;
-            recycleRecourceText.text = oreData.recycleOre.ToString("F2");
-        }
+    public void RecycleResource(OreData oreData)
+    {        
+        oreData.recycleOre += oreData.amountOfRecycleReceive;     
+        oreData.ore = 0;
+        oreData.amountOfRecycleReceive = 0;
     }
+    public void OpenOre(OreData oreData)
+    {
+        oreData.amountOfRecycleReceive = (oreData.ore * oreData.recycleCount);
+    } 
    
-
-    public void RecycleStone()
-    {
-        RecycleResource(mainData.stoneData, stoneText, recycleStoneText);
-    }
-
-    public void RecycleIron()
-    {
-        RecycleResource(mainData.ironData, ironText, recycleIronText);
-    }
-
-    public void RecycleGold()
-    {
-        RecycleResource(mainData.goldData, goldText, recycleGoldText);
-    }
 }

@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Onyx
   m_EditorClassIdentifier: 
   ore: 0
-  recycleOre: 0
+  recycleOre: 4
   recycleCount: 0.8
   recycleOreGive: 2
-  recycleOreSellCost: 167.9
+  recycleOreSellCost: 167.06155
   defaultOreSellCost: 167.9
-  recycleOreBuyCost: 179.653
+  recycleOreBuyCost: 178.75586
   dropProcent: 0
   amountOfRecycle: 1
-  amountOfRecycleReceive: 0.8
+  amountOfRecycleReceive: 0
   numberNeededToDecrease: 50

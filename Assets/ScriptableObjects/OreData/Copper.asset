@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Copper
   m_EditorClassIdentifier: 
   ore: 0
-  recycleOre: 0
+  recycleOre: 3.5
   recycleCount: 0.7
   recycleOreGive: 3
-  recycleOreSellCost: 94.7
+  recycleOreSellCost: 94.22709
   defaultOreSellCost: 94.7
-  recycleOreBuyCost: 101.328995
+  recycleOreBuyCost: 100.82298
   dropProcent: 0
   amountOfRecycle: 1
-  amountOfRecycleReceive: 0.7
+  amountOfRecycleReceive: 0
   numberNeededToDecrease: 50
