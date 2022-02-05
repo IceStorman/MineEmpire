@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Tin
   m_EditorClassIdentifier: 
   ore: 0
-  recycleOre: 4
+  recycleOre: 0
   recycleCount: 0.8
   recycleOreGive: 3
-  recycleOreSellCost: 94.797905
+  recycleOreSellCost: 86.2
   defaultOreSellCost: 86.2
-  recycleOreBuyCost: 101.43376
+  recycleOreBuyCost: 92.23399
   dropProcent: 0
   amountOfRecycle: 1
   amountOfRecycleReceive: 0
-  numberNeededToDecrease: 60
+  numberNeededToDecrease: 50

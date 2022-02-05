@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Emerald
   m_EditorClassIdentifier: 
   ore: 0
-  recycleOre: 2.5
+  recycleOre: 0
   recycleCount: 0.5
   recycleOreGive: 2
   recycleOreSellCost: 170.2361

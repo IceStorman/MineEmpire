@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Stone
   m_EditorClassIdentifier: 
   ore: 0
-  recycleOre: 344.5
+  recycleOre: 0
   recycleCount: 0.5
   recycleOreGive: 15
-  recycleOreSellCost: 8.687976
+  recycleOreSellCost: 7.9
   defaultOreSellCost: 7.9
-  recycleOreBuyCost: 9.296134
+  recycleOreBuyCost: 8.453
   dropProcent: 80
   amountOfRecycle: 50
-  amountOfRecycleReceive: 0
-  numberNeededToDecrease: 60
+  amountOfRecycleReceive: 0.5
+  numberNeededToDecrease: 50

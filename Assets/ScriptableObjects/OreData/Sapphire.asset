@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Sapphire
   m_EditorClassIdentifier: 
   ore: 0
-  recycleOre: 2.5
+  recycleOre: 0
   recycleCount: 0.5
   recycleOreGive: 1
-  recycleOreSellCost: 388.74893
+  recycleOreSellCost: 390.7
   defaultOreSellCost: 390.7
-  recycleOreBuyCost: 415.96136
+  recycleOreBuyCost: 418.049
   dropProcent: 0
   amountOfRecycle: 1
   amountOfRecycleReceive: 0
