@@ -39227,14 +39227,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1681b85fa97366a4387a5bf1b5948a5a, type: 3}
   - {fileID: 21300000, guid: a9a90c685b3e0fd4cbc9d73227bc1d98, type: 3}
   - {fileID: 21300000, guid: 978208e2c3a147149be29cea910b0fe3, type: 3}
-  - {fileID: 21300000, guid: 56eb02cfa23f15143bae22199c1e12fc, type: 3}
+  - {fileID: 21300000, guid: 6177bc8ca951848418596b4c6be51551, type: 3}
   - {fileID: 21300000, guid: 076507ea109f25a46b45d4bdf4468bca, type: 3}
   - {fileID: 21300000, guid: 3b94376e85538fd408f3ecff159b512a, type: 3}
   - {fileID: 21300000, guid: cf29e3801a02edf4da433c777cd6fe2d, type: 3}
   - {fileID: 21300000, guid: 1e066adf1896d37409c0fcb02bf4f99c, type: 3}
   - {fileID: 21300000, guid: 84cdb185c2e6b7b438a64ca91907548b, type: 3}
   - {fileID: 21300000, guid: cb47a37e690e0ba41b0706b7f81485f7, type: 3}
-  - {fileID: 21300000, guid: b242d5cb9579b724fbfc237a31b31a21, type: 3}
+  - {fileID: 21300000, guid: ea2fe096a5add38418b1587f11db60cf, type: 3}
   pageText:
   - Click on mine button to mine ores!
   - when you earn enough ore you must recycle it
